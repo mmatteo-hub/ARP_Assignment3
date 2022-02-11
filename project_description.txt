@@ -1,0 +1,3 @@
+[MASTER] Started on 02/11/22 at 12:10:45.
+[MASTER] Client [127.0.0.1] connected at index 0.
+[MASTER] Client at index 0 disconnected.
