@@ -1,0 +1,2 @@
+qua verrà caricato il progetto del drone di ogni gruppo (o master)
+per i droni direi di chiamarli drone_<nomegruppo> come la cartella
