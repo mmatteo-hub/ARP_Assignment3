@@ -8,6 +8,7 @@
 #include <signal.h>
 #include <stdio.h>
 #include <fcntl.h>
+#include <time.h>
 
 typedef struct
 {
