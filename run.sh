@@ -1,1 +1,1 @@
-./exes/master "./log.txt"
+./sources/exes/master "./log.txt"
