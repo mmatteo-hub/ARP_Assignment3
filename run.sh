@@ -1,1 +1,0 @@
-./exes/master "./log.txt"
