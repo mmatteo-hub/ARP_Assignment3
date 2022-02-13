@@ -1,0 +1,34 @@
+############ DRONE_API ############
+The 'drone_api.c' file is a library created to simplify the communication between the master and the drones.
+There are some #define that are used to define all the possible responses to a drone request:
+0. SUCCESS: the request has been completed without errors.
+1. INVALID_MESSAGE: the contents of the message are not valid.
+2. OUT_OF_BOUNDS_POSITION: the requested position is outside the map.
+3. OCCUPIED_POSITION_WALL: the requested position is occupied by a wall.
+4. OCCUPIED_POSITION_DRONE: the requested position is occupied by a drone.
+5. DRONE_NOT_SPAWNED: the drone needs to be spawned.
+6. DRONE_ALREADY_SPAWNED: the drone is already spawned in map.
+7. DRONE_IS_LANDED: the drone needs to not be landed.
+8. ONE_CELL_AT_A_TIME: the drone requested to move more than 1 cell.
+9. LAND_ONLY_AT_Z0: the drone requested to land when not at z=0.
+
+A drone can use the following functions to send requests to the master:
+1. send_spawn_message: to spawn the drone in a specific position.
+2. send_move_message: to move the drone with respect to the current position.
+3. send_landing_message: to land and take off the drone.
+These functions return the response of the master which can either be SUCCESS or an error.
+ 
+There are some function pointers available to the master so that it is possible to automatically decode data received from a drone and call the correct handler. These handlers need to be implemented by the master process and specified to the library so that they can be linked with the correct function pointer.
+Once data is available to the master, it can call the following function:
+- decode_client_message: to read the data and call the correct handler.
+The function returns negative values in case of errors.
+
+One of the following handler is called:
+1. handle_spawn_message.
+2. handle_move_message.
+3. handle_landing_message.
+Inside these handlers, the master needs to check for inconsistencies in the data sent by the drone and eventually reply with an error or with SUCCESS.
+
+Inside the library there is also another function:
+- drone_error: to print in console the reply of the master in a human-readable string.
+

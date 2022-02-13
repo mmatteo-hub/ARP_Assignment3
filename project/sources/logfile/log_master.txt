@@ -1,0 +1,3 @@
+17:09:53 | [MASTER] Started the initialization phase.
+17:09:53 | [MASTER] Data initialized, initializating socket.
+17:09:53 | [MASTER] Socket initialized, waiting for connections.

@@ -1,0 +1,27 @@
+############ MASTER ############
+The 'master' process has the objective of handling the movement of different simple simulated drones in a simulated environment.
+
+First, the master performs some initialization instructions:
+1. Uses the logger.h library to create a Logger object.
+2. Initializes the signal handler for SIGTERM so that it is possible to release the allocated resources before exiting.
+3. Initializes the environment map to have walls on the outer borders and some scattered walls. Then, prints it on console.
+4. Creates and initializes a socket server so that it can connect and communicate with drone processes.
+5. Starts listening for client connections and drone requests.
+
+When a new client makes a connection request, the master checks if the maximum number of connections has been reached by checking if there is a drone available in the array. In case there is no drone available, the master immediately closes the connection with the client. Otherwise, the master assigns a Drone to the client which is marked as 'not yet spawned'.
+
+The master is able to decode the messages sent by the drones by using the drone_api.h library which automatically calls the correct handler when new data is available.
+
+After the connection is established, the first message that a drone should send to the master is a SPAWN_MESSAGE to specify where in the map the drone wants to be spawned: the master makes some checks about the requested position and, if no error occurs, a new Drone is created and inserted into the array.
+
+Then, a drone can send a MOVE_MESSAGE to request a movement inside the map: again, the master makes some checks about the state of the drone and the position to which it wants to move. If no error occurs, the drone is move to the desired position.
+
+Then, a drone can send a LANDING_MESSAGE to request a landing or a take off behaviour: the master checks if the drone is at ground level to perform this action. If no error occurs, the drone is set to be landed or not depending on the requested state.
+
+Every time a new drone request is performed, the master prints a new map with the spawned drones in the correct position, with different colours, and with a different char depending on their state:
+- If the drone is not spawned, a ' ' is printed.
+- If the drone is landed, a 'X' is printed.
+- If the drone is flying, an integer corresponding to the elevation of the drone is printed.
+NB. If two drones are in the same (x, y) position, only the drone with the highest elevation is printed on the map.
+
+It may happen that a client closes the connection: the drone_api.h library advises the master process of this event and then the master proceeds to remove the corresponding Drone from the array.

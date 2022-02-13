@@ -1,0 +1,15 @@
+############ LOGGER ############
+The 'logger.c' is a helper library for printing info and error strings inside a log file.
+To use the library it is necessary to create a Logger object by using the following function:
+- create_logger(Logger* logger, char* prefix, char* path) :
+  - the "prefix" string is the name that will be printed before a log entry.
+  - the "path" string is the path of the log file.
+This function creates and opens the log file and ints the Logger object.
+It returns a negative value is case of some error occurring.
+
+There are some other functions that are implemented inside this library:
+1. info(Logger* logger, char* text, int console): prints the specified text inside the log file and also on console if specified by the last paramter.
+2. error_cont(Logger* logger, char* text): prints the specified text inside the log file and on console, then returns the control to the caller process.
+3. error_exit(Logger* logger, char* text): prints the specified text inside the log file and on console, then makes the caller process exit by sending the SIGTERM signal.
+4. perror_cont(Logger* logger, char* text): prints the specified text and the errno string inside the log file and on console, then returns the control to the caller process.
+5. perror_exit(Logger* logger, char* text): prints the specified text and the errno string inside the log file and on console, then makes the caller process exit by sending the SIGTERM signal.
