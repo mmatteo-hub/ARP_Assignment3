@@ -330,6 +330,9 @@ int main(int argc, char *argv[])
     
     // Freeing resources on termination
     free_resources();
+
+    // print on the log file
+    info(&logger, "The drone has been stopped.",0);
     
     // exit
  	return 0;
