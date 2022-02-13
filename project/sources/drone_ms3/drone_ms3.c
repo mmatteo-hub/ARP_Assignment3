@@ -337,6 +337,7 @@ int main(int argc, char *argv[])
     // exit
  	return 0;
 }
+
 // implementation of the function to print the map
 void print_array()
 {
