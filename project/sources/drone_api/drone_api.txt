@@ -1,4 +1,5 @@
 ############ DRONE_API ############
+### AUTHORS: Mattia Musumeci, Daniele Martino Parisi
 The 'drone_api.c' file is a library created to simplify the communication between the master and the drones.
 There are some #define that are used to define all the possible responses to a drone request:
 0. SUCCESS: the request has been completed without errors.

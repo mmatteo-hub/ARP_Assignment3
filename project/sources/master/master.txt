@@ -1,4 +1,5 @@
 ############ MASTER ############
+### AUTHORS: Mattia Musumeci, Daniele Martino Parisi
 The 'master' process has the objective of handling the movement of different simple simulated drones in a simulated environment.
 
 First, the master performs some initialization instructions:

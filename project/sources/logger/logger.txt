@@ -1,4 +1,5 @@
 ############ LOGGER ############
+### AUTHORS: Mattia Musumeci, Daniele Martino Parisi
 The 'logger.c' is a helper library for printing info and error strings inside a log file.
 To use the library it is necessary to create a Logger object by using the following function:
 - create_logger(Logger* logger, char* prefix, char* path) :
