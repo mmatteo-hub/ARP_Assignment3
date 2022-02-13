@@ -347,18 +347,22 @@ void print_array()
             char v = map[j][i];
             if(v == 'P')
             {
+                // print the position in blu
                 printf("%sP%s",KBLU,KNRM);
             }
             else if(v == 'V')
             {
+                // print the visited position in green
                 printf("%sV%s",KGRN,KNRM);
             }
             else if(v == 'X')
             {
+                // print the wall in white
                 printf("%sX%s",KNRM,KNRM);
             }
             else
             {
+                // print the unvisited in yellow
                 printf("%sU%s",KYEL,KNRM);
             }
         }
