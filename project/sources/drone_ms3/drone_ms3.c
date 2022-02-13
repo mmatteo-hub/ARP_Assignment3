@@ -296,6 +296,8 @@ int main(int argc, char *argv[])
             // check the amount of battery remaining to be sure that the drone can land 
             if(bat <= direction_z)
             {
+                // write into the log file
+                info(&logger, "Landing due to battery charge.", 0);
                 // loop of 10 steps to recharge
                 for(int i=0; i<10; ++i)
                 {
@@ -306,8 +308,6 @@ int main(int argc, char *argv[])
                     // print on the console
                     printf("Landing: ");
                     drone_error(result);
-                    // write into the log file
-                    info(&logger, "Landing due to battery charge.", 0);
                     // use battery
                     --bat;
                     // print on the console
@@ -324,6 +324,8 @@ int main(int argc, char *argv[])
                 
                 // send a message to the socket
                 send_land_message(socket_fd, 1);
+                // write into the log file
+                info(&logger, "Started recharging battery", 0);
                 // for the maximum amount of the battery
                 for(bat = 0; bat < battery; bat++)
                 {
@@ -331,16 +333,14 @@ int main(int argc, char *argv[])
                     system("clear");
                     // print on the console
                     printf("Recharging: %s %d %% %s", KYEL, 100*bat/battery, KNRM);
-                    // write on the buffer
-                    sprintf(buff, "Recharging: %d %%", 100*bat/battery);
-                    // write into the log file
-                    info(&logger, buff, 0);
                     printf("\n\n");
                     // print the map
                     print_array(map);
                     // sleep
                     usleep(250000);
                 }
+                // write into the log file
+                info(&logger, "Recharge completed.", 0);
                 // print a message to the socket
                 send_land_message(socket_fd, 0);
             }
