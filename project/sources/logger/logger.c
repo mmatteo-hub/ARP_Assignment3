@@ -77,7 +77,7 @@ void info_hidden(Logger* logger, char* text, char* color, int console)
     // Getting current time for log
     char now[9];
     strftime(now, 9, "%X", localtime(&(time_t){time(NULL)}));
-    
+        
     // Writing info on log.txt file
     if(write(logger->fd, now, 8) == -1 ||
        write(logger->fd, " | [", 4) == -1 ||

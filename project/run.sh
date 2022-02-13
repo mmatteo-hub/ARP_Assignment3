@@ -4,4 +4,4 @@ LOGFILES_DIR="./sources/logfile"
 
 # Terminals are launched for each process
 gnome-terminal -- "$EXES_DIR/master" "$LOGFILES_DIR/log_master.txt"
-gnome-terminal -- "$EXES_DIR/drone_ms3 10 10"
+gnome-terminal -- "$EXES_DIR/drone_ms3" "10" "10"

@@ -9,6 +9,9 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <time.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <semaphore.h>
 
 typedef struct
 {

@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
     // take the random time
     srand(time(NULL));
     // create the logger specifying the name and the path 
-    create_logger(&logger, "drone_ms3", "./../logfile/log_master.txt");
+    create_logger(&logger, "drone_ms3", "./sources/logfile/log_drone_ms3.txt");
     // call sig handler
     signal(SIGTERM, err_sig);
     // writing into the log file
@@ -295,7 +295,7 @@ int main(int argc, char *argv[])
                 }
                 
                 // send a message to the socket
-                send_landing_message(socket_fd, 1);
+                send_land_message(socket_fd, 1);
                 // for the maximum amount of the battery
                 for(bat = 0; bat < battery; bat++)
                 {
@@ -314,7 +314,7 @@ int main(int argc, char *argv[])
                     usleep(250000);
                 }
                 // print a message to the socket
-                send_landing_message(socket_fd, 0);
+                send_land_message(socket_fd, 0);
             }
         }
     }
