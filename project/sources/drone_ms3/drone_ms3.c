@@ -374,6 +374,7 @@ void print_array()
         printf("\n");
     }
 }
+
 // implementation of the function to free the resources
 void free_resources()
 {
