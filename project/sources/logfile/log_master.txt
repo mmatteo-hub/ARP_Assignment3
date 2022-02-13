@@ -1,5 +1,5 @@
-20:00:05 | [MASTER] Started the initialization phase.
-20:00:05 | [MASTER] Data initialized, initializating socket.
-20:00:05 | [MASTER] Socket initialized, waiting for connections.
-20:00:05 | [MASTER] Client [127.0.0.1] connected at index 0.
-20:01:11 | [MASTER] Client at index 0 disconnected.
+23:14:32 | [MASTER] Started the initialization phase.
+23:14:32 | [MASTER] Data initialized, initializating socket.
+23:14:32 | [MASTER] Socket initialized, waiting for connections.
+23:14:32 | [MASTER] Client [127.0.0.1] connected at index 0.
+23:14:40 | [MASTER] Client at index 0 disconnected.
