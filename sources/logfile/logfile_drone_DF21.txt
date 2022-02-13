@@ -1,0 +1,100 @@
+Sun Feb 13 09:48:34 2022
+Correctly connected with server
+
+Sun Feb 13 09:48:34 2022
+Spawn psoition: [x = 10|y= 10| z= 0]
+
+Sun Feb 13 09:48:36 2022
+Velocity set by user: 1
+
+Sun Feb 13 09:48:36 2022
+Spawn result is: 0
+
+Sun Feb 13 09:48:37 2022
+Drone is taking off for 99 spetps before refueling
+
+Sun Feb 13 09:48:50 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:11 | y:10 | z:6 ]
+
+Sun Feb 13 09:48:52 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:12 | y:10 | z:6 ]
+
+Sun Feb 13 09:48:54 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:13 | y:10 | z:6 ]
+
+Sun Feb 13 09:48:56 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:14 | y:10 | z:6 ]
+
+Sun Feb 13 09:48:58 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:15 | y:10 | z:6 ]
+
+Sun Feb 13 09:49:00 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:16 | y:10 | z:6 ]
+
+Sun Feb 13 09:49:02 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:17 | y:10 | z:6 ]
+
+Sun Feb 13 09:49:04 2022
+Tried to move 1 0 0 : 0
+Drone position [ x:18 | y:10 | z:6 ]
+
+Sun Feb 13 09:49:06 2022
+Tried to move 0 0 0 : 4
+OSTACLE ENCOUNTERED: choose another trajectory
+Drone position [ x:18 | y:10 | z:6 ]
+
+Sun Feb 13 09:49:08 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:19 | y:11 | z:6 ]
+
+Sun Feb 13 09:49:10 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:20 | y:12 | z:6 ]
+
+Sun Feb 13 09:49:12 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:21 | y:13 | z:6 ]
+
+Sun Feb 13 09:49:14 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:22 | y:14 | z:6 ]
+
+Sun Feb 13 09:49:16 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:23 | y:15 | z:6 ]
+
+Sun Feb 13 09:49:18 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:24 | y:16 | z:6 ]
+
+Sun Feb 13 09:49:20 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:25 | y:17 | z:6 ]
+
+Sun Feb 13 09:49:22 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:26 | y:18 | z:6 ]
+
+Sun Feb 13 09:49:24 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:27 | y:19 | z:6 ]
+
+Sun Feb 13 09:49:26 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:28 | y:20 | z:6 ]
+
+Sun Feb 13 09:49:28 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:29 | y:21 | z:6 ]
+
+Sun Feb 13 09:49:30 2022
+Tried to move 1 1 0 : 0
+Drone position [ x:30 | y:22 | z:6 ]
+

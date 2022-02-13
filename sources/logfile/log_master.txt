@@ -1,0 +1,145 @@
+[mmss_drone] Starting
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Recharging battery.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Cannot move due to a wall.
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Moving
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
+[mmss_drone] Landing due to battery charge.
