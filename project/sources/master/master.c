@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <strings.h>
+#include <time.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include "../drone_api/drone_api.h"
@@ -34,6 +35,7 @@ int is_inside_map(int posx, int posy, int posz);
 int get_drone(int posx, int posy, int posz);
 int get_visible_drone(int posx, int posy);
 char drone_to_char(Drone drone);
+int random_between(int min, int max);
 
 int on_spawn_message(int id, int posx, int posy, int posz);
 int on_move_message(int id, int offx, int offy, int offz);
@@ -51,21 +53,24 @@ Drone drones[MAX_CLIENTS];
 
 int main(int argc, char *argv[])
 {
-    // Init logger
+    // Inits the random seed
+    srand(time(NULL)); 
+    
+    // Inits logger
     create_logger(&logger, "MASTER", argv[1]);
     info(&logger, "Started the initialization phase.", 0);
   
-    // So that process can release resources in case of error
+    // Inits signal to release resources in case of error
     signal(SIGTERM, on_error);
     
-    // Init drones and endpoints
+    // Inits drones and endpoints
     for(int i=0; i<MAX_CLIENTS; ++i)
     {
         c_endpoints[i] = -1;
         drones[i] = (Drone){0, -1, -1, -1, 0};
     }
     
-    // Init drone_api library
+    // Inits drone_api library
     handle_spawn_message = on_spawn_message;
     handle_move_message = on_move_message;
     handle_land_message = on_land_message;
@@ -76,18 +81,18 @@ int main(int argc, char *argv[])
     
     info(&logger, "Data initialized, initializating socket.", 0);
     
-    // Setting server data
+    // Sets server data
     struct sockaddr_in serv_addr;
     bzero((char *) &serv_addr, sizeof(serv_addr));  
     serv_addr.sin_family = AF_INET;             // Using protocol IPv4
     serv_addr.sin_port = htons(51234);          // Setting server port
     serv_addr.sin_addr.s_addr = INADDR_ANY;     // Server listens on all available interfaces
     
-    // Opening socket
+    // Opens socket
     if((s_endpoint = socket(AF_INET, SOCK_STREAM, 0)) == -1)
         perror_exit(&logger, "Opening socket");
     
-    // Binding server address to socket
+    // Binds server address to socket
     if (bind(s_endpoint, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) == -1)
         perror_exit(&logger, "Binding socket");
         
@@ -97,7 +102,7 @@ int main(int argc, char *argv[])
         
     info(&logger, "Socket initialized, waiting for connections.", 0);
     
-    // Set of file descriptors
+    // Sets of file descriptors
     fd_set fds;
     
     while(1)
@@ -132,6 +137,7 @@ int main(int argc, char *argv[])
             }
             
         // Prints the new map
+        system("clear");
         print_map();
     }
         
@@ -140,12 +146,12 @@ int main(int argc, char *argv[])
 
 void free_resources()
 {
-    // Closing connections with client
+    // Closes connections with client
     for(int i=0; i<MAX_CLIENTS; ++i)
         if(c_endpoints[i] != -1 && close(c_endpoints[i]) == -1)
             perror_cont(&logger, "Closing client connection");
         
-    // Closing socket
+    // Closes socket
     if(close(s_endpoint) == -1)
         perror_cont(&logger, "Closing socket");
 }
@@ -163,13 +169,13 @@ void accept_client()
 {
     struct sockaddr_in cli_addr;
     
-    // Accepting client connection
+    // Accepts client connection
     int clilen = sizeof(cli_addr);
     int c_endpoint = accept(s_endpoint, (struct sockaddr *) &cli_addr, &clilen);
     if(c_endpoint == -1)
         perror_exit(&logger, "Accepting client connection");
         
-    // Checking if server has a index for the client
+    // Checks if server has a index for the client
     int index = -1;
     for(int i=0; i<MAX_CLIENTS; ++i)
         if(c_endpoints[i] == -1)
@@ -178,7 +184,7 @@ void accept_client()
             break;
         }
         
-    // Getting client address
+    // Gets client address
     char address[INET_ADDRSTRLEN];
     inet_ntop(cli_addr.sin_family, &(cli_addr.sin_addr), address, INET_ADDRSTRLEN);
         
@@ -198,10 +204,10 @@ void accept_client()
 
 void disconnect_client(int id)
 {
-    // Removing client file descriptor
+    // Removes client file descriptor
     c_endpoints[id] = -1;
     
-    // Reinitializing drone
+    // Reinits drone
     drones[id] = (Drone){0, -1, -1, 0};    
     
     char* text; asprintf(&text, "Client at index %d disconnected.", id);
@@ -221,7 +227,7 @@ int on_spawn_message(int id, int posx, int posy, int posz)
     if(get_drone(posx, posy, posz) != -1)
         return OCCUPIED_POSITION_DRONE;
     
-    // Creating drone
+    // Creates drone
     drones[id] = (Drone){1, posx, posy, posz, 0};
     
     return SUCCESS;
@@ -241,7 +247,7 @@ int on_move_message(int id, int offx, int offy, int offz)
     if(abs(offx)>1 || abs(offy)>1 || abs(offz)>1)
         return ONE_CELL_AT_A_TIME;
         
-    // Getting target position
+    // Gets target position
     int posx = drone.posx + offx;
     int posy = drone.posy + offy;
     int posz = drone.posz + offz;
@@ -254,14 +260,13 @@ int on_move_message(int id, int offx, int offy, int offz)
     if(get_drone(posx, posy, posz) != -1)
         return OCCUPIED_POSITION_DRONE;
     
-    // Moving drone
+    // Moves drone
     drones[id].posx = posx;
     drones[id].posy = posy;
     drones[id].posz = posz;
     
     return SUCCESS;
 }
-
 
 int on_land_message(int id, int landed)
 {
@@ -317,7 +322,7 @@ int get_visible_drone(int posx, int posy)
 
 void create_map()
 {
-    // Creating outher walls
+    // Creates outher walls
     for(int x=0; x<MAP_SIZE_X; ++x)
     {
         for(int y=0; y<MAP_SIZE_Y; ++y)
@@ -329,19 +334,32 @@ void create_map()
         }
     }
     
-    // Creating walls in center
-    for(int i=0; i<10; ++i)
-    {        
-        map[54][i+03] = '*';
-        map[43][i+24] = '*';
-        map[i+06][13] = '*';
-        map[i+38][33] = '*';
+    // Creating random walls
+    int walls = random_between(10, 15);
+    for(int i=0; i<walls; ++i)
+    {
+        int length = random_between(4, 12);
+        int x = random_between(0, MAP_SIZE_X-length);
+        int y = random_between(0, MAP_SIZE_Y-length);
+        
+        int multx = random_between(0, 1);
+        int multy = random_between(0, 1);
+        if(multx == 0 && multy == 0)
+            multx = 1;
+        
+        for(int j=0; j<length; ++j)
+            map[(x+multx*j)][(y+multy*j)] = '*';
     }
+}
+
+int random_between(int min, int max)
+{
+    return min + rand()%(max+1-min);
 }
 
 void print_map()
 {    
-    // Setting markers for drones
+    // Sets markers for drones
     for(int i=0; i<MAX_CLIENTS; ++i)
     {
         Drone d = drones[i];
@@ -349,6 +367,7 @@ void print_map()
             map[d.posx][d.posy] = 'd';
     }
     
+    // Actually prints map
     for(int y=MAP_SIZE_Y-1; y>=0; --y)
     {
         for(int x=0; x<MAP_SIZE_X; ++x)
@@ -365,7 +384,7 @@ void print_map()
         printf("\n");
     }
     
-    // Removing markers
+    // Removes markers
     for(int i=0; i<MAX_CLIENTS; ++i)
     {
         Drone d = drones[i];
