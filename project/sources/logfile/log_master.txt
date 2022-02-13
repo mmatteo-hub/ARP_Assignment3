@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 23:13:38 | [MASTER] Started the initialization phase.
 23:13:38 | [MASTER] Data initialized, initializating socket.
 23:13:38 | [MASTER] Socket initialized, waiting for connections.
 23:13:39 | [MASTER] Client [127.0.0.1] connected at index 0.
 23:14:32 | [MASTER] Client at index 0 disconnected.
+=======
+23:14:32 | [MASTER] Started the initialization phase.
+23:14:32 | [MASTER] Data initialized, initializating socket.
+23:14:32 | [MASTER] Socket initialized, waiting for connections.
+23:14:32 | [MASTER] Client [127.0.0.1] connected at index 0.
+23:14:40 | [MASTER] Client at index 0 disconnected.
+>>>>>>> refs/remotes/origin/master

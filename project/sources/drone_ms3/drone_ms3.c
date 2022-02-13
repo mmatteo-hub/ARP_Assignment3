@@ -133,9 +133,36 @@ int main(int argc, char *argv[])
 	if (connect(socket_fd,(struct sockaddr *)&serv_addr, sizeof(serv_addr)) == -1)
  		perror_exit(&logger, "Connection with server");
  	
-    // store the spawn x and y position taken as argument
-    int spawnx = atoi(argv[1]);
-    int spawny = atoi(argv[2]);
+    // check the spawn position
+    int spawnx = argv[1] == NULL ? rand()%R_MAP : atoi(argv[1]);
+    int spawny = argv[2] == NULL ? rand()%C_MAP : atoi(argv[2]);
+    // definition of variable result
+    int result;
+
+    do
+    {
+        // check the result of the spawn position
+        result = send_spawn_message(socket_fd, spawnx, spawny, 0);
+        // if result is not succeded
+        if(result != SUCCESS)
+        {
+            info(&logger, "Spawn position not valid. Re-computing...",0);
+            // compute again the spawn position
+            spawnx = rand()%R_MAP;
+            spawny = rand()%C_MAP;
+        }
+        // result succeded
+        else
+            break;
+
+    } while(1);
+
+    // print on the console
+    printf("Spawn result is: %i\n", result);
+    // write into the buffer
+    sprintf(buff, "Spawn position: [x = %d, y = %d, z = 0]", spawnx, spawny);
+    // write into the log file
+    info(&logger, buff, 0);
 
     // update the current position of the drone
     curr_x = spawnx;
@@ -146,15 +173,7 @@ int main(int argc, char *argv[])
     map[curr_x][curr_y] = 'V';
     // print the map
     print_array(map);
-    
-    // check the result of the spawn position
-    int result = send_spawn_message(socket_fd, spawnx, spawny, 0);
-    // print on the console
-    printf("Spawn result is: %i\n", result);
-    // write into the buffer
-    sprintf(buff, "Spawn position: [x = %d, y = %d, z = 0]", spawnx, spawny);
-    // write into the log file
-    info(&logger, buff, 0);
+
     sleep(1);
     
     // initialise the maximum amount of battery
@@ -330,10 +349,14 @@ int main(int argc, char *argv[])
     
     // Freeing resources on termination
     free_resources();
+
+    // print on the log file
+    info(&logger, "The drone has been stopped.",0);
     
     // exit
  	return 0;
 }
+
 // implementation of the function to print the map
 void print_array()
 {
@@ -347,18 +370,22 @@ void print_array()
             char v = map[j][i];
             if(v == 'P')
             {
+                // print the position in blu
                 printf("%sP%s",KBLU,KNRM);
             }
             else if(v == 'V')
             {
+                // print the visited position in green
                 printf("%sV%s",KGRN,KNRM);
             }
             else if(v == 'X')
             {
+                // print the wall in white
                 printf("%sX%s",KNRM,KNRM);
             }
             else
             {
+                // print the unvisited in yellow
                 printf("%sU%s",KYEL,KNRM);
             }
         }
@@ -366,6 +393,7 @@ void print_array()
         printf("\n");
     }
 }
+
 // implementation of the function to free the resources
 void free_resources()
 {
