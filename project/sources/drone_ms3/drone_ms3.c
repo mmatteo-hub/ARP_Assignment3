@@ -54,7 +54,7 @@ void free_resources();
 void print_array();
 
 // define an 2D array to count the number of times a cell has been visited (in the plane xy)
-int map[R_MAP][C_MAP] = {0};
+char map[R_MAP][C_MAP];
 
 // sig handles
 void err_sig (int signo)
@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
     curr_z = 0;
 
     // set the spawn position as visited
-    map[curr_x - 1][C_MAP - curr_y - 1] += 1;
+    map[curr_x][curr_y] = 'V';
     // print the map
     print_array(map);
     
@@ -219,10 +219,16 @@ int main(int argc, char *argv[])
             // check the error
             drone_error(result);
             printf("\n");
-            
+        
             // if the drone can move
             if(result != SUCCESS)
             {
+                // check if it is a wall
+                if(result == OCCUPIED_POSITION_WALL)
+                {
+                   map[curr_x + direction_x][curr_y + direction_y] = 'X';
+                }
+
                 printf("%s",KRED);
                 // print into the log file
                 info(&logger, "Cannot move due to a wall.", 1);
@@ -231,6 +237,9 @@ int main(int argc, char *argv[])
                 print_array(map);
                 break;
             }
+
+            // update the position in which the drone is as visited
+            map[curr_x][curr_y] = 'V';
 
             // compute the current position of the drone
             curr_x += direction_x;
@@ -242,9 +251,9 @@ int main(int argc, char *argv[])
             
             // print on the log file the current position of the drone
             info(&logger, buff, 0);
-            
+
             // update the position in which the drone is as visited
-            map[curr_x - 1][C_MAP - curr_y - 1] += 1;
+            map[curr_x][curr_y] = 'P';
 
             // use battery
             --bat;
@@ -325,63 +334,38 @@ int main(int argc, char *argv[])
     // exit
  	return 0;
 }
-
 // implementation of the function to print the map
 void print_array()
 {
     // loop on the columns of the array
-    for(int i = 0; i < C_MAP - 1; i++)
+    for(int i = C_MAP - 1; i >= 0; i--)
     {
         // loop on the rows of the array
         for(int j = 0; j < R_MAP - 1; j++)
         {
             // take the value (j,i)
-            int v = map[j][i];
-            // switch on its value
-            switch(v)
+            char v = map[j][i];
+            if(v == 'P')
             {
-                // not visited yet
-                case 0:
-                    // print on the console
-                    printf("%s%d%s",KNRM, v, KNRM);
-                    break;
-                
-                // visited 1, 2 or 3 times
-                case 1:
-                case 2:
-                case 3:
-                    // print on the console
-                    printf("%s%d%s",KGRN, v, KNRM);
-                    break;
-                
-                // visited 4, 5 or 6 times
-                case 4:
-                case 5:
-                case 6:
-                    // print on the console
-                    printf("%s%d%s",KYEL, v, KNRM);
-                    break;
-                
-                // visited 7, 8 or 9 times
-                case 7:
-                case 8:
-                case 9:
-                    // print on the console
-                    printf("%s%d%s",KRED, v, KNRM);
-                    break;
-
-                // visited more than 10 times
-                default:
-                    // print on the console
-                    printf("%s%d%s",KRED, v, KNRM);
-                    break;
+                printf("%sP%s",KBLU,KNRM);
+            }
+            else if(v == 'V')
+            {
+                printf("%sV%s",KGRN,KNRM);
+            }
+            else if(v == 'X')
+            {
+                printf("%sX%s",KNRM,KNRM);
+            }
+            else
+            {
+                printf("%sU%s",KYEL,KNRM);
             }
         }
         // print in a new line to perform the map shape
         printf("\n");
     }
 }
-
 // implementation of the function to free the resources
 void free_resources()
 {
