@@ -1,1 +1,0 @@
-master:		./master "./[path]/log_master.txt"
