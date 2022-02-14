@@ -7,6 +7,11 @@ LOGFILES_DIR="./sources/logfile"
 DRONE_API="$SOURCES_DIR/drone_api/drone_api.o"
 LOGGER_LIB="$SOURCES_DIR/logger/logger.o"
 
+# Creats folder to store the executable files
+mkdir -p $EXES_DIR
+# Creating folder to store the log files
+mkdir -p $LOGFILES_DIR
+
 # Compiling libraries
 gcc -c $SOURCES_DIR/drone_api/drone_api.c -o $DRONE_API
 gcc -c $SOURCES_DIR/logger/logger.c       -o $LOGGER_LIB
