@@ -418,7 +418,7 @@ void print_array()
         // print in a new line to perform the map shape
         printf("\n");
     }
-    printf("\nMap discovered: %s%d %%%s",KGRN, 100*counter/(R_MAP*C_MAP), KNRM);
+    printf("\nMap discovered: %s%d %%%s\n",KGRN, 100*counter/(R_MAP*C_MAP), KNRM);
 }
 
 // implementation of the function to free the resources
