@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-11:39:19 | [MASTER] Started the initialization phase.
-11:39:19 | [MASTER] Data initialized, initializating socket.
-11:39:19 | [MASTER] Socket initialized, waiting for connections.
-11:39:19 | [MASTER] Client [127.0.0.1] connected at index 0.
-=======
-11:34:24 | [MASTER] Started the initialization phase.
-11:34:24 | [MASTER] Data initialized, initializating socket.
-11:34:24 | [MASTER] Socket initialized, waiting for connections.
-11:34:24 | [MASTER] Client [127.0.0.1] connected at index 0.
->>>>>>> 228542dfc80be7564e4948ec636b1d34be1dccdc
+11:54:00 | [MASTER] Started the initialization phase.
+11:54:00 | [MASTER] Data initialized, initializating socket.
+11:54:00 | [MASTER] Socket initialized, waiting for connections.
+11:54:01 | [MASTER] Client [127.0.0.1] connected at index 0.

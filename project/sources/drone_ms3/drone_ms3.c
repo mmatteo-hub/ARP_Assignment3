@@ -254,6 +254,7 @@ int main(int argc, char *argv[])
                     print_array(map);
                     break;
                 }
+                // check if there is a drine
                 else if(result == OCCUPIED_POSITION_DRONE)
                 {
                     // print into the log file
@@ -262,6 +263,7 @@ int main(int argc, char *argv[])
                     print_array(map);
                     break;
                 }
+                // check if the direction required would bring the drone out of the map
                 else if(result == OUT_OF_BOUNDS_POSITION)
                 {
                     // print into the log file
@@ -288,7 +290,7 @@ int main(int argc, char *argv[])
             info(&logger, buff, 0);
 
             // update the position in which the drone is as visited
-            map[curr_x][curr_y] = 'P';
+            map[curr_x][curr_y] = 'O';
 
             // use battery
             --bat;
@@ -380,14 +382,14 @@ void print_array()
     for(int i = C_MAP - 1; i >= 0; i--)
     {
         // loop on the rows of the array
-        for(int j = 0; j < R_MAP - 1; j++)
+        for(int j = 0; j < R_MAP ; j++)
         {
             // take the value (j,i)
             char v = map[j][i];
-            if(v == 'P')
+            if(v == 'O')
             {
                 // print the position in blu
-                printf("%sP%s",KBLU,KNRM);
+                printf("%sO%s",KBLU,KNRM);
             }
             else if(v == 'V')
             {
@@ -402,7 +404,7 @@ void print_array()
             else
             {
                 // print the unvisited in yellow
-                printf("%sU%s",KYEL,KNRM);
+                printf("%s-%s",KYEL,KNRM);
             }
         }
         // print in a new line to perform the map shape
