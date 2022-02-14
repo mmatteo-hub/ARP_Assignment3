@@ -169,8 +169,8 @@ int main(int argc, char *argv[])
                 z_shift = 0;
 
             //avoid touching the floor and the ceiling
-            if(((z_shift == -1 && z_pos == 1) || (z_shift == 1 && z_pos == 9))
-                && (x_shift != 0 || y_shift != 0))
+            if((((z_shift == -1 && z_pos == 1) || (z_shift == 1 && z_pos == 9))
+                && (x_shift != 0 || y_shift != 0)) || z_pos == 0)
                 break;
 
             //move the drone in the desired direction
