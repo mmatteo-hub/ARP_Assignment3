@@ -1,0 +1,2 @@
+23:22:03 | [logfile_drone_DF21] Correctly connected with master
+23:22:03 | [logfile_drone_DF21] Spawn psoition: [x = 1|y= 1| z= 0]
