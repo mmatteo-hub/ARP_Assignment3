@@ -1,6 +1,6 @@
 ############### DRONE_MS3 ###############
-### Authors: Matteo Maragliano, Sara Sgambato
-## Drone name: drone_ms3
+### AUTHORS: Matteo Maragliano, Sara Sgambato
+### DRONE NAME: drone_ms3
 The implementation of this drone was done considering the work done regarding the first assignment.
 
 The drone is totally randomly driven in fact we have definedd:

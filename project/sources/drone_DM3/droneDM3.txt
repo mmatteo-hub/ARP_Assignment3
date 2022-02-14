@@ -1,4 +1,6 @@
-*** DRONE DM3 ***
+############### DRONE_DM1 ###############
+### AUTHORS: Monica Fossati, Davide Bruzzo
+### DRONE NAME: drone_DM1
 This is a simple drone, connected to the master via socket.
 This drone receives as input the initial position and a path for the logfile.
 It moves randomly in the 3-dimentional space.
