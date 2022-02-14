@@ -351,8 +351,8 @@ void create_map()
     for(int i=0; i<walls; ++i)
     {
         int length = random_between(4, 12);
-        int x = random_between(0, MAP_SIZE_X-length);
-        int y = random_between(0, MAP_SIZE_Y-length);
+        int x = random_between(0, MAP_SIZE_X-length-1);
+        int y = random_between(0, MAP_SIZE_Y-length-1);
         
         int multx = random_between(0, 1);
         int multy = (multx+1)%2;
