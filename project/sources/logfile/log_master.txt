@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-11:10:55 | [MASTER] Started the initialization phase.
-11:10:55 | [MASTER] Data initialized, initializating socket.
-11:10:55 | [MASTER] Binding socket: Address already in use
-11:10:56 | [MASTER] Client [127.0.0.1] connected at index 0.
-=======
-10:26:49 | [MASTER] Started the initialization phase.
-10:26:49 | [MASTER] Data initialized, initializating socket.
-10:26:49 | [MASTER] Binding socket: Address already in use
->>>>>>> 59b92b80759581723d25479ccce84dc177ee9c93
+11:39:19 | [MASTER] Started the initialization phase.
+11:39:19 | [MASTER] Data initialized, initializating socket.
+11:39:19 | [MASTER] Socket initialized, waiting for connections.
+11:39:19 | [MASTER] Client [127.0.0.1] connected at index 0.

@@ -262,6 +262,15 @@ int main(int argc, char *argv[])
                     print_array(map);
                     break;
                 }
+                else if(result == OUT_OF_BOUNDS_POSITION)
+                {
+                    // print into the log file
+                    info(&logger, "Cannot move: map limit reached", 1);
+                    // print the map
+                    print_array(map);
+                    break;
+                }
+                break;
             }
 
             // update the position in which the drone is as visited
