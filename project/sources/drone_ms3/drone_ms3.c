@@ -381,6 +381,8 @@ int main(int argc, char *argv[])
 // implementation of the function to print the map
 void print_array()
 {
+    // counter to determine the percentage of map visited
+    int counter = 0;
     // loop on the columns of the array
     for(int i = C_MAP - 1; i >= 0; i--)
     {
@@ -393,16 +395,19 @@ void print_array()
             {
                 // print the position in blu
                 printf("%sO%s",KBLU,KNRM);
+                counter ++;
             }
             else if(v == 'V')
             {
                 // print the visited position in green
                 printf("%sV%s",KGRN,KNRM);
+                counter ++;
             }
             else if(v == 'X')
             {
                 // print the wall in white
                 printf("%sX%s",KNRM,KNRM);
+                counter ++;
             }
             else
             {
@@ -413,6 +418,7 @@ void print_array()
         // print in a new line to perform the map shape
         printf("\n");
     }
+    printf("\nMap discovered: %s%d %%%s\n",KGRN, 100*counter/(R_MAP*C_MAP), KNRM);
 }
 
 // implementation of the function to free the resources
