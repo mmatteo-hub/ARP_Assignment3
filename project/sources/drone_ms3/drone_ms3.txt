@@ -1,6 +1,6 @@
 ########## DRONE ##########
 ### Authors: Matteo Maragliano, Sara Sgambato
-The implementation of this drone was done considering the work done rearding the first assignment.
+The implementation of this drone was done considering the work done regarding the first assignment.
 
 In our code first we initialize some functions useful to compute some values:
 - randomePos() calculates the offset on the axis to move randomly;
@@ -12,7 +12,7 @@ Then we initialize a function, sign(), used in the main function, and the sig ha
 In the main function, after connecting to the server, there is a control on the spawn of the position (fai Mara).
 
 After setting the battery to 20 (which means that the drone can move 20 times before having to recharge its battery), the velocity, the offsets of the xyz axis and the number of steps are computed via the functions described above.
-Then, there is a while loop which makes the dron move along the chosen direction for the number of steps just calculated, while decreasing at each step the battery level.
+Then, there is a while loop which makes the drone move along the chosen direction for the number of steps just calculated, while decreasing at each step the battery level.
 
 Given that the drone can also move along the z axis, we implemented a control on the battery and the height of the drone so that we are sure that the drone will have enough battery to land given its z offset.
 Once the drone lands, the battery is recharged.
