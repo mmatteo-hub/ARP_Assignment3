@@ -2,9 +2,12 @@
 project/sources/exes/drone_ms3
 project/sources/exes/drone_MS8
 project/sources/exes/drone_RM1
+project/sources/exes/master
+project/sources/drone_api/drone_api.o
+project/sources/logger/logger.o
 
 project/sources/logfile/log_drone_ms3.txt
 project/sources/logfile/log_drone_MS8.txt
 project/sources/logfile/log_drone_RM1.txt
-
+project/sources/logfile/master.txt
 
