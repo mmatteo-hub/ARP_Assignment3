@@ -29,12 +29,14 @@ void on_error(int signo);
 void accept_client();
 void disconnect_client(int index);
 
-void create_map();
-void print_map();
 int is_inside_map(int posx, int posy, int posz);
 int get_drone(int posx, int posy, int posz);
 int get_visible_drone(int posx, int posy);
+
+void create_map();
+void print_map();
 char drone_to_char(Drone drone);
+
 int random_between(int min, int max);
 
 int on_spawn_message(int id, int posx, int posy, int posz);
@@ -360,6 +362,13 @@ void create_map()
         for(int j=0; j<length; ++j)
             map[(x+multx*j)][(y+multy*j)] = '*';
     }
+    
+    // Create a safe after for drones to spawn
+    // The are is 10x10 cells at the centre of the map
+    for(int x=MAP_SIZE_X/2-5; x<=MAP_SIZE_X/2+5; ++x)
+        for(int y=MAP_SIZE_Y/2-5; y<=MAP_SIZE_Y/2+5; ++y)
+            map[x][y] = ' ';
+    
 }
 
 int random_between(int min, int max)
