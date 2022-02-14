@@ -18,10 +18,15 @@
 
 //ASCII ESCAPES
 #define RED   "\x1B[31m"
+#define BLU "\e[0;34m"
 #define GRN   "\x1B[32m"
 #define YEL   "\x1B[33m"
-#define BLU   "\x1B[34m"
 #define CYN   "\x1B[36m"
+#define BLUB "\e[0;104m"
+#define CYNB "\e[46m"
+#define MAGHB "\e[0;105m"
+
+#define BLKB "\e[40m"
 #define RESET "\x1B[0m"
 #define CLEAR "\e[1;1H\e[2J"
 
@@ -29,7 +34,7 @@
 #define PORT_NUMBER 51234 
 
 //battery capacity of the drone
-#define BATTERY_CAPACITY 200
+#define BATTERY_CAPACITY 420
 
 //map dimensions
 #define MAPX 80
@@ -185,7 +190,7 @@ int main(int argc, char *argv[])
         //take off after battery charge
         if(battery < z_pos+1) {
 
-            sprintf(status_string, " ==   BATTERY LOW !!   Emergency landing   == ");
+            sprintf(status_string, RED " ==   BATTERY LOW !!   Emergency landing   == " RESET);
             fprintf(log_file, "\n ==   BATTERY LOW !!   Emergency landing   == \n");
 
             land();
@@ -207,7 +212,7 @@ int main(int argc, char *argv[])
 
 //function to charge the battery
 void charge_battery(){
-    sprintf(status_string, "    .. Charging battery ...");
+    sprintf(status_string,CYN "    .. Charging battery ..." RESET);
     fprintf(log_file, "\n       .. Charging battery ...\n");
     sprintf(battery_string," ");
     for(k=0;k<BUFFSIZE;k++)
@@ -215,22 +220,22 @@ void charge_battery(){
 
     int i=0;
     charge_string[0]='[';
-    charge_string[51]=']';
+    charge_string[53]=']';
     while (battery<BATTERY_CAPACITY)
     {
        
         battery += 1;
-        if((int)(battery)%4==0){
+        if((int)(battery)%8==0){
             i+=1;
             charge_string[i]='|';
             update_screen();
         }   
 
-        usleep(30000);
+        usleep(15000);
     }
 
 
-    sprintf(status_string, "     ==   BATTERY FULL   ==");
+    sprintf(status_string, CYN "     ==   BATTERY FULL   ==" RESET);
     update_screen();
     usleep(500000);
     sprintf(charge_string," ");
@@ -239,17 +244,19 @@ void charge_battery(){
 
 //function to land correctly
 void land(){
-    int height = z_pos;
     
+    int height = z_pos;
+    usleep(20000);
     while(height-- > 0){
         move_drone(0,0,-1);
         usleep(1000000/speed);
     }
     
-    sprintf(status_string, "     Landed succesfully ");
+    sprintf(status_string, CYN "     Landed succesfully " RESET);
     fprintf(log_file, "\n     Landed succesfully \n");
     sprintf(movement_string," ");
     update_screen();
+    usleep(800000);
     
     if (send_land_message(sockfd, 1) == CONNECTION_ABORTED) {
         master_terminated = 1;
@@ -266,7 +273,7 @@ void take_off(int height){
         exit_routine(SIGTERM);
     }
 
-    sprintf(status_string, " TAKING OFF  ....");
+    sprintf(status_string,CYN " TAKING OFF  ...." RESET);
     fprintf(log_file, "\n\n TAKING OFF  ....\n\n");
     usleep(1500000);
 
@@ -277,8 +284,9 @@ void take_off(int height){
     }
 
     fprintf(log_file,"\n\n TAKE OFF COMPLETED\n\n");
-    sprintf(status_string," TAKE OFF COMPLETED ");
-    sleep(1);
+    sprintf(status_string,CYN " TAKE OFF COMPLETED " RESET);
+    usleep(800000);
+
     sprintf(status_string," ");
 
 }
@@ -304,7 +312,12 @@ int move_drone(int x_shift, int y_shift, int z_shift){
 
     sprintf(position_string, "Actual position: [ x = %d  |  y = %d  |  z = %d ] ", x_pos, y_pos, z_pos);
     sprintf(movement_string, "Trying to move%s%s%s : %s ",verb[0][x_shift+1],verb[1][y_shift+1],verb[2][z_shift+1], decode_result(result));
-    sprintf(battery_string, "Battery level = %.0f %%", battery/BATTERY_CAPACITY * 100);
+    if (battery>2*BATTERY_CAPACITY/3)
+        sprintf(battery_string, GRN "Battery level = %.0f %%" RESET, battery/BATTERY_CAPACITY * 100);
+    else if (battery>BATTERY_CAPACITY/3)
+        sprintf(battery_string, YEL "Battery level = %.0f %%" RESET, battery/BATTERY_CAPACITY * 100);    
+    else
+        sprintf(battery_string, RED "Battery level = %.0f %%" RESET, battery/BATTERY_CAPACITY * 100);
     fprintf(log_file, "\n Actual position: [ x = %d  |  y = %d  |  z = %d ] \n", x_pos, y_pos, z_pos);
     fprintf(log_file, "Trying to move%s%s%s : %s \n" , verb[0][x_shift+1],verb[1][y_shift+1],verb[2][z_shift+1], decode_result(result));
     fprintf(log_file, "\t Battery level = %.0f %%\n", battery/BATTERY_CAPACITY * 100);
@@ -435,7 +448,7 @@ void get_input(){
     fprintf(stdout, "\t Y : "); fflush(stdout);
     fgets(buffer, 80, stdin);
     y_spawn = atoi(buffer);
-    fprintf(stdout, "Insert a speed value between 1 and 20: \t"); fflush(stdout);
+    fprintf(stdout, "Insert a speed value between 1 and 25: \t"); fflush(stdout);
     fgets(buffer, 80, stdin);
     speed = atoi(buffer) + 5;
 }
@@ -448,20 +461,22 @@ void update_screen(){
 
     for(y=MAPY-1; y>-1; y--){
         for(x=0; x<MAPX; x++){
-            if(y==y_pos && x==x_pos){
-                fprintf(stdout, CYN "X" RESET); fflush(stdout);
-            }else{
-                if (map[y][x] == '#')
-                    fprintf(stdout,  BLU "%c" RESET , map[y][x]);        
-                else if ((map[y][x]  -'0') > 6)
-                    fprintf(stdout, GRN "%c" RESET, map[y][x]);
-                else if ((map[y][x]  - '0') > 3)
-                    fprintf(stdout, YEL "%c" RESET, map[y][x]);
-                else
-                    fprintf(stdout, RED "%c" RESET, map[y][x]);     
-            }
+            if(y==y_pos && x==x_pos)
+                fprintf(stdout,CYNB "X" RESET);
+            else if (map[y][x] == '#')
+                fprintf(stdout,  MAGHB "%c" RESET , map[y][x]);
+            else if (abs(y_pos-y)<2 && abs(x_pos-x)<2)
+                fprintf(stdout,  CYN "-" RESET );
+            else if (map[y][x] == '#')
+                fprintf(stdout,  BLUB "%c" RESET , map[y][x]);        
+            else if ((map[y][x]  -'0') > 6)
+                fprintf(stdout, GRN "%c" RESET, map[y][x]);
+            else if ((map[y][x]  - '0') > 3)
+                fprintf(stdout, YEL "%c" RESET, map[y][x]);
+            else
+                fprintf(stdout, RED "%c" RESET, map[y][x]);     
         }
-	if (y == 37)
+	    if (y == 37)
             fprintf(stdout, CYN "   \t [ DRONE MS8 ] " RESET);
         else if (y == 33)
             fprintf(stdout, CYN "   EXPLORED SPACE " RESET);
@@ -477,7 +492,7 @@ void update_screen(){
     fprintf(stdout,"%s\n",position_string);
     fprintf(stdout,"%s\n",movement_string);
     fprintf(stdout,"\t %s\n",battery_string);
-    fprintf(stdout,"  %s\n\n",charge_string); 
+    fprintf(stdout,BLU "  %s\n\n" RESET,charge_string); 
 
 }
 
