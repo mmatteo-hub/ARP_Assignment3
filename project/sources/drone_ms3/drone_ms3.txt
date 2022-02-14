@@ -1,22 +1,32 @@
 ########## DRONE ##########
 ### Authors: Matteo Maragliano, Sara Sgambato
+## Drone name: drone_ms3
 The implementation of this drone was done considering the work done regarding the first assignment.
 
-In our code first we initialize some functions useful to compute some values:
-- randomePos() calculates the offset on the axis to move randomly;
-- randomStep() calculates the number of times the drone has to move in a certain direction randomly;
-- randomVel() calculates the velocity of the drone randomly.
+The drone is totally randomly driven in fact we have definedd:
+- randomePos() that alculates the offset on the axis to move randomly;
+- randomStep() that calculates the number of times the drone has to move in a certain direction randomly;
+- randomVel() that calculates the velocity of the drone randomly.
+- sign() that calcualtes if the position has to be increased or decreased.
 
-Then we initialize a function, sign(), used in the main function, and the sig handler for SIGTERM.
+In the main function, after connecting to the server, there is a control on the spawn of the position, in particualr:
+- if the drone was given a position then the program checks that this is available, so there is not another drone already placed here or there is not a wall;
+- if the drone was not given a position then the program computes it randomly and checks again the availability.
+Once finished the drone can start moving.
 
-In the main function, after connecting to the server, there is a control on the spawn of the position (fai Mara).
-
-After setting the battery to 20 (which means that the drone can move 20 times before having to recharge its battery), the velocity, the offsets of the xyz axis and the number of steps are computed via the functions described above.
-Then, there is a while loop which makes the drone move along the chosen direction for the number of steps just calculated, while decreasing at each step the battery level.
-
-Given that the drone can also move along the z axis, we implemented a control on the battery and the height of the drone so that we are sure that the drone will have enough battery to land given its z offset.
+The drone is equipped with anbattery that allows it to move for 20 steps at maximum, after that it has to land and recharge it.
+The drone computes randomly the amount of steps to do before changing the direction.
+Given that the drone can also move along the z axis, it has been implemented a control on the battery with respect to the height of the drone from the ground (0 level) so that to be sure that the drone will have enough battery to land.
 Once the drone lands, the battery is recharged.
 
-Afer the main function there is the implementation of a function we created to print all the points of the map to see the trajectory computed by our drone.
+Inside the execution of the drone there are some different prints that allow the user know the general state of the drone, what is its behaviour and were it is going.
+To simplify it and in order to make it clearer it has been developed a map that keeps into account the position occupied by the drone:
+since the difficult to implement 3D view, we opted for a 2D in which we do not take case about the z axis.
+The general legend of the map is:
 
-In the end, we implemented a function to free the resources (that is, closing the socket).
+- (in yellow) for position not visited yet;
+V (in green) for position already visited;
+X (in white) for position of the walls;
+O (in blue) for position of the drone in real time. 
+
+The program ends with a function that frees all the resources.
