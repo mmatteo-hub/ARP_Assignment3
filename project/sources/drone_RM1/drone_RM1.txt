@@ -1,7 +1,7 @@
 ==================================================================================
 
 NAME
-	drone_RM - process the aim of which is to simulate a drone inside the 
+	drone_RM1 - process the aim of which is to simulate a drone inside the 
 	environment made available by the master process.
 
 DESCRIPTION
