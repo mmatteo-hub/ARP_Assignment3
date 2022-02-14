@@ -1,0 +1,28 @@
+DRONE PROJECT: drone_DF21
+
+Authors: Davide Leo Parisi 4329669
+         Francesco Ferrazzi 5262829
+
+
+This program aims to simulate the behavior of a drone that spawns inside an environment where other drones can run simultaneously. The spawn position is pre-defined by the user.
+
+The code developed guarantees that the drone can move around the three-dimensional space in a randomic way along the (x,y,z) axis, avoiding obstacles and other drones.
+
+This is done thanks to a communication system via socket with the master process.
+The master process tells the drone if at the next step it is going to collide into an obstacle (another drone or a wall for example) or if it is free to go.
+The drone manages obstacle avoidance. 
+
+The drone is equipped with a battery. The capacity of the battery is set randomly each time before the drone takes off. The battery has a capacity that goes from 90 to 110 steps. The drone can fly until the battery is not empty.
+The status of the battery is shown to the user in both terminal and logfile. When the drone is not able to fly anymore (battery too low), it must land and recharge the battery.
+
+In particular, the code provides the following actions: 
+- let the user set the drone's velocity
+- make the drone takeoff 
+- move around in a three-dimensional space (x,y,z) keeping the same trajectory for a few steps avoiding obstacles and deadlocks
+- keep flying before landing until the battery is not empty
+- land the drone to allow it to recharge the battery
+- system for recharging the battery
+- let the user decide to start over again with the same velocity or change it
+- kill the program 
+
+If there is an error in the master process that closes the program a function to free all resources and end the program is called.
