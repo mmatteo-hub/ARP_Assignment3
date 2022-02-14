@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 11:39:19 | [drone_ms3] Starting
 11:39:19 | [drone_ms3] Spawn position not valid. Re-computing...
 11:39:19 | [drone_ms3] Spawn position: [x = 27, y = 23, z = 0]
@@ -1325,3 +1326,65 @@
 11:42:33 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
 11:42:33 | [drone_ms3] Current position = [40, 12, 75].
 11:42:33 | [drone_ms3] Battery remaining: 70 %
+=======
+11:34:24 | [drone_ms3] Starting
+11:34:24 | [drone_ms3] Spawn position not valid. Re-computing...
+11:34:24 | [drone_ms3] Spawn position: [x = 26, y = 17, z = 0]
+11:34:25 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:25 | [drone_ms3] Current position = [27, 17, 1].
+11:34:25 | [drone_ms3] Battery remaining: 95 %
+11:34:25 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:25 | [drone_ms3] Current position = [28, 17, 2].
+11:34:25 | [drone_ms3] Battery remaining: 90 %
+11:34:25 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:25 | [drone_ms3] Current position = [29, 17, 3].
+11:34:25 | [drone_ms3] Battery remaining: 85 %
+11:34:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:26 | [drone_ms3] Current position = [30, 17, 4].
+11:34:26 | [drone_ms3] Battery remaining: 80 %
+11:34:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:26 | [drone_ms3] Current position = [31, 17, 5].
+11:34:26 | [drone_ms3] Battery remaining: 75 %
+11:34:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:26 | [drone_ms3] Current position = [32, 17, 6].
+11:34:26 | [drone_ms3] Battery remaining: 70 %
+11:34:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 1].
+11:34:26 | [drone_ms3] Current position = [33, 17, 7].
+11:34:26 | [drone_ms3] Battery remaining: 65 %
+11:34:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:26 | [drone_ms3] Current position = [33, 17, 8].
+11:34:26 | [drone_ms3] Battery remaining: 60 %
+11:34:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:27 | [drone_ms3] Current position = [33, 17, 9].
+11:34:27 | [drone_ms3] Battery remaining: 55 %
+11:34:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:27 | [drone_ms3] Current position = [33, 17, 10].
+11:34:27 | [drone_ms3] Battery remaining: 50 %
+11:34:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:27 | [drone_ms3] Current position = [33, 17, 11].
+11:34:27 | [drone_ms3] Battery remaining: 45 %
+11:34:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:28 | [drone_ms3] Current position = [33, 17, 12].
+11:34:28 | [drone_ms3] Battery remaining: 40 %
+11:34:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:28 | [drone_ms3] Current position = [33, 17, 13].
+11:34:28 | [drone_ms3] Battery remaining: 35 %
+11:34:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:28 | [drone_ms3] Current position = [33, 17, 14].
+11:34:28 | [drone_ms3] Battery remaining: 30 %
+11:34:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:28 | [drone_ms3] Current position = [33, 17, 15].
+11:34:28 | [drone_ms3] Battery remaining: 25 %
+11:34:29 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:29 | [drone_ms3] Current position = [33, 17, 16].
+11:34:29 | [drone_ms3] Battery remaining: 20 %
+11:34:29 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+11:34:29 | [drone_ms3] Current position = [33, 17, 17].
+11:34:29 | [drone_ms3] Battery remaining: 15 %
+11:34:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+11:34:29 | [drone_ms3] Current position = [34, 18, 17].
+11:34:29 | [drone_ms3] Battery remaining: 10 %
+11:34:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+11:34:29 | [drone_ms3] Current position = [35, 19, 17].
+11:34:29 | [drone_ms3] Battery remaining: 5 %
+>>>>>>> 228542dfc80be7564e4948ec636b1d34be1dccdc

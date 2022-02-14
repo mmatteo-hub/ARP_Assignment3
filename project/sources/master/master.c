@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
                 int error = decode_client_message(i, c_endpoints[i]);
                 
                 // If the client is not connected any more, disconnects it
-                if(error == EPIPE)
+                if(error == CONNECTION_ABORTED)
                     disconnect_client(i);
                 else if(error == -1)
                     perror_exit(&logger, "Decoding client message");
@@ -355,9 +355,7 @@ void create_map()
         int y = random_between(0, MAP_SIZE_Y-length);
         
         int multx = random_between(0, 1);
-        int multy = random_between(0, 1);
-        if(multx == 0 && multy == 0)
-            multx = 1;
+        int multy = (multx+1)%2;
         
         for(int j=0; j<length; ++j)
             map[(x+multx*j)][(y+multy*j)] = '*';
