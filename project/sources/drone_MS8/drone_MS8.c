@@ -244,8 +244,8 @@ void charge_battery(){
 
 //function to land correctly
 void land(){
-    
-
+	
+    int height = z_pos;
     update_screen();
     usleep(20000);
 
