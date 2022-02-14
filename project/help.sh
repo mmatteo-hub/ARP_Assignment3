@@ -7,4 +7,5 @@ sources/drone_api/drone_api.txt <(echo) \
 sources/logger/logger.txt <(echo) \
 sources/master/master.txt <(echo) \
 sources/drone_RM1/drone_RM1.txt <(echo) \
+sources/drone_DF21/drone_DF21.txt <(echo) \
 | more -d -c -p

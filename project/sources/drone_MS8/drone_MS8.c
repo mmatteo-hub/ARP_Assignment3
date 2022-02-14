@@ -172,6 +172,8 @@ int main(int argc, char *argv[])
             if(((z_shift == -1 && z_pos == 1) || (z_shift == 1 && z_pos == 9))
                 && (x_shift != 0 || y_shift != 0))
                 break;
+            if (z_pos = 0)
+                z_shift = 1;
 
             //move the drone in the desired direction
             if (move_drone(x_shift, y_shift, z_shift) == 0)
@@ -244,8 +246,8 @@ void charge_battery(){
 
 //function to land correctly
 void land(){
-    
-
+	
+    int height = z_pos;
     update_screen();
     usleep(20000);
 
