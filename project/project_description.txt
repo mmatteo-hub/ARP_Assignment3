@@ -20,7 +20,8 @@ PROJECT DESCRIPTION
 AUTHORS
       Group RM1: formed by Luca Mosetti and Emanuele Rambaldi, developed the drone_RM1 
                  process;
-      Group x: ...
+      Group DM3: formed by Monica Fossati and Davide Bruzzo, developed the drone_DM3 
+                 process;
       Group y: ...
   
  ==================================================================================
