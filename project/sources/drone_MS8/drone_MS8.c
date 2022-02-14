@@ -462,7 +462,7 @@ void update_screen(){
             }
         }
 	if (y == 37)
-            frpintf(stdout, CYB "   \t [ DRONE MS8 ] " RESET)
+            frpintf(stdout, CYB "   \t [ DRONE MS8 ] " RESET);
         else if (y == 33)
             fprintf(stdout, CYN "   EXPLORED SPACE " RESET);
         else if (y == 31)
