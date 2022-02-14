@@ -245,16 +245,23 @@ int main(int argc, char *argv[])
                 // check if it is a wall
                 if(result == OCCUPIED_POSITION_WALL)
                 {
-                   map[curr_x + direction_x][curr_y + direction_y] = 'X';
+                    map[curr_x + direction_x][curr_y + direction_y] = 'X';
+                    printf("%s",KRED);
+                    // print into the log file
+                    info(&logger, "Cannot move due to a wall.", 1);
+                    printf("%s",KNRM);
+                    // print the map
+                    print_array(map);
+                    break;
                 }
-
-                printf("%s",KRED);
-                // print into the log file
-                info(&logger, "Cannot move due to a wall.", 1);
-                printf("%s",KNRM);
-                // print the map
-                print_array(map);
-                break;
+                else if(result == OCCUPIED_POSITION_DRONE)
+                {
+                    // print into the log file
+                    info(&logger, "Cannot move due to a drone occupying the position.", 1);
+                    // print the map
+                    print_array(map);
+                    break;
+                }
             }
 
             // update the position in which the drone is as visited
@@ -319,7 +326,7 @@ int main(int argc, char *argv[])
                     if(result == OUT_OF_BOUNDS_POSITION)
                         break;
                     // sleep
-                    usleep(250000);
+                    usleep(125000);
                 }
                 
                 // send a message to the socket
@@ -337,7 +344,7 @@ int main(int argc, char *argv[])
                     // print the map
                     print_array(map);
                     // sleep
-                    usleep(250000);
+                    usleep(125000);
                 }
                 // write into the log file
                 info(&logger, "Recharge completed.", 0);
