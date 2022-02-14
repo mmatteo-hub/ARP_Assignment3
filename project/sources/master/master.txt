@@ -26,3 +26,5 @@ Every time a new drone request is performed, the master prints a new map with th
 NB. If two drones are in the same (x, y) position, only the drone with the highest elevation is printed on the map.
 
 It may happen that a client closes the connection: the drone_api.h library advises the master process of this event and then the master proceeds to remove the corresponding Drone from the array.
+
+It may happen than during execution an error occurs: this is handled via the logger.h library which sends a SIGTERM signal when required. The master process has an handler for this signal and releases all the allocated resources in that handler.
