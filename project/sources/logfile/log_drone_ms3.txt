@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 11:10:56 | [drone_ms3] Starting
 11:10:56 | [drone_ms3] Spawn position not valid. Re-computing...
 11:10:56 | [drone_ms3] Spawn position: [x = 22, y = 34, z = 0]
@@ -130,3 +131,7 @@
 11:11:12 | [drone_ms3] Landing due to battery charge.
 11:11:12 | [drone_ms3] Started recharging battery
 11:11:15 | [drone_ms3] Recharge completed.
+=======
+10:26:49 | [drone_ms3] Starting
+10:26:49 | [drone_ms3] Connection with server: Connection refused
+>>>>>>> 59b92b80759581723d25479ccce84dc177ee9c93
