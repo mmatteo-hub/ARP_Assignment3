@@ -27,3 +27,5 @@ while doing so.
 
 A signal handler catches a termination signal sent to the drone and launches the process' exit 
 routine where the user gets notifieed one last time on screen and the socket used is closed.
+All the drone's status changes and decisions are logged in a separate .txt file that will store a 
+copy of all the messages shown to the user on screen.
