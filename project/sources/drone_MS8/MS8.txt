@@ -1,0 +1,29 @@
+
+############### DRONE_MS8 ###############
+### AUTHORS: Mohammad Al Horany, Salvatore D'Ippolito
+### DRONE NAME: drone_MS8
+
+This drone moves randomly across a map and marks in its own memory the positions it has 
+occupied and the relative altitudes reached in all positions.
+
+The map is set up by the master process, that also keeps track of the positions of all the other 
+drones moving inside it. The drone comunicates with the master through a dedicated socket. Every 
+movement deision is comunicated to the master and before an actual movement is carried out the 
+drone waits for an answer by the master that comunicates back if the desired movement
+interpheres with another drone's trajectory or if it drives the drone into a wall.
+
+In both cases drone MS8 simply stops and recalculates a new random direction to follow.
+If a wall was ncountered however, the wall's position is marked on the map. The drone will 
+eventually explore the whole map, recreating its own version of the map generatd by the master.
+
+When launching the drone's executable, 3 arguments have to be passed: 2 planar coordinates on the 
+map and one integer between 1 and 20 that fixes the drone's simulated velocity. If any of the 
+two coordinates are invalid or if any of these 3 arguments is missing the drone's process will 
+ask the user to re-insert these values. Drone MS8 will then simulate a battery charging routine 
+and a subsequent take off to a random z height. Each step the drone takes reduces slightly the 
+battery, whose status is updated in real time on the processes' terminal. When the battery reaches
+a value close to zero, it simulates a controlled emergency landing and updates its current altitude
+while doing so.
+
+A signal handler catches a termination signal sent to the drone and launches the process' exit 
+routine where the user gets notifieed one last time on screen and the socket used is closed.
