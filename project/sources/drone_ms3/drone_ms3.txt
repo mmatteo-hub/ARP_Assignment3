@@ -14,7 +14,7 @@ In the main function, after connecting to the server, there is a control on the 
 - if the drone was not given a position then the program computes it randomly and checks again the availability.
 Once finished the drone can start moving.
 
-The drone is equipped with anbattery that allows it to move for 20 steps at maximum, after that it has to land and recharge it.
+The drone is equipped with a battery that allows it to move for 100 steps at maximum before recharging, after that it has to land and recharge it.
 The drone computes randomly the amount of steps to do before changing the direction.
 Given that the drone can also move along the z axis, it has been implemented a control on the battery with respect to the height of the drone from the ground (0 level) so that to be sure that the drone will have enough battery to land.
 Once the drone lands, the battery is recharged.

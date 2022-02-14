@@ -20,7 +20,7 @@
 #define max_inc 2
 #define max_step 10
 #define min_step 2
-#define battery 20
+#define battery 100
 #define max_vel 3
 #define min_vel 1
 
@@ -232,7 +232,7 @@ int main(int argc, char *argv[])
             // check the direction is available
             int result = send_move_message(socket_fd, direction_x, direction_y, direction_z);
             // put into the buffer the direction
-            sprintf(buff, "Direction computed = [Vx = %i, Vy = %i, Vz = %i].", direction_x, direction_y, direction_z);
+            sprintf(buff, "Direction computed = [Vx = %i, Vy = %i, Vz = %i].", direction_x*vel, direction_y*vel, direction_z*vel);
             // write into the log file
             info(&logger, buff, 1);
             // check the error
@@ -316,7 +316,7 @@ int main(int argc, char *argv[])
             {
                 // write into the log file
                 info(&logger, "Landing due to battery charge.", 0);
-                // loop of 10 steps to recharge
+                // loop of 10 steps maximum to land
                 for(int i=0; i<10; ++i)
                 {
                     // clear the output
@@ -329,7 +329,7 @@ int main(int argc, char *argv[])
                     // use battery
                     --bat;
                     // print on the console
-                    printf("Battery remaining: %s0 %% %s", KRED, KNRM);
+                    printf("Battery remaining for moving around: %s0 %% %s", KRED, KNRM);
                     printf("\n\n");
                     // print the map
                     print_array(map);
@@ -339,11 +339,14 @@ int main(int argc, char *argv[])
                     // sleep
                     usleep(125000);
                 }
+
+                // write into the log file
+                info(&logger, "Landed", 1);
                 
                 // send a message to the socket
                 send_land_message(socket_fd, 1);
                 // write into the log file
-                info(&logger, "Started recharging battery", 0);
+                info(&logger, "Started recharging battery", 1);
                 // for the maximum amount of the battery
                 for(bat = 0; bat < battery; bat++)
                 {
@@ -355,10 +358,10 @@ int main(int argc, char *argv[])
                     // print the map
                     print_array(map);
                     // sleep
-                    usleep(125000);
+                    usleep(75000);
                 }
                 // write into the log file
-                info(&logger, "Recharge completed.", 0);
+                info(&logger, "Recharge completed.", 1);
                 // print a message to the socket
                 send_land_message(socket_fd, 0);
             }
