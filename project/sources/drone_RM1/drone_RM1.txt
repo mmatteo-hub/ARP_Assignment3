@@ -1,68 +1,35 @@
-==================================================================================
+############### DRONE_RM1 ###############
+### AUTHORS: Luca Mosetti, Emanuele Rambaldi
+### DRONE NAME: drone_RM1
+Process the aim of which is to simulate a drone inside the environment made available by the master process.
 
-NAME
-	drone_RM - process the aim of which is to simulate a drone inside the 
-	environment made available by the master process.
+### DESCRIPTION
+First of all, the drone process tries to establish a connection with the master by sending a connection request to the socket that the master binds to the address (127.0.0.1, 51234).
+The communication between the master and the drone is carried out thanks to a custom library, which has been developed in order to standardize the messages sent on the socket by drones of different groups.
+Once that the connection has been established successfully, the drone sends a spawning request to the master and, if the position specified as argument, is not already occupied, it takes off inside the map.
 
-DESCRIPTION
-	First of all, the drone process tries to establish a connection with the 
-	master by sending a connection request to the socket that the master binds 
-	to the address (127.0.0.1, 51234).
-	The communication between the master and the drone is carried out through a
-	custom library, that has been developed in order to standardize the messages
-	sent on the socket by drones of different groups.
-	Once that the connection has been established successfully, the drone sends a
-	spawning request to the master and, if the position specified as argument, is
-	not already occupied, it takes off inside the map.
+From now on, the drone moves inside the map with the velocity given as third argument to the process. However, since there are other drones and obstacles inside the map, the drone must ask the master if the new position in which it wants to move is allowed.
+The moving direction is chosen autonomously by randomly extracting a feasible triplet in the form: x (horizontal movement), y (vertical movement) and z (movement 'through the screen'). In particular, the drone implements a sort of navigation algorithm that prevents it from asking the master for a planar direction opposite to the one previously requested.
+In order to better understand how the algorithm works, it is better to provide an example. There are 8 possible moving directions on the plane:
 
-	From now on, the drone moves inside the map with the velocity given as third
-	argument at run-time. However, since there are other drones and obstacles
-	inside the map, the drone must ask the master if the new position in which it
-	wants to move is allowed.
-	The moving direction is chosen autonomously by extracting randomly a feasible
-	one along the three axes: x (horizontal), y (vertical) and z (through the 
-	screen). In particular, the drone implements a sort of navigation algorithm 
-	that prevents it from asking the master for a planar direction opposite to 
-	the one previously requested.
-	In order to better understand how the algorithm works, it is better to provide
-	an example. There are 8 possible moving directions on the plane:
-
-		NW	N      NE
+		NW	N   NE
 		W	*	E
-		SW	S      SW
+		SW	S   SW
 
-	If, for instance, the direction at the previous step was NE, the algorithm will
-	prevent the drone to ask the master for the three directions: S, SW and W.
-	Thanks to this feature the drone is encouraged to explore a larger portion of
-	the map and avoids oscillating in a narrow space.
-	Unfortunately, due to the navigation algorithm at issue, the drone could get
-	stuck: this happens when the device approaches a corner of the map diagonally.
-	In order to avoid this situation, the algorithm is disabled when the critical
-	condition is detected.
+If, for instance, the direction at the previous step was NE, the algorithm will prevent the drone from asking the master for the three directions: S, SW and W.
+Thanks to this feature the drone is encouraged to explore a larger portion of the map and avoids oscillating in a narrow space. Unfortunately, due to the navigation algorithm at issue, the drone could get stuck: this happens when the device approaches a corner of the map diagonally.
+In order to avoid this situation, the algorithm is disabled when the critical condition is detected.
 
-	The drone is provided with a battery that, at each successful step, decreases.
-	Initially the battery is charged randomly between and a continuous check on the
-	power left is necessary to guarantee the safe landing of the drone.
-	In other words, when the drone detects that the residual battery is sufficient
-	only to reach the floor (and accomplish no other movement), the landing procedure
-	is started.
-	Once the device has landed, the battery recharge, which takes some time, takes
-	place. After this, the drone takes off again.
+Initially the drone is provided with a full-charged battery that, at each performed step, decresases. A continuous check on the battery power is run in order to guarantee the safe return of the drone to the floor for the recharge. In other words, when the drone detects that the residual battery is sufficient only to reach the floor (and accomplish no other movement), the landing procedure is started.
+Once the device has landed, the battery recharge, which takes some time, takes place. After this, the drone takes off again.
 
-DATA LOGGING
-	The process writes its state in the log_drone_RM.txt file under the following
-	circumstances:
-		- it takes off;
-		- it performs a step in a certain direction;
-		- it starts the recharging procedure;
+### DATA LOGGING
+The process writes its state in the log_drone_RM.txt file under the following circumstances:
+- it takes off;
+- it performs a step in a certain direction;
+- it starts the recharging procedure;
 
-	In addition to this information, three relevant battery levels are written as 
-	well:
-		- half the battery left;
-		- a quarter of the battery left;
-		- only the battery necessary to land left;
-
-AUTHORS
-	Written by Luca Mosetti and Emanuele Rambaldi.
-
-==================================================================================
+In addition to this information, three relevant battery levels are written as well:
+- half the battery left;
+- a quarter of the battery left;
+- only the battery necessary to land left;

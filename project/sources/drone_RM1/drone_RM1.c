@@ -15,71 +15,101 @@
 #include <math.h>
 #include "./../drone_api/drone_api.h"
 
-// compile with gcc dumb_drone.c -o dumb_drone ./../drone_api/drone_api.o
-
 int fd_sock;
 
-void error(char* s);
-void free_resources();
+void error_exit(char* s);
+void close_socket();
 void write_log(char* file_path, char* msg);
 
 int main(int argc, char *argv[])
 {
 
   if (argc < 5){
-    error("argv[] insufficient number of arguments provided");
+    error_exit("\x1b[31m" "argv[] insufficient number of arguments provided\n" "\x1b[0m");
   }
 
   srand(time(NULL));
 
- 	// Opening socket
- 	if((fd_sock = socket(AF_INET, SOCK_STREAM, 0)) == -1)
- 		error("Opening socket");
+ 	// Open the socket
+ 	if((fd_sock = socket(AF_INET, SOCK_STREAM, 0)) == -1){
+ 		error_exit("\x1b[31m" "Error while opening the socket\n" "\x1b[0m");
+  }
 
-  // Getting server hostname
+  // Get the host by name
  	struct hostent *server;
 	server = gethostbyname("127.0.0.1");
- 	if (server == NULL)
- 		error("Getting local host");
-
-	// Setting server data and port number (51234)
+ 	if (server == NULL){
+ 		error_exit("\x1b[31m" "Error while getting the host by name\n" "\x1b[0m");
+  }
+  
+	// Set the server data and the port number (51234)
   struct sockaddr_in serv_addr;
 	bzero((char *) &serv_addr, sizeof(serv_addr));
  	serv_addr.sin_family = AF_INET;
  	bcopy((char *)server->h_addr, (char *)&serv_addr.sin_addr.s_addr, server->h_length);
  	serv_addr.sin_port = htons(51234);
 
-	// Making a connection request to the server
-	if (connect(fd_sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) == -1)
- 	    error("Connection with server");
+	// Make a connection request to the server
+	if (connect(fd_sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) == -1){
+ 	  error_exit("\x1b[31m" "Error while connecting to the server\n" "\x1b[0m");
+  }
 
   // Initialize an istance of the struct Drone
   Drone my_drone;
 
-  // Spawn coordinates
+  // Retrieve the spawn coordinates
   my_drone.posx = atoi(argv[1]);
   my_drone.posy = atoi(argv[2]);
   my_drone.posz = 0;
 
-  // Drone velocity
+  // Retrieve the drone velocity
   int vel = atoi(argv[3]);
 
   // Limit drone's velocity in the interval 1-10
-  if(vel < 1)
+  if(vel < 1){
     vel = 1;
-  if(vel > 10)
+  }
+  if(vel > 10){
     vel = 10;
+  }
 
-  // Time required to execute a step both when the drone moves and when it lands
+  // Define the time required to execute a step both when the drone moves and when it lands
   int step_move_time = floor(2000000/vel);
   int step_land_time = floor(3000000/vel);
 
   // Send spawning request to the master
-  int result = send_spawn_message(fd_sock, my_drone.posx, my_drone.posy, my_drone.posz);
-  printf("Spawn result is: %i\n\n", result);
-  if(result != SUCCESS)
-      error("Cannot spawn the drone");
+  while(1){
+    int result = send_spawn_message(fd_sock, my_drone.posx, my_drone.posy, my_drone.posz);
+    if(result != SUCCESS){
+        if(result == OUT_OF_BOUNDS_POSITION){
+          printf("\x1b[31m"  "Cannot spawn the drone:" "\x1b[0m" " the requested position is outside the map\n");
+          fflush(stdout);
+        }
+        else if (result == OCCUPIED_POSITION_WALL){
+          printf("\x1b[31m"  "Cannot spawn the drone:" "\x1b[0m" " the requested position is occupied by a wall\n");
+          fflush(stdout);
+        }
+        else if (result == OCCUPIED_POSITION_DRONE){
+          printf("\x1b[31m"  "Cannot spawn the drone:" "\x1b[0m" " the requested position is occupied by a drone\n");
+          fflush(stdout);
+        }
+        else{
+          error_exit("\x1b[31m" "Unknown error while spawning the drone\n" "\x1b[0m");
+        }
 
+        printf("-> Recalculating the spawn position...\n\n");
+        fflush(stdout);
+
+        my_drone.posx = rand()%11 + 35; // random position along the x-axis in the "safe spawning zone"
+        my_drone.posy = rand()%11 + 15; // random position along the y-axis in the "safe spawning zone"
+        my_drone.posz = 0;
+    }
+    else{
+      printf("\x1b[32m" "Drone successfully spawned\n\n" "\x1b[0m");
+      fflush(stdout);
+      break;
+    }
+  }
   sleep(1);
 
   // Get the relative path to reach the drone's log file
@@ -142,7 +172,8 @@ int main(int argc, char *argv[])
         steps = rand()%4 + 2;
       }
 
-      // Exit condition (don't ask to remain in the same spot)
+      // If the determined direction is not (0,0,0) put the flag to 0 to eventually
+      // exit from the while loop
       if(offx != 0 || offy != 0 || offz != 0)
         nav_alg = 0;
 
@@ -174,8 +205,9 @@ int main(int argc, char *argv[])
           nav_alg = 1;
       }
 
-      // If the drone is stuck do not care about the navigation algorithm
-      if(failures >= 7){
+      // If the drone is stuck do not care about the navigation algorithm and therefore exit
+      // the while loop
+      if(failures >= 15){
         nav_alg = 0;
       }
     }
@@ -229,7 +261,7 @@ int main(int argc, char *argv[])
         fflush(stdout);
 
         // Print on the LOG file
-        sprintf(msg, "Half of battery left");
+        sprintf(msg, "Half of the battery left");
         write_log(log_path, msg);
       }
 
@@ -240,7 +272,7 @@ int main(int argc, char *argv[])
         fflush(stdout);
 
         // Print on the LOG file
-        sprintf(msg, "A quarter of battery left");
+        sprintf(msg, "A quarter of the battery left");
         write_log(log_path, msg);
       }
 
@@ -262,18 +294,18 @@ int main(int argc, char *argv[])
         landing = 1;
 
         // Print on stdout
-        printf("\x1b[31m" "Battery is running out! Starting the landing manouvre to recharge\n" "\x1b[0m");
+        printf("\x1b[31m" "Battery is running out! Starting the landing manoeuvre to recharge\n" "\x1b[0m");
         fflush(stdout);
 
         // Print on the LOG file
-        sprintf(msg, "Battery is running out! Starting the landing manouvre to recharge");
+        sprintf(msg, "Battery is running out! Starting the landing manoeuvre to recharge");
         write_log(log_path, msg);
 
         break;
       }
     }
 
-    // Land if battery is low, execute the landing procedure
+    // If the battery is low, execute the landing procedure
     if(landing)
     {
       printf("\n");
@@ -327,27 +359,33 @@ int main(int argc, char *argv[])
     }
   }
 
-  // We won't never arrive here
-  free_resources();
+  // Close the socket and return (if the program works properly it will never arrive here)
+  close_socket();
  	return 0;
 }
 
 
 
-void error(char* s)
+void error_exit(char* s)
 {
-    // Closing the socket
-    free_resources();
+    // Close the socket
+    close_socket();
 
-    perror(s);
-    error(0);
+    // Print the error message
+    printf("%s", s);
+    fflush(stdout);
+
+    exit(-1);
 }
 
-void free_resources()
+void close_socket()
 {
-    // Closing the socket
-    if(close(fd_sock) == -1)
-        perror("Closing socket");
+    // Close the socket
+    if(close(fd_sock) == -1){
+        printf("\x1b[31m" "Error while closing the socket\n" "\x1b[0m");
+        fflush(stdout);
+        exit(-1);
+    }
 }
 
 void write_log(char* file_path, char* msg)
@@ -355,7 +393,7 @@ void write_log(char* file_path, char* msg)
   // Pointer to the log file
   FILE *fp;
 
-  // Getting current time for log
+  // Get the current time for log
   char t[9];
   strftime(t, 9, "%X", localtime(&(time_t){time(NULL)}));
 
