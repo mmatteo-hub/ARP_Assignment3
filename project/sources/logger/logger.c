@@ -78,6 +78,14 @@ void info_hidden(Logger* logger, char* text, char* color, int console)
     char now[9];
     strftime(now, 9, "%X", localtime(&(time_t){time(NULL)}));
         
+    // Creates a lock for the log file so that there
+    // are no concurrent writings
+    if(flock(logger->fd, LOCK_EX) == -1)
+    {
+        perror("Locking log file");
+        return;
+    }
+    
     // Writing info on log.txt file
     if(write(logger->fd, now, 8) == -1 ||
        write(logger->fd, " | [", 4) == -1 ||
@@ -86,6 +94,10 @@ void info_hidden(Logger* logger, char* text, char* color, int console)
        write(logger->fd, text, strlen(text)) == -1 ||
        write(logger->fd, "\n", 1) == -1)
         perror("Writing string on log file");
+    
+    //Unlocking log file
+    if(flock(logger->fd, LOCK_UN) == -1)
+        perror("Unlocking log file");
     
     // Writing info on console
     if(console)

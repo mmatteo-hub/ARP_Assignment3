@@ -9,5 +9,5 @@ project/sources/logger/logger.o
 project/sources/logfile/log_drone_ms3.txt
 project/sources/logfile/log_drone_MS8.txt
 project/sources/logfile/log_drone_RM1.txt
-project/sources/logfile/master.txt
+project/sources/logfile/log_master.txt
 

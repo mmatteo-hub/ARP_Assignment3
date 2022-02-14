@@ -11,6 +11,7 @@
 #include <time.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <sys/file.h>
 #include <semaphore.h>
 
 typedef struct
