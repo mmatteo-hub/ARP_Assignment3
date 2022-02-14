@@ -8,3 +8,4 @@ Each drone starts from a point in the environment and moves in the environment r
 ## AUTHORS
 Group RM1 (Luca Mosetti, Emanuale Rambaldi): developed drone_RM1.
 Group MD99 (Mattia Musumeci, Daniele Martino Parisi): developed drone_api, logger and master.
+Group DF21 (Parisi Davide Leo, Ferrazzi Francesco): developed drone_DF21.
