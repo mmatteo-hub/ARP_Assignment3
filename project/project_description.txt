@@ -1,27 +1,26 @@
 ==================================================================================
 
 PROJECT DESCRIPTION
-  The objective of this project is to develop a concurrent program composed by some
-  processes that interacts with each other through the use of sockets:
-    - Multiple 'drone' processes that simulate the behaviour of a flying drone.
-    - A single 'master' process that controls the movements of each drone.
+      The objective of this project is to develop a concurrent program composed by
+      some processes that interacts with each other through the use of sockets:
+        - Multiple 'drone' processes that simulate the behaviour of a flying drone.
+        - A single 'master' process that controls the movements of each drone.
 
-  Each drone starts from a point in the environment and moves in the environment 
-  randomly while consuming power: after total power consumption it lands until the 
-  power is restored. An important concept is the following: the drone moves in the 
-  desired position only after receiving the permission from the master. If, for any 
-  reason, the master does not give the permission to move, then the drone should not 
-  move.
+      Each drone starts from a point in the environment and moves in the environment 
+      randomly while consuming power: after total power consumption it lands until 
+      the power is restored. An important concept is the following: the drone moves 
+      in the  desired position only after receiving the permission from the master. 
+      If, for any reason, the master does not give the permission to move, then the 
+      drone should not  move.
 
-  The master process receives different requests from different drones and checks if
-  a specific action would cause an inconsistency, a collision or exit from the working
-  area. In these cases, it denies the requested movement.
+      The master process receives different requests from different drones and checks 
+      if a specific action would cause an inconsistency, a collision or exit from the 
+      working area. In these cases, it denies the requested movement.
   
 AUTHORS
-  Group RM1: formed by Luca Mosetti and Emanuele Rambaldi, developed the drone_RM1 
-             process;
-  Group x: ...
-  Group y: ...
-  
+      Group RM1: formed by Luca Mosetti and Emanuele Rambaldi, developed the drone_RM1 
+                 process;
+      Group x: ...
+      Group y: ...
   
  ==================================================================================
