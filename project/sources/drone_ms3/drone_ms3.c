@@ -315,7 +315,7 @@ int main(int argc, char *argv[])
             // print the map
             print_array(map);
             // sleep proportionally to the velocity of the drone
-            usleep(500000/vel);
+            usleep(200000/vel);
         
             // check the amount of battery remaining to be sure that the drone can land 
             if(bat <= direction_z)

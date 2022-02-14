@@ -1,52 +1,89 @@
-DM3: Socket opened at : 		Mon Feb 14 16:01:23 2022
-DM3: Socket established at : 		Mon Feb 14 16:01:23 2022
-DM3: Drone spawned at : 		Mon Feb 14 16:01:23 2022
-DM3: Taking off at : 			Mon Feb 14 16:01:24 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:24 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:25 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:25 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:26 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:26 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:27 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:28 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:28 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:29 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:29 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:30 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:30 2022
-DM3: Trying to move north at : 	Mon Feb 14 16:01:31 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:31 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:32 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:32 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:33 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:33 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:34 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:34 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:35 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:35 2022
-DM3: Trying to move south-west at : 	Mon Feb 14 16:01:36 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:36 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:37 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:37 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:38 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:38 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:39 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:39 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:40 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:40 2022
-DM3: Trying to move north-east at : 	Mon Feb 14 16:01:41 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:41 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:42 2022
-DM3: Trying to move up at : 		Mon Feb 14 16:01:42 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:43 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:44 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:44 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:45 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:45 2022
-DM3: Trying to move east at : 	Mon Feb 14 16:01:46 2022
-DM3: Landing at : 			Mon Feb 14 16:01:46 2022
-DM3: Trying to move down at : 	Mon Feb 14 16:01:46 2022
-DM3: Trying to move down at : 	Mon Feb 14 16:01:47 2022
-DM3: Trying to move down at : 	Mon Feb 14 16:01:48 2022
-DM3: Trying to move down at : 	Mon Feb 14 16:01:49 2022
-DM3: Trying to move down at : 	Mon Feb 14 16:01:50 2022
+DM3: Socket opened at : 		Mon Feb 14 22:31:55 2022
+DM3: Socket established at : 		Mon Feb 14 22:31:55 2022
+DM3: Drone spawned at : 		Mon Feb 14 22:31:55 2022
+DM3: Taking off at : 			Mon Feb 14 22:31:56 2022
+DM3: Trying to move up at : 		Mon Feb 14 22:31:56 2022
+DM3: Trying to move up at : 		Mon Feb 14 22:31:57 2022
+DM3: Trying to move up at : 		Mon Feb 14 22:31:57 2022
+DM3: Trying to move up at : 		Mon Feb 14 22:31:58 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:31:58 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:31:59 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:31:59 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:00 2022
+DM3: Refused: 'WALL' at : 		Mon Feb 14 22:32:00 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:00 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:00 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:01 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:01 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:02 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:03 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:03 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:04 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:04 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:05 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:05 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:06 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:06 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:07 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:07 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:08 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:08 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:09 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:09 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:10 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:10 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:11 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:11 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:12 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:12 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:13 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:13 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:14 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:14 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:15 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:16 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:16 2022
+DM3: Trying to move north-west at : 	Mon Feb 14 22:32:17 2022
+DM3: Refused: 'WALL' at : 		Mon Feb 14 22:32:17 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:17 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:17 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:18 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:18 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:19 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:19 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:20 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:20 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:21 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:21 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:22 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:22 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:23 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:23 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:24 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:24 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:25 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:25 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:26 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:26 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:27 2022
+DM3: Trying to move south at : 	Mon Feb 14 22:32:27 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:28 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:28 2022
+DM3: Trying to move west at : 	Mon Feb 14 22:32:29 2022
+DM3: Refused: 'WALL' at : 		Mon Feb 14 22:32:29 2022
+DM3: Trying to move south-west at : 	Mon Feb 14 22:32:29 2022
+DM3: Refused: 'WALL' at : 		Mon Feb 14 22:32:29 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:29 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:30 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:30 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:31 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:31 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:32 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:32 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:33 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:33 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:34 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:34 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:35 2022
+DM3: Trying to move east at : 	Mon Feb 14 22:32:35 2022
+DM3: Trying to move down at : 	Mon Feb 14 22:32:36 2022
