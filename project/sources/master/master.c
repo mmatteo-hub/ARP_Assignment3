@@ -355,9 +355,7 @@ void create_map()
         int y = random_between(0, MAP_SIZE_Y-length);
         
         int multx = random_between(0, 1);
-        int multy = random_between(0, 1);
-        if(multx == 0 && multy == 0)
-            multx = 1;
+        int multy = (multx+1)%2;
         
         for(int j=0; j<length; ++j)
             map[(x+multx*j)][(y+multy*j)] = '*';
