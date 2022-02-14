@@ -78,7 +78,10 @@ int main(int argc, char *argv[])
     
     //Send position to the master
     int result = send_spawn_message(socket_fd, posX, posY, 0);
-    printf("Spawn result is: %i\n", result);
+    if(result == 0)
+    	printf("Spawn result is: SUCCESS\n");
+    else
+    	printf("Spawn result is: FAILED\n");
     clk = time(NULL);
     fprintf(f,"DM3: Drone spawned at : \t\t%s", ctime(&clk));
     fflush(f);
