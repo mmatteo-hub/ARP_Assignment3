@@ -1,4 +1,4 @@
-########## DRONE ##########
+############### DRONE_MS3 ###############
 ### Authors: Matteo Maragliano, Sara Sgambato
 ## Drone name: drone_ms3
 The implementation of this drone was done considering the work done regarding the first assignment.
