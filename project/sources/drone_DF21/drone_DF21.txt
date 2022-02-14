@@ -1,8 +1,6 @@
-DRONE PROJECT: drone_DF21
-
-Authors: Davide Leo Parisi 4329669
-         Francesco Ferrazzi 5262829
-
+############### DRONE_DF21 ###############
+### AUTHORS: Davide Leo Parisi 4329669, Francesco Ferrazzi 5262829
+### DRONE NAME: drone_DF21
 
 This program aims to simulate the behavior of a drone that spawns inside an environment where other drones can run simultaneously. The spawn position is pre-defined by the user.
 

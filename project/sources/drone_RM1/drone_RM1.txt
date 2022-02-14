@@ -12,9 +12,9 @@ From now on, the drone moves inside the map with the velocity given as third arg
 The moving direction is chosen autonomously by randomly extracting a feasible triplet in the form: x (horizontal movement), y (vertical movement) and z (movement 'through the screen'). In particular, the drone implements a sort of navigation algorithm that prevents it from asking the master for a planar direction opposite to the one previously requested.
 In order to better understand how the algorithm works, it is better to provide an example. There are 8 possible moving directions on the plane:
 
-		NW	N   NE
-		W	*	E
-		SW	S   SW
+		NW  N   NE
+		W   *   E
+		SW  S   SW
 
 If, for instance, the direction at the previous step was NE, the algorithm will prevent the drone from asking the master for the three directions: S, SW and W.
 Thanks to this feature the drone is encouraged to explore a larger portion of the map and avoids oscillating in a narrow space. Unfortunately, due to the navigation algorithm at issue, the drone could get stuck: this happens when the device approaches a corner of the map diagonally.
