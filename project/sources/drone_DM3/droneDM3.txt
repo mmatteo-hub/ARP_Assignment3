@@ -3,6 +3,6 @@ This is a simple drone, connected to the master via socket.
 This drone receives as input the initial position and a path for the logfile.
 It moves randomly in the 3-dimentional space.
 Before moving it sends a request to the master that can allow or deny the movement.
-If the movement is denied because there is a wall or the movement is not inside the map, the drone change immidiately direction.
+If the movement is denied because there is a wall or the movement is not inside the map, the drone change immediately direction.
 If the movement is denied because in that position there is another drone, it sends another request.
 The drone also can construct a map of the environment on the base of the messages received from the master.
