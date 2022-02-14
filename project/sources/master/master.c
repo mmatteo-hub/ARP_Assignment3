@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
     for(int i=0; i<MAX_CLIENTS; ++i)
     {
         c_endpoints[i] = -1;
-        drones[i] = (Drone){0, -1, -1, -1, 0};
+        drones[i] = (Drone){0, 0, -1, -1, -1};
     }
     
     // Inits drone_api library
@@ -183,23 +183,29 @@ void accept_client()
             index = i;
             break;
         }
-        
+               
     // Gets client address
     char address[INET_ADDRSTRLEN];
     inet_ntop(cli_addr.sin_family, &(cli_addr.sin_addr), address, INET_ADDRSTRLEN);
-        
-    if(index != -1)
+    
+    // If there is no space available
+    if(index == -1)
     {
-        c_endpoints[index] = c_endpoint;
-        char* text; asprintf(&text, "Client [%s] connected at index %d.", address, index);
+        // The connection is closed
+        close(c_endpoint);
+        // Prints info on log file
+        char* text; asprintf(&text, "Client [%s] cannot connect: maximum capacity reached.", address);
         info(&logger, text, 0);
         free(text);
+        return;
     }
-    else
-    {
-        close(c_endpoint);
-        info(&logger, "Client [%s] cannot connect: maximum capacity reached.", 0);
-    }
+    
+    // Adds the client to the array
+    c_endpoints[index] = c_endpoint;
+    // Prints info on log file
+    char* text; asprintf(&text, "Client [%s] connected at index %d.", address, index);
+    info(&logger, text, 0);
+    free(text);
 }
 
 void disconnect_client(int id)
@@ -207,14 +213,15 @@ void disconnect_client(int id)
     // Removes client file descriptor
     c_endpoints[id] = -1;
     
-    // Reinits drone
-    drones[id] = (Drone){0, -1, -1, 0};    
+    // Reinits the drone
+    drones[id] = (Drone){0, 0, -1, -1, -1};    
     
     char* text; asprintf(&text, "Client at index %d disconnected.", id);
     info(&logger, text, 0);
     free(text);
 }
 
+// Handler for a spawn request
 int on_spawn_message(int id, int posx, int posy, int posz)
 {
     // Basic checks
@@ -228,11 +235,12 @@ int on_spawn_message(int id, int posx, int posy, int posz)
         return OCCUPIED_POSITION_DRONE;
     
     // Creates drone
-    drones[id] = (Drone){1, posx, posy, posz, 0};
+    drones[id] = (Drone){1, 0, posx, posy, posz};
     
     return SUCCESS;
 }
 
+// Handler for a move request
 int on_move_message(int id, int offx, int offy, int offz)
 {
     Drone drone = drones[id];
@@ -268,6 +276,7 @@ int on_move_message(int id, int offx, int offy, int offz)
     return SUCCESS;
 }
 
+// Handler for a land request
 int on_land_message(int id, int landed)
 {
     Drone drone = drones[id];
@@ -275,6 +284,7 @@ int on_land_message(int id, int landed)
     // A not spawned drone cannot land
     if(drone.spawned == 0)
         return DRONE_NOT_SPAWNED;
+    // A drone can land only at z=0
     if(drone.posz != 0)
         return LAND_ONLY_AT_Z0;
         
@@ -283,7 +293,7 @@ int on_land_message(int id, int landed)
     return SUCCESS;
 }
 
-// Checks if position is inside the map
+// Checks if a position is inside the map
 int is_inside_map(int posx, int posy, int posz)
 {
     return  posx >= 0 && posx < MAP_SIZE_X && 
@@ -291,7 +301,8 @@ int is_inside_map(int posx, int posy, int posz)
             posz >= 0 && posz < MAP_SIZE_Z;
 }
 
-// Gets the drone at (x, y, z)
+// Gets the drone at (posx, posy, posz)
+// Returns the index of the drone in the array
 int get_drone(int posx, int posy, int posz)
 {
     for(int i=0; i<MAX_CLIENTS; ++i)
@@ -304,7 +315,8 @@ int get_drone(int posx, int posy, int posz)
     return -1;
 }
 
-// Gets the drone at (x, y) with the highest z value
+// Gets the drone at (posx, posy) with the highest z value
+// Returns the index of the drone in the array
 int get_visible_drone(int posx, int posy)
 {
     int posz = -1;
@@ -322,7 +334,7 @@ int get_visible_drone(int posx, int posy)
 
 void create_map()
 {
-    // Creates outher walls
+    // Creates outer walls of the map
     for(int x=0; x<MAP_SIZE_X; ++x)
     {
         for(int y=0; y<MAP_SIZE_Y; ++y)
@@ -334,7 +346,7 @@ void create_map()
         }
     }
     
-    // Creating random walls
+    // Creates random walls on the map
     int walls = random_between(10, 15);
     for(int i=0; i<walls; ++i)
     {
@@ -359,7 +371,8 @@ int random_between(int min, int max)
 
 void print_map()
 {    
-    // Sets markers for drones
+    // Sets markers for drones to avoid checking if 
+    // in each position of the map there is a drone
     for(int i=0; i<MAX_CLIENTS; ++i)
     {
         Drone d = drones[i];
@@ -367,7 +380,8 @@ void print_map()
             map[d.posx][d.posy] = 'd';
     }
     
-    // Actually prints map
+    // Prints map so that x axis is the length
+    // and y axis is the width of the console
     for(int y=MAP_SIZE_Y-1; y>=0; --y)
     {
         for(int x=0; x<MAP_SIZE_X; ++x)
@@ -395,6 +409,7 @@ void print_map()
     fflush(stdout);
 }
 
+// Function that decides the char to represent the drone
 char drone_to_char(Drone drone)
 {
     if(!drone.spawned)
