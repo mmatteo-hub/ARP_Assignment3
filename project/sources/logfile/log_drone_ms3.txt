@@ -1,2 +1,17 @@
-10:26:49 | [drone_ms3] Starting
-10:26:49 | [drone_ms3] Connection with server: Connection refused
+11:15:05 | [drone_ms3] Starting
+11:15:05 | [drone_ms3] Spawn position not valid. Re-computing...
+11:15:05 | [drone_ms3] Spawn position: [x = 30, y = 38, z = 0]
+11:15:07 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = -1].
+11:15:07 | [drone_ms3] Cannot move due to a wall.
+11:15:07 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+11:15:07 | [drone_ms3] Current position = [31, 38, 0].
+11:15:07 | [drone_ms3] Battery remaining: 95 %
+11:15:07 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+11:15:07 | [drone_ms3] Current position = [32, 38, 0].
+11:15:07 | [drone_ms3] Battery remaining: 90 %
+11:15:08 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+11:15:08 | [drone_ms3] Current position = [33, 38, 0].
+11:15:08 | [drone_ms3] Battery remaining: 85 %
+11:15:08 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+11:15:08 | [drone_ms3] Current position = [34, 38, 0].
+11:15:08 | [drone_ms3] Battery remaining: 80 %

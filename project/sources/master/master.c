@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
                 int error = decode_client_message(i, c_endpoints[i]);
                 
                 // If the client is not connected any more, disconnects it
-                if(error == EPIPE)
+                if(error == CONNECTION_ABORTED)
                     disconnect_client(i);
                 else if(error == -1)
                     perror_exit(&logger, "Decoding client message");

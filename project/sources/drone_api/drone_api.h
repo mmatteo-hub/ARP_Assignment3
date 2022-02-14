@@ -21,7 +21,7 @@
 #define DRONE_IS_LANDED 7           // The drone needs to not be landed.
 #define ONE_CELL_AT_A_TIME 8        // The drone requested to move more than 1 cell.
 #define LAND_ONLY_AT_Z0 9           // The drone requested to land when not at z=0.
-#define DRONE_DEADLOCK 10           // Two drones requested to exchange positions
+#define CONNECTION_ABORTED 10       // The other socket-end aborted the connection.       
 
 typedef struct{
     // True if the drone spawned in map
@@ -33,6 +33,11 @@ typedef struct{
     int posy;
     int posz;
 }Drone;
+
+// Returns 0 in case of no error occurring and other end alive
+// Returns CONNECTION_ABORTED if the other end aborted the connection
+// Returns -1 in case of some other error occurring
+int is_alive(int socket_fd);
 
 // A function that the server can use to decode the client
 // message and automatically call the corresponding handler
