@@ -54,7 +54,7 @@ void free_resources();
 void print_array();
 
 // function to check the master response
-validate_response_or_exit(int result);
+void validate_response_or_exit(int result);
 
 // define an 2D array to count the number of times a cell has been visited (in the plane xy)
 char map[R_MAP][C_MAP];
