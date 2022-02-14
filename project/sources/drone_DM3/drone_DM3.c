@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "./../drone_api/drone_api.h"
 
-#define MAX_FUEL 50
+#define MAX_FUEL 100
 #define MAP_ROW 40
 #define MAP_COL 80
 
@@ -225,6 +225,7 @@ void take_off()
 
 void refuel()
 {
+	print_map();
 	printf("\nRefueling...\n");
 	clk = time(NULL);
 	fprintf(f,"DM3: Refueling at : \t\t\t%s", ctime(&clk));
@@ -234,11 +235,12 @@ void refuel()
 		fuel += 1;
 		if(fuel%5 == 0)
 		{
-			printf("Fuel: %i/%i\n", fuel, MAX_FUEL);
+			printf("\rFuel: %i/%i", fuel, MAX_FUEL);
 			fflush(stdout);
 		}
 		usleep(100000);
 	}
+	printf("\n");
 	
 	return;
 }
@@ -294,9 +296,13 @@ void print_map()
 				map[i][j] = '.';
 			fprintf(f,"%c", map[i][j]);
     			fflush(f);
+    			printf("%c", map[i][j]);
+    			fflush(stdout);
 		}
 		fprintf(f,"\n");
     		fflush(f);
+    		printf("\n");
+    		fflush(stdout);
 	}
 	return;
 }

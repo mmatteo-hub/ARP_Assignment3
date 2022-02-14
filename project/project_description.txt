@@ -4,8 +4,6 @@ The objective of this project is to develop a concurrent program composed by som
 - A single 'master' process that controls the movements of each drone.
 
 Each drone starts from a point in the environment and moves in the environment randomly while consuming power: after total power consumption it lands until the power is restored. An important concept is the following: the drone moves in the desired position only after receiving the permission from the master. If, for any reason, the master does not give the permission to move, then the drone should not move.
-
-The master process receives different requests from different drones and checks if a specific action would cause an inconsistency, a collision or exit from the working area. In these cases, it denies the requested movement.
   
 ## AUTHORS
 Group RM1 (Luca Mosetti, Emanuale Rambaldi): developed drone_RM1.
