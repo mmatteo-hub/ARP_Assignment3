@@ -183,7 +183,6 @@ int main(int argc, char *argv[])
     
     // initialise the maximum amount of battery
     int bat = battery;
-
     // initialise the direction
     int direction_x = 0;
     int direction_y = 0;
