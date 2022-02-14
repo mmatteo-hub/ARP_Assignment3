@@ -53,6 +53,9 @@ void free_resources();
 // function to print the map
 void print_array();
 
+// function to check the master response
+void validate_response_or_exit(int result);
+
 // define an 2D array to count the number of times a cell has been visited (in the plane xy)
 char map[R_MAP][C_MAP];
 
@@ -143,6 +146,8 @@ int main(int argc, char *argv[])
     {
         // check the result of the spawn position
         result = send_spawn_message(socket_fd, spawnx, spawny, 0);
+        // check the master is alve
+        validate_response_or_exit(result);
         // if result is not succeded
         if(result != SUCCESS)
         {
@@ -178,7 +183,6 @@ int main(int argc, char *argv[])
     
     // initialise the maximum amount of battery
     int bat = battery;
-
     // initialise the direction
     int direction_x = 0;
     int direction_y = 0;
@@ -231,6 +235,8 @@ int main(int argc, char *argv[])
             system("clear");
             // check the direction is available
             int result = send_move_message(socket_fd, direction_x, direction_y, direction_z);
+            // check the master is alve
+            validate_response_or_exit(result);
             // put into the buffer the direction
             sprintf(buff, "Direction computed = [Vx = %i, Vy = %i, Vz = %i].", direction_x*vel, direction_y*vel, direction_z*vel);
             // write into the log file
@@ -323,6 +329,8 @@ int main(int argc, char *argv[])
                     system("clear");
                     // check the result of the move message
                     int result = send_move_message(socket_fd, 0, 0, -1);
+                    // check the master is alve
+                    validate_response_or_exit(result);
                     // print on the console
                     printf("Landing: ");
                     drone_error(result);
@@ -378,9 +386,21 @@ int main(int argc, char *argv[])
  	return 0;
 }
 
+// check the master still works
+void validate_response_or_exit(int result)
+{
+    if(result == CONNECTION_ABORTED || result == -1)
+    {
+        free_resources();
+        exit(0);
+    }
+}
+
 // implementation of the function to print the map
 void print_array()
 {
+    // counter to determine the percentage of map visited
+    int counter = 0;
     // loop on the columns of the array
     for(int i = C_MAP - 1; i >= 0; i--)
     {
@@ -393,16 +413,19 @@ void print_array()
             {
                 // print the position in blu
                 printf("%sO%s",KBLU,KNRM);
+                counter ++;
             }
             else if(v == 'V')
             {
                 // print the visited position in green
                 printf("%sV%s",KGRN,KNRM);
+                counter ++;
             }
             else if(v == 'X')
             {
                 // print the wall in white
                 printf("%sX%s",KNRM,KNRM);
+                counter ++;
             }
             else
             {
@@ -413,6 +436,7 @@ void print_array()
         // print in a new line to perform the map shape
         printf("\n");
     }
+    printf("\nMap discovered: %s%d %%%s\n",KGRN, 100*counter/(R_MAP*C_MAP), KNRM);
 }
 
 // implementation of the function to free the resources
