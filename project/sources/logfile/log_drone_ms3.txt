@@ -1,342 +1,1612 @@
-14:53:32 | [drone_ms3] Starting
-14:53:33 | [drone_ms3] Spawn position not valid. Re-computing...
-14:53:33 | [drone_ms3] Spawn position: [x = 73, y = 11, z = 0]
-14:53:34 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
-14:53:34 | [drone_ms3] Cannot move: map limit reached
-14:53:34 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
-14:53:34 | [drone_ms3] Current position = [74, 11, 0].
-14:53:34 | [drone_ms3] Battery remaining: 99 %
-14:53:34 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
-14:53:34 | [drone_ms3] Current position = [75, 11, 0].
-14:53:34 | [drone_ms3] Battery remaining: 98 %
-14:53:34 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
-14:53:34 | [drone_ms3] Current position = [76, 11, 0].
-14:53:34 | [drone_ms3] Battery remaining: 97 %
-14:53:35 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
-14:53:35 | [drone_ms3] Current position = [77, 11, 0].
-14:53:35 | [drone_ms3] Battery remaining: 96 %
-14:53:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:35 | [drone_ms3] Current position = [77, 11, 1].
-14:53:35 | [drone_ms3] Battery remaining: 95 %
-14:53:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:35 | [drone_ms3] Current position = [77, 11, 2].
-14:53:35 | [drone_ms3] Battery remaining: 94 %
-14:53:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:35 | [drone_ms3] Current position = [77, 11, 3].
-14:53:35 | [drone_ms3] Battery remaining: 93 %
-14:53:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:35 | [drone_ms3] Current position = [77, 11, 4].
-14:53:35 | [drone_ms3] Battery remaining: 92 %
-14:53:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:36 | [drone_ms3] Current position = [77, 11, 5].
-14:53:36 | [drone_ms3] Battery remaining: 91 %
-14:53:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:36 | [drone_ms3] Current position = [77, 11, 6].
-14:53:36 | [drone_ms3] Battery remaining: 90 %
-14:53:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:36 | [drone_ms3] Current position = [77, 11, 7].
-14:53:36 | [drone_ms3] Battery remaining: 89 %
-14:53:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:36 | [drone_ms3] Current position = [77, 11, 8].
-14:53:36 | [drone_ms3] Battery remaining: 88 %
-14:53:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:36 | [drone_ms3] Current position = [77, 11, 9].
-14:53:36 | [drone_ms3] Battery remaining: 87 %
-14:53:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:37 | [drone_ms3] Cannot move: map limit reached
-14:53:37 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = -2].
-14:53:37 | [drone_ms3] Current position = [78, 11, 8].
-14:53:37 | [drone_ms3] Battery remaining: 86 %
-14:53:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
-14:53:37 | [drone_ms3] Cannot move due to a drone occupying the position.
-14:53:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
-14:53:37 | [drone_ms3] Current position = [78, 12, 9].
-14:53:37 | [drone_ms3] Battery remaining: 85 %
-14:53:37 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:37 | [drone_ms3] Current position = [77, 11, 9].
-14:53:37 | [drone_ms3] Battery remaining: 84 %
-14:53:38 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:38 | [drone_ms3] Current position = [76, 10, 9].
-14:53:38 | [drone_ms3] Battery remaining: 83 %
-14:53:38 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:38 | [drone_ms3] Current position = [75, 9, 9].
-14:53:38 | [drone_ms3] Battery remaining: 82 %
-14:53:39 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:39 | [drone_ms3] Current position = [74, 8, 9].
-14:53:39 | [drone_ms3] Battery remaining: 81 %
-14:53:39 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:39 | [drone_ms3] Current position = [73, 7, 9].
-14:53:39 | [drone_ms3] Battery remaining: 80 %
-14:53:40 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:40 | [drone_ms3] Current position = [72, 6, 9].
-14:53:40 | [drone_ms3] Battery remaining: 79 %
-14:53:40 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:40 | [drone_ms3] Current position = [71, 6, 8].
-14:53:40 | [drone_ms3] Battery remaining: 78 %
-14:53:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:41 | [drone_ms3] Current position = [70, 6, 7].
-14:53:41 | [drone_ms3] Battery remaining: 77 %
-14:53:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:41 | [drone_ms3] Current position = [69, 6, 6].
-14:53:41 | [drone_ms3] Battery remaining: 76 %
-14:53:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:41 | [drone_ms3] Current position = [68, 6, 5].
-14:53:41 | [drone_ms3] Battery remaining: 75 %
-14:53:42 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:42 | [drone_ms3] Current position = [67, 6, 4].
-14:53:42 | [drone_ms3] Battery remaining: 74 %
-14:53:42 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:42 | [drone_ms3] Current position = [66, 6, 3].
-14:53:42 | [drone_ms3] Battery remaining: 73 %
-14:53:42 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:42 | [drone_ms3] Current position = [65, 6, 2].
-14:53:42 | [drone_ms3] Battery remaining: 72 %
-14:53:42 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:42 | [drone_ms3] Current position = [64, 6, 1].
-14:53:42 | [drone_ms3] Battery remaining: 71 %
-14:53:43 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = -2].
-14:53:43 | [drone_ms3] Current position = [63, 6, 0].
-14:53:43 | [drone_ms3] Battery remaining: 70 %
-14:53:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
-14:53:43 | [drone_ms3] Cannot move due to a drone occupying the position.
-14:53:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = -1].
-14:53:43 | [drone_ms3] Cannot move: map limit reached
-14:53:43 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:43 | [drone_ms3] Current position = [62, 6, 0].
-14:53:43 | [drone_ms3] Battery remaining: 69 %
-14:53:44 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:44 | [drone_ms3] Current position = [61, 6, 0].
-14:53:44 | [drone_ms3] Battery remaining: 68 %
-14:53:44 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:44 | [drone_ms3] Current position = [60, 6, 0].
-14:53:44 | [drone_ms3] Battery remaining: 67 %
-14:53:45 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:45 | [drone_ms3] Current position = [59, 6, 0].
-14:53:45 | [drone_ms3] Battery remaining: 66 %
-14:53:45 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:45 | [drone_ms3] Current position = [58, 6, 0].
-14:53:45 | [drone_ms3] Battery remaining: 65 %
-14:53:46 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:53:46 | [drone_ms3] Current position = [57, 6, 0].
-14:53:46 | [drone_ms3] Battery remaining: 64 %
-14:53:46 | [drone_ms3] Direction computed = [Vx = 1, Vy = -1, Vz = -1].
-14:53:46 | [drone_ms3] Cannot move: map limit reached
-14:53:46 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:46 | [drone_ms3] Current position = [58, 7, 1].
-14:53:46 | [drone_ms3] Battery remaining: 63 %
-14:53:47 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:47 | [drone_ms3] Current position = [59, 8, 2].
-14:53:47 | [drone_ms3] Battery remaining: 62 %
-14:53:47 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:47 | [drone_ms3] Current position = [60, 9, 3].
-14:53:47 | [drone_ms3] Battery remaining: 61 %
-14:53:48 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:48 | [drone_ms3] Current position = [61, 10, 4].
-14:53:48 | [drone_ms3] Battery remaining: 60 %
-14:53:48 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:48 | [drone_ms3] Current position = [62, 11, 5].
-14:53:48 | [drone_ms3] Battery remaining: 59 %
-14:53:49 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
-14:53:49 | [drone_ms3] Current position = [63, 12, 6].
-14:53:49 | [drone_ms3] Battery remaining: 58 %
-14:53:49 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:49 | [drone_ms3] Current position = [64, 12, 6].
-14:53:49 | [drone_ms3] Battery remaining: 57 %
-14:53:50 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:50 | [drone_ms3] Current position = [65, 12, 6].
-14:53:50 | [drone_ms3] Battery remaining: 56 %
-14:53:50 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:50 | [drone_ms3] Current position = [66, 12, 6].
-14:53:50 | [drone_ms3] Battery remaining: 55 %
-14:53:50 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:50 | [drone_ms3] Current position = [67, 12, 6].
-14:53:50 | [drone_ms3] Battery remaining: 54 %
-14:53:50 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:50 | [drone_ms3] Current position = [68, 12, 6].
-14:53:50 | [drone_ms3] Battery remaining: 53 %
-14:53:50 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:50 | [drone_ms3] Current position = [69, 12, 6].
-14:53:50 | [drone_ms3] Battery remaining: 52 %
-14:53:51 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:51 | [drone_ms3] Current position = [70, 12, 6].
-14:53:51 | [drone_ms3] Battery remaining: 51 %
-14:53:51 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:51 | [drone_ms3] Current position = [71, 12, 6].
-14:53:51 | [drone_ms3] Battery remaining: 50 %
-14:53:51 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
-14:53:51 | [drone_ms3] Current position = [71, 11, 7].
-14:53:51 | [drone_ms3] Battery remaining: 49 %
-14:53:51 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
-14:53:51 | [drone_ms3] Current position = [71, 10, 8].
-14:53:51 | [drone_ms3] Battery remaining: 48 %
-14:53:51 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
-14:53:51 | [drone_ms3] Current position = [71, 9, 9].
-14:53:51 | [drone_ms3] Battery remaining: 47 %
-14:53:52 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:52 | [drone_ms3] Current position = [70, 9, 9].
-14:53:52 | [drone_ms3] Battery remaining: 46 %
-14:53:52 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:52 | [drone_ms3] Current position = [69, 9, 9].
-14:53:52 | [drone_ms3] Battery remaining: 45 %
-14:53:52 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:52 | [drone_ms3] Current position = [68, 9, 9].
-14:53:52 | [drone_ms3] Battery remaining: 44 %
-14:53:52 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:52 | [drone_ms3] Current position = [67, 9, 9].
-14:53:52 | [drone_ms3] Battery remaining: 43 %
-14:53:52 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:52 | [drone_ms3] Current position = [66, 9, 9].
-14:53:52 | [drone_ms3] Battery remaining: 42 %
-14:53:53 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:53 | [drone_ms3] Current position = [65, 9, 9].
-14:53:53 | [drone_ms3] Battery remaining: 41 %
-14:53:53 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:53 | [drone_ms3] Current position = [64, 9, 9].
-14:53:53 | [drone_ms3] Battery remaining: 40 %
-14:53:53 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:53 | [drone_ms3] Current position = [63, 9, 9].
-14:53:53 | [drone_ms3] Battery remaining: 39 %
-14:53:53 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
-14:53:53 | [drone_ms3] Current position = [62, 9, 9].
-14:53:53 | [drone_ms3] Battery remaining: 38 %
-14:53:53 | [drone_ms3] Direction computed = [Vx = -3, Vy = 3, Vz = 3].
-14:53:53 | [drone_ms3] Cannot move: map limit reached
-14:53:53 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:53 | [drone_ms3] Current position = [61, 8, 9].
-14:53:53 | [drone_ms3] Battery remaining: 37 %
-14:53:54 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:54 | [drone_ms3] Current position = [60, 7, 9].
-14:53:54 | [drone_ms3] Battery remaining: 36 %
-14:53:54 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:54 | [drone_ms3] Current position = [59, 6, 9].
-14:53:54 | [drone_ms3] Battery remaining: 35 %
-14:53:55 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
-14:53:55 | [drone_ms3] Current position = [58, 5, 9].
-14:53:55 | [drone_ms3] Battery remaining: 34 %
-14:53:55 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
-14:53:55 | [drone_ms3] Current position = [57, 5, 9].
-14:53:55 | [drone_ms3] Battery remaining: 33 %
-14:53:56 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 1].
-14:53:56 | [drone_ms3] Cannot move: map limit reached
-14:53:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
-14:53:56 | [drone_ms3] Cannot move: map limit reached
-14:53:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
-14:53:56 | [drone_ms3] Cannot move: map limit reached
-14:53:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
-14:53:56 | [drone_ms3] Cannot move: map limit reached
-14:53:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
-14:53:56 | [drone_ms3] Cannot move due to a drone occupying the position.
-14:53:56 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:56 | [drone_ms3] Current position = [58, 5, 9].
-14:53:56 | [drone_ms3] Battery remaining: 32 %
-14:53:56 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:56 | [drone_ms3] Current position = [59, 5, 9].
-14:53:56 | [drone_ms3] Battery remaining: 31 %
-14:53:56 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:56 | [drone_ms3] Current position = [60, 5, 9].
-14:53:56 | [drone_ms3] Battery remaining: 30 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:57 | [drone_ms3] Current position = [61, 5, 9].
-14:53:57 | [drone_ms3] Battery remaining: 29 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:57 | [drone_ms3] Current position = [62, 5, 9].
-14:53:57 | [drone_ms3] Battery remaining: 28 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:57 | [drone_ms3] Current position = [63, 5, 9].
-14:53:57 | [drone_ms3] Battery remaining: 27 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:57 | [drone_ms3] Current position = [64, 5, 9].
-14:53:57 | [drone_ms3] Battery remaining: 26 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
-14:53:57 | [drone_ms3] Current position = [65, 5, 9].
-14:53:57 | [drone_ms3] Battery remaining: 25 %
-14:53:57 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = -2].
-14:53:57 | [drone_ms3] Current position = [65, 6, 8].
-14:53:57 | [drone_ms3] Battery remaining: 24 %
-14:53:58 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = -2].
-14:53:58 | [drone_ms3] Current position = [65, 7, 7].
-14:53:58 | [drone_ms3] Battery remaining: 23 %
-14:53:58 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = -2].
-14:53:58 | [drone_ms3] Cannot move due to a wall.
-14:53:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
-14:53:58 | [drone_ms3] Current position = [64, 6, 6].
-14:53:58 | [drone_ms3] Battery remaining: 22 %
-14:53:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
-14:53:58 | [drone_ms3] Current position = [63, 5, 5].
-14:53:58 | [drone_ms3] Battery remaining: 21 %
-14:53:59 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
-14:53:59 | [drone_ms3] Current position = [62, 4, 4].
-14:53:59 | [drone_ms3] Battery remaining: 20 %
-14:53:59 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
-14:53:59 | [drone_ms3] Current position = [61, 3, 3].
-14:53:59 | [drone_ms3] Battery remaining: 19 %
-14:53:59 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
-14:53:59 | [drone_ms3] Current position = [61, 2, 3].
-14:53:59 | [drone_ms3] Battery remaining: 18 %
-14:54:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
-14:54:00 | [drone_ms3] Current position = [61, 1, 3].
-14:54:00 | [drone_ms3] Battery remaining: 17 %
-14:54:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
-14:54:00 | [drone_ms3] Cannot move due to a wall.
-14:54:00 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = 2].
-14:54:00 | [drone_ms3] Cannot move due to a wall.
-14:54:00 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:00 | [drone_ms3] Current position = [62, 2, 3].
-14:54:00 | [drone_ms3] Battery remaining: 16 %
-14:54:01 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:01 | [drone_ms3] Current position = [63, 3, 3].
-14:54:01 | [drone_ms3] Battery remaining: 15 %
-14:54:01 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:01 | [drone_ms3] Current position = [64, 4, 3].
-14:54:01 | [drone_ms3] Battery remaining: 14 %
-14:54:01 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:01 | [drone_ms3] Current position = [65, 5, 3].
-14:54:01 | [drone_ms3] Battery remaining: 13 %
-14:54:01 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:01 | [drone_ms3] Current position = [66, 6, 3].
-14:54:01 | [drone_ms3] Battery remaining: 12 %
-14:54:01 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:01 | [drone_ms3] Current position = [67, 7, 3].
-14:54:01 | [drone_ms3] Battery remaining: 11 %
-14:54:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
-14:54:02 | [drone_ms3] Cannot move due to a wall.
-14:54:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
-14:54:02 | [drone_ms3] Cannot move due to a drone occupying the position.
-14:54:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = -3].
-14:54:02 | [drone_ms3] Current position = [68, 7, 2].
-14:54:02 | [drone_ms3] Battery remaining: 10 %
-14:54:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = -3].
-14:54:02 | [drone_ms3] Current position = [69, 7, 1].
-14:54:02 | [drone_ms3] Battery remaining: 9 %
-14:54:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = -3].
-14:54:02 | [drone_ms3] Current position = [70, 7, 0].
-14:54:02 | [drone_ms3] Battery remaining: 8 %
-14:54:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = -3].
-14:54:02 | [drone_ms3] Cannot move: map limit reached
-14:54:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
-14:54:02 | [drone_ms3] Current position = [70, 6, 1].
-14:54:02 | [drone_ms3] Battery remaining: 7 %
-14:54:03 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
-14:54:03 | [drone_ms3] Current position = [70, 5, 2].
-14:54:03 | [drone_ms3] Battery remaining: 6 %
-14:54:03 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
-14:54:03 | [drone_ms3] Current position = [70, 4, 3].
-14:54:03 | [drone_ms3] Battery remaining: 5 %
-14:54:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
-14:54:04 | [drone_ms3] Current position = [70, 3, 4].
-14:54:04 | [drone_ms3] Battery remaining: 4 %
-14:54:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
-14:54:04 | [drone_ms3] Current position = [70, 2, 5].
-14:54:04 | [drone_ms3] Battery remaining: 3 %
-14:54:05 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:54:05 | [drone_ms3] Current position = [69, 2, 5].
-14:54:05 | [drone_ms3] Battery remaining: 2 %
-14:54:06 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:54:06 | [drone_ms3] Current position = [68, 2, 5].
-14:54:06 | [drone_ms3] Battery remaining: 1 %
-14:54:06 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
-14:54:06 | [drone_ms3] Current position = [67, 2, 5].
-14:54:07 | [drone_ms3] Landing due to battery charge.
-14:54:07 | [drone_ms3] Landed
-14:54:07 | [drone_ms3] Started recharging battery
-14:54:16 | [drone_ms3] Recharge completed.
+21:11:03 | [drone_ms3] Starting
+21:11:03 | [drone_ms3] Spawn position not valid. Re-computing...
+21:11:03 | [drone_ms3] Spawn position: [x = 68, y = 18, z = 0]
+21:11:04 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:11:04 | [drone_ms3] Current position = [69, 19, 0].
+21:11:04 | [drone_ms3] Battery remaining: 99 %
+21:11:05 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:11:05 | [drone_ms3] Current position = [70, 20, 0].
+21:11:05 | [drone_ms3] Battery remaining: 98 %
+21:11:05 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:11:05 | [drone_ms3] Current position = [71, 21, 0].
+21:11:05 | [drone_ms3] Battery remaining: 97 %
+21:11:06 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:11:06 | [drone_ms3] Current position = [72, 22, 0].
+21:11:06 | [drone_ms3] Battery remaining: 96 %
+21:11:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:06 | [drone_ms3] Cannot move: map limit reached
+21:11:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 2].
+21:11:06 | [drone_ms3] Current position = [72, 21, 1].
+21:11:06 | [drone_ms3] Battery remaining: 95 %
+21:11:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 2].
+21:11:07 | [drone_ms3] Current position = [72, 20, 2].
+21:11:07 | [drone_ms3] Battery remaining: 94 %
+21:11:07 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:07 | [drone_ms3] Current position = [73, 20, 3].
+21:11:07 | [drone_ms3] Battery remaining: 93 %
+21:11:07 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:07 | [drone_ms3] Current position = [74, 20, 4].
+21:11:07 | [drone_ms3] Battery remaining: 92 %
+21:11:08 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:08 | [drone_ms3] Current position = [75, 20, 5].
+21:11:08 | [drone_ms3] Battery remaining: 91 %
+21:11:08 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:08 | [drone_ms3] Current position = [76, 20, 6].
+21:11:08 | [drone_ms3] Battery remaining: 90 %
+21:11:09 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:09 | [drone_ms3] Current position = [77, 20, 7].
+21:11:09 | [drone_ms3] Battery remaining: 89 %
+21:11:09 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:09 | [drone_ms3] Current position = [78, 20, 8].
+21:11:09 | [drone_ms3] Battery remaining: 88 %
+21:11:09 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:09 | [drone_ms3] Cannot move due to a wall.
+21:11:09 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:09 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:09 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:11:09 | [drone_ms3] Current position = [78, 20, 9].
+21:11:09 | [drone_ms3] Battery remaining: 87 %
+21:11:10 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:11:10 | [drone_ms3] Cannot move: map limit reached
+21:11:10 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:10 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:10 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:11:10 | [drone_ms3] Cannot move: map limit reached
+21:11:10 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:10 | [drone_ms3] Current position = [78, 20, 8].
+21:11:10 | [drone_ms3] Battery remaining: 86 %
+21:11:10 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:10 | [drone_ms3] Current position = [78, 20, 7].
+21:11:10 | [drone_ms3] Battery remaining: 85 %
+21:11:11 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:11 | [drone_ms3] Current position = [78, 20, 6].
+21:11:11 | [drone_ms3] Battery remaining: 84 %
+21:11:12 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:12 | [drone_ms3] Current position = [78, 20, 5].
+21:11:12 | [drone_ms3] Battery remaining: 83 %
+21:11:12 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:12 | [drone_ms3] Current position = [78, 20, 4].
+21:11:12 | [drone_ms3] Battery remaining: 82 %
+21:11:13 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:13 | [drone_ms3] Current position = [78, 20, 3].
+21:11:13 | [drone_ms3] Battery remaining: 81 %
+21:11:13 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:13 | [drone_ms3] Current position = [78, 20, 2].
+21:11:13 | [drone_ms3] Battery remaining: 80 %
+21:11:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:14 | [drone_ms3] Current position = [78, 20, 1].
+21:11:14 | [drone_ms3] Battery remaining: 79 %
+21:11:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:14 | [drone_ms3] Current position = [78, 20, 0].
+21:11:14 | [drone_ms3] Battery remaining: 78 %
+21:11:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:15 | [drone_ms3] Cannot move: map limit reached
+21:11:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:15 | [drone_ms3] Cannot move: map limit reached
+21:11:15 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
+21:11:15 | [drone_ms3] Cannot move due to a wall.
+21:11:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:15 | [drone_ms3] Current position = [78, 21, 0].
+21:11:15 | [drone_ms3] Battery remaining: 77 %
+21:11:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:15 | [drone_ms3] Current position = [78, 22, 0].
+21:11:15 | [drone_ms3] Battery remaining: 76 %
+21:11:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:16 | [drone_ms3] Current position = [78, 23, 0].
+21:11:16 | [drone_ms3] Battery remaining: 75 %
+21:11:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:16 | [drone_ms3] Current position = [78, 24, 0].
+21:11:16 | [drone_ms3] Battery remaining: 74 %
+21:11:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:16 | [drone_ms3] Current position = [78, 25, 0].
+21:11:16 | [drone_ms3] Battery remaining: 73 %
+21:11:17 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:17 | [drone_ms3] Current position = [78, 26, 0].
+21:11:17 | [drone_ms3] Battery remaining: 72 %
+21:11:17 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:17 | [drone_ms3] Current position = [78, 27, 0].
+21:11:17 | [drone_ms3] Battery remaining: 71 %
+21:11:17 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:17 | [drone_ms3] Cannot move: map limit reached
+21:11:17 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:11:17 | [drone_ms3] Current position = [78, 28, 1].
+21:11:17 | [drone_ms3] Battery remaining: 70 %
+21:11:18 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = -1].
+21:11:18 | [drone_ms3] Current position = [77, 27, 0].
+21:11:18 | [drone_ms3] Battery remaining: 69 %
+21:11:18 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = -1].
+21:11:18 | [drone_ms3] Cannot move: map limit reached
+21:11:18 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:11:18 | [drone_ms3] Cannot move: map limit reached
+21:11:18 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:11:18 | [drone_ms3] Current position = [78, 28, 0].
+21:11:18 | [drone_ms3] Battery remaining: 68 %
+21:11:19 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:11:19 | [drone_ms3] Cannot move due to a wall.
+21:11:19 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:11:19 | [drone_ms3] Cannot move due to a wall.
+21:11:19 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:11:19 | [drone_ms3] Current position = [78, 29, 0].
+21:11:19 | [drone_ms3] Battery remaining: 67 %
+21:11:19 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:19 | [drone_ms3] Current position = [78, 28, 0].
+21:11:19 | [drone_ms3] Battery remaining: 66 %
+21:11:19 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:19 | [drone_ms3] Current position = [78, 27, 0].
+21:11:19 | [drone_ms3] Battery remaining: 65 %
+21:11:20 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:20 | [drone_ms3] Current position = [78, 26, 0].
+21:11:20 | [drone_ms3] Battery remaining: 64 %
+21:11:20 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:20 | [drone_ms3] Current position = [78, 25, 0].
+21:11:20 | [drone_ms3] Battery remaining: 63 %
+21:11:20 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:20 | [drone_ms3] Current position = [78, 24, 0].
+21:11:20 | [drone_ms3] Battery remaining: 62 %
+21:11:21 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:21 | [drone_ms3] Current position = [78, 23, 0].
+21:11:21 | [drone_ms3] Battery remaining: 61 %
+21:11:21 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:21 | [drone_ms3] Current position = [78, 22, 0].
+21:11:21 | [drone_ms3] Battery remaining: 60 %
+21:11:21 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:21 | [drone_ms3] Current position = [78, 21, 0].
+21:11:21 | [drone_ms3] Battery remaining: 59 %
+21:11:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:11:22 | [drone_ms3] Current position = [78, 20, 0].
+21:11:22 | [drone_ms3] Battery remaining: 58 %
+21:11:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:22 | [drone_ms3] Current position = [78, 21, 1].
+21:11:22 | [drone_ms3] Battery remaining: 57 %
+21:11:23 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:23 | [drone_ms3] Current position = [78, 22, 2].
+21:11:23 | [drone_ms3] Battery remaining: 56 %
+21:11:23 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:23 | [drone_ms3] Current position = [78, 23, 3].
+21:11:23 | [drone_ms3] Battery remaining: 55 %
+21:11:24 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:24 | [drone_ms3] Current position = [78, 24, 4].
+21:11:24 | [drone_ms3] Battery remaining: 54 %
+21:11:24 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:24 | [drone_ms3] Current position = [78, 25, 5].
+21:11:24 | [drone_ms3] Battery remaining: 53 %
+21:11:25 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:25 | [drone_ms3] Current position = [78, 26, 6].
+21:11:25 | [drone_ms3] Battery remaining: 52 %
+21:11:25 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:25 | [drone_ms3] Current position = [78, 27, 7].
+21:11:25 | [drone_ms3] Battery remaining: 51 %
+21:11:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:26 | [drone_ms3] Current position = [78, 28, 8].
+21:11:26 | [drone_ms3] Battery remaining: 50 %
+21:11:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:26 | [drone_ms3] Current position = [78, 29, 9].
+21:11:26 | [drone_ms3] Battery remaining: 49 %
+21:11:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:11:27 | [drone_ms3] Cannot move: map limit reached
+21:11:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:11:27 | [drone_ms3] Current position = [78, 29, 8].
+21:11:27 | [drone_ms3] Battery remaining: 48 %
+21:11:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:11:27 | [drone_ms3] Current position = [78, 29, 7].
+21:11:27 | [drone_ms3] Battery remaining: 47 %
+21:11:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:11:27 | [drone_ms3] Current position = [78, 29, 6].
+21:11:27 | [drone_ms3] Battery remaining: 46 %
+21:11:28 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:11:28 | [drone_ms3] Cannot move due to a wall.
+21:11:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:28 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:28 | [drone_ms3] Current position = [78, 29, 5].
+21:11:28 | [drone_ms3] Battery remaining: 45 %
+21:11:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:28 | [drone_ms3] Current position = [78, 29, 4].
+21:11:28 | [drone_ms3] Battery remaining: 44 %
+21:11:29 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:29 | [drone_ms3] Current position = [78, 29, 3].
+21:11:29 | [drone_ms3] Battery remaining: 43 %
+21:11:29 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:29 | [drone_ms3] Current position = [78, 29, 2].
+21:11:29 | [drone_ms3] Battery remaining: 42 %
+21:11:30 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:30 | [drone_ms3] Current position = [78, 29, 1].
+21:11:30 | [drone_ms3] Battery remaining: 41 %
+21:11:30 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:30 | [drone_ms3] Current position = [78, 29, 0].
+21:11:30 | [drone_ms3] Battery remaining: 40 %
+21:11:31 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:11:31 | [drone_ms3] Cannot move: map limit reached
+21:11:31 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:11:31 | [drone_ms3] Current position = [78, 29, 1].
+21:11:31 | [drone_ms3] Battery remaining: 39 %
+21:11:32 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = -3].
+21:11:32 | [drone_ms3] Current position = [77, 29, 0].
+21:11:32 | [drone_ms3] Battery remaining: 38 %
+21:11:32 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = -3].
+21:11:32 | [drone_ms3] Cannot move: map limit reached
+21:11:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:32 | [drone_ms3] Current position = [77, 30, 0].
+21:11:32 | [drone_ms3] Battery remaining: 37 %
+21:11:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:32 | [drone_ms3] Current position = [77, 31, 0].
+21:11:32 | [drone_ms3] Battery remaining: 36 %
+21:11:33 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:33 | [drone_ms3] Current position = [77, 32, 0].
+21:11:33 | [drone_ms3] Battery remaining: 35 %
+21:11:33 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:33 | [drone_ms3] Current position = [77, 33, 0].
+21:11:34 | [drone_ms3] Battery remaining: 34 %
+21:11:34 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:34 | [drone_ms3] Current position = [77, 34, 0].
+21:11:34 | [drone_ms3] Battery remaining: 33 %
+21:11:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:35 | [drone_ms3] Current position = [77, 35, 0].
+21:11:35 | [drone_ms3] Battery remaining: 32 %
+21:11:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:35 | [drone_ms3] Current position = [77, 36, 0].
+21:11:35 | [drone_ms3] Battery remaining: 31 %
+21:11:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:36 | [drone_ms3] Current position = [77, 37, 0].
+21:11:36 | [drone_ms3] Battery remaining: 30 %
+21:11:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:11:36 | [drone_ms3] Current position = [77, 38, 0].
+21:11:36 | [drone_ms3] Battery remaining: 29 %
+21:11:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:37 | [drone_ms3] Cannot move: map limit reached
+21:11:37 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:11:37 | [drone_ms3] Current position = [78, 38, 0].
+21:11:37 | [drone_ms3] Battery remaining: 28 %
+21:11:37 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:11:37 | [drone_ms3] Cannot move due to a wall.
+21:11:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = -1].
+21:11:38 | [drone_ms3] Cannot move: map limit reached
+21:11:38 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = -3].
+21:11:38 | [drone_ms3] Cannot move: map limit reached
+21:11:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:11:38 | [drone_ms3] Current position = [78, 37, 0].
+21:11:38 | [drone_ms3] Battery remaining: 27 %
+21:11:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:11:38 | [drone_ms3] Current position = [78, 36, 0].
+21:11:38 | [drone_ms3] Battery remaining: 26 %
+21:11:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:11:39 | [drone_ms3] Current position = [78, 35, 0].
+21:11:39 | [drone_ms3] Battery remaining: 25 %
+21:11:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:11:39 | [drone_ms3] Current position = [78, 34, 0].
+21:11:39 | [drone_ms3] Battery remaining: 24 %
+21:11:40 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:11:40 | [drone_ms3] Cannot move: map limit reached
+21:11:40 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:40 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:40 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = -1].
+21:11:40 | [drone_ms3] Cannot move: map limit reached
+21:11:40 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:40 | [drone_ms3] Current position = [77, 34, 1].
+21:11:40 | [drone_ms3] Battery remaining: 23 %
+21:11:40 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:40 | [drone_ms3] Current position = [76, 34, 2].
+21:11:40 | [drone_ms3] Battery remaining: 22 %
+21:11:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:41 | [drone_ms3] Current position = [75, 34, 3].
+21:11:41 | [drone_ms3] Battery remaining: 21 %
+21:11:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:41 | [drone_ms3] Current position = [74, 34, 4].
+21:11:41 | [drone_ms3] Battery remaining: 20 %
+21:11:41 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:41 | [drone_ms3] Current position = [73, 34, 5].
+21:11:41 | [drone_ms3] Battery remaining: 19 %
+21:11:42 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 2].
+21:11:42 | [drone_ms3] Current position = [72, 34, 6].
+21:11:42 | [drone_ms3] Battery remaining: 18 %
+21:11:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:11:42 | [drone_ms3] Current position = [72, 34, 7].
+21:11:42 | [drone_ms3] Battery remaining: 17 %
+21:11:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:11:42 | [drone_ms3] Current position = [72, 34, 8].
+21:11:42 | [drone_ms3] Battery remaining: 16 %
+21:11:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:43 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:11:43 | [drone_ms3] Current position = [72, 34, 9].
+21:11:43 | [drone_ms3] Battery remaining: 15 %
+21:11:44 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:11:44 | [drone_ms3] Cannot move: map limit reached
+21:11:44 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:11:44 | [drone_ms3] Current position = [73, 35, 8].
+21:11:44 | [drone_ms3] Battery remaining: 14 %
+21:11:44 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:11:44 | [drone_ms3] Current position = [74, 36, 7].
+21:11:44 | [drone_ms3] Battery remaining: 13 %
+21:11:44 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:11:44 | [drone_ms3] Current position = [75, 37, 6].
+21:11:44 | [drone_ms3] Battery remaining: 12 %
+21:11:44 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:11:44 | [drone_ms3] Current position = [76, 38, 5].
+21:11:44 | [drone_ms3] Battery remaining: 11 %
+21:11:45 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:11:45 | [drone_ms3] Cannot move due to a wall.
+21:11:45 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:11:45 | [drone_ms3] Current position = [77, 37, 4].
+21:11:45 | [drone_ms3] Battery remaining: 10 %
+21:11:45 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:11:45 | [drone_ms3] Current position = [78, 36, 3].
+21:11:45 | [drone_ms3] Battery remaining: 9 %
+21:11:45 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:11:45 | [drone_ms3] Cannot move due to a wall.
+21:11:45 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:11:45 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:11:45 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:45 | [drone_ms3] Current position = [78, 35, 4].
+21:11:45 | [drone_ms3] Battery remaining: 8 %
+21:11:46 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:46 | [drone_ms3] Current position = [78, 34, 5].
+21:11:46 | [drone_ms3] Battery remaining: 7 %
+21:11:46 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:46 | [drone_ms3] Current position = [78, 33, 6].
+21:11:46 | [drone_ms3] Battery remaining: 6 %
+21:11:47 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:47 | [drone_ms3] Current position = [78, 32, 7].
+21:11:47 | [drone_ms3] Battery remaining: 5 %
+21:11:48 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:48 | [drone_ms3] Current position = [78, 31, 8].
+21:11:48 | [drone_ms3] Battery remaining: 4 %
+21:11:48 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:48 | [drone_ms3] Current position = [78, 30, 9].
+21:11:48 | [drone_ms3] Battery remaining: 3 %
+21:11:49 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 1].
+21:11:49 | [drone_ms3] Cannot move: map limit reached
+21:11:49 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:49 | [drone_ms3] Current position = [78, 29, 8].
+21:11:49 | [drone_ms3] Battery remaining: 2 %
+21:11:49 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:49 | [drone_ms3] Current position = [78, 28, 7].
+21:11:49 | [drone_ms3] Battery remaining: 1 %
+21:11:49 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:49 | [drone_ms3] Current position = [78, 27, 6].
+21:11:49 | [drone_ms3] Battery remaining: 0 %
+21:11:49 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:11:49 | [drone_ms3] Current position = [78, 26, 5].
+21:11:50 | [drone_ms3] Landing due to battery charge.
+21:11:51 | [drone_ms3] Landed
+21:11:51 | [drone_ms3] Started recharging battery
+21:12:03 | [drone_ms3] Recharge completed.
+21:12:03 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:12:03 | [drone_ms3] Cannot move: map limit reached
+21:12:03 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:12:03 | [drone_ms3] Cannot move: map limit reached
+21:12:03 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:03 | [drone_ms3] Current position = [77, 26, 5].
+21:12:03 | [drone_ms3] Battery remaining: 99 %
+21:12:03 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:03 | [drone_ms3] Current position = [76, 26, 5].
+21:12:03 | [drone_ms3] Battery remaining: 98 %
+21:12:04 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:04 | [drone_ms3] Current position = [75, 26, 5].
+21:12:04 | [drone_ms3] Battery remaining: 97 %
+21:12:04 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:04 | [drone_ms3] Current position = [74, 26, 5].
+21:12:04 | [drone_ms3] Battery remaining: 96 %
+21:12:04 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:04 | [drone_ms3] Current position = [73, 26, 5].
+21:12:04 | [drone_ms3] Battery remaining: 95 %
+21:12:05 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:05 | [drone_ms3] Current position = [72, 26, 5].
+21:12:05 | [drone_ms3] Battery remaining: 94 %
+21:12:05 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:05 | [drone_ms3] Current position = [71, 26, 5].
+21:12:05 | [drone_ms3] Battery remaining: 93 %
+21:12:05 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:05 | [drone_ms3] Current position = [70, 26, 5].
+21:12:05 | [drone_ms3] Battery remaining: 92 %
+21:12:06 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:12:06 | [drone_ms3] Current position = [69, 25, 5].
+21:12:06 | [drone_ms3] Battery remaining: 91 %
+21:12:06 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:12:06 | [drone_ms3] Current position = [68, 24, 5].
+21:12:06 | [drone_ms3] Battery remaining: 90 %
+21:12:06 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:12:06 | [drone_ms3] Current position = [67, 23, 5].
+21:12:06 | [drone_ms3] Battery remaining: 89 %
+21:12:06 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:12:06 | [drone_ms3] Current position = [66, 22, 5].
+21:12:06 | [drone_ms3] Battery remaining: 88 %
+21:12:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:06 | [drone_ms3] Current position = [66, 21, 6].
+21:12:06 | [drone_ms3] Battery remaining: 87 %
+21:12:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:07 | [drone_ms3] Current position = [66, 20, 7].
+21:12:07 | [drone_ms3] Battery remaining: 86 %
+21:12:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:07 | [drone_ms3] Current position = [66, 19, 8].
+21:12:07 | [drone_ms3] Battery remaining: 85 %
+21:12:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:07 | [drone_ms3] Current position = [66, 18, 9].
+21:12:07 | [drone_ms3] Battery remaining: 84 %
+21:12:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:07 | [drone_ms3] Current position = [66, 17, 10].
+21:12:07 | [drone_ms3] Battery remaining: 83 %
+21:12:08 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:08 | [drone_ms3] Current position = [66, 16, 11].
+21:12:08 | [drone_ms3] Battery remaining: 82 %
+21:12:08 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:08 | [drone_ms3] Current position = [66, 15, 12].
+21:12:08 | [drone_ms3] Battery remaining: 81 %
+21:12:08 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:08 | [drone_ms3] Current position = [66, 14, 13].
+21:12:08 | [drone_ms3] Battery remaining: 80 %
+21:12:08 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:08 | [drone_ms3] Current position = [66, 13, 14].
+21:12:08 | [drone_ms3] Battery remaining: 79 %
+21:12:09 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:12:09 | [drone_ms3] Cannot move: map limit reached
+21:12:09 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:12:09 | [drone_ms3] Current position = [65, 12, 14].
+21:12:09 | [drone_ms3] Battery remaining: 78 %
+21:12:09 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:12:09 | [drone_ms3] Current position = [64, 11, 14].
+21:12:09 | [drone_ms3] Battery remaining: 77 %
+21:12:10 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:12:10 | [drone_ms3] Current position = [63, 10, 14].
+21:12:10 | [drone_ms3] Battery remaining: 76 %
+21:12:10 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:12:10 | [drone_ms3] Current position = [62, 9, 14].
+21:12:10 | [drone_ms3] Battery remaining: 75 %
+21:12:11 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:12:11 | [drone_ms3] Current position = [61, 8, 14].
+21:12:11 | [drone_ms3] Battery remaining: 74 %
+21:12:11 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:11 | [drone_ms3] Current position = [60, 8, 14].
+21:12:11 | [drone_ms3] Battery remaining: 73 %
+21:12:12 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:12 | [drone_ms3] Current position = [59, 8, 14].
+21:12:12 | [drone_ms3] Battery remaining: 72 %
+21:12:12 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:12 | [drone_ms3] Current position = [58, 8, 14].
+21:12:12 | [drone_ms3] Battery remaining: 71 %
+21:12:12 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:12 | [drone_ms3] Current position = [57, 8, 14].
+21:12:12 | [drone_ms3] Battery remaining: 70 %
+21:12:12 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:12 | [drone_ms3] Current position = [56, 8, 14].
+21:12:12 | [drone_ms3] Battery remaining: 69 %
+21:12:13 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:13 | [drone_ms3] Current position = [55, 8, 14].
+21:12:13 | [drone_ms3] Battery remaining: 68 %
+21:12:13 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:13 | [drone_ms3] Current position = [54, 8, 14].
+21:12:13 | [drone_ms3] Battery remaining: 67 %
+21:12:13 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:12:13 | [drone_ms3] Current position = [53, 8, 14].
+21:12:13 | [drone_ms3] Battery remaining: 66 %
+21:12:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:12:14 | [drone_ms3] Cannot move: map limit reached
+21:12:14 | [drone_ms3] Direction computed = [Vx = -1, Vy = 1, Vz = -1].
+21:12:14 | [drone_ms3] Current position = [52, 9, 13].
+21:12:14 | [drone_ms3] Battery remaining: 65 %
+21:12:14 | [drone_ms3] Direction computed = [Vx = -1, Vy = 1, Vz = -1].
+21:12:14 | [drone_ms3] Cannot move due to a wall.
+21:12:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:12:14 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:12:15 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:12:15 | [drone_ms3] Current position = [53, 10, 12].
+21:12:15 | [drone_ms3] Battery remaining: 64 %
+21:12:15 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:12:15 | [drone_ms3] Current position = [54, 11, 11].
+21:12:15 | [drone_ms3] Battery remaining: 63 %
+21:12:15 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:12:15 | [drone_ms3] Current position = [55, 12, 10].
+21:12:15 | [drone_ms3] Battery remaining: 62 %
+21:12:15 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:12:15 | [drone_ms3] Current position = [56, 13, 9].
+21:12:15 | [drone_ms3] Battery remaining: 61 %
+21:12:16 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = -3].
+21:12:16 | [drone_ms3] Current position = [57, 14, 8].
+21:12:16 | [drone_ms3] Battery remaining: 60 %
+21:12:16 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:16 | [drone_ms3] Current position = [58, 15, 8].
+21:12:16 | [drone_ms3] Battery remaining: 59 %
+21:12:16 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:16 | [drone_ms3] Current position = [59, 16, 8].
+21:12:16 | [drone_ms3] Battery remaining: 58 %
+21:12:17 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:17 | [drone_ms3] Current position = [60, 17, 8].
+21:12:17 | [drone_ms3] Battery remaining: 57 %
+21:12:18 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:18 | [drone_ms3] Current position = [61, 18, 8].
+21:12:18 | [drone_ms3] Battery remaining: 56 %
+21:12:18 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:18 | [drone_ms3] Current position = [62, 19, 8].
+21:12:18 | [drone_ms3] Battery remaining: 55 %
+21:12:19 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:19 | [drone_ms3] Current position = [63, 20, 8].
+21:12:19 | [drone_ms3] Battery remaining: 54 %
+21:12:19 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:19 | [drone_ms3] Current position = [64, 21, 8].
+21:12:19 | [drone_ms3] Battery remaining: 53 %
+21:12:20 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:20 | [drone_ms3] Current position = [65, 22, 8].
+21:12:20 | [drone_ms3] Battery remaining: 52 %
+21:12:20 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:12:20 | [drone_ms3] Current position = [66, 23, 8].
+21:12:20 | [drone_ms3] Battery remaining: 51 %
+21:12:21 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:21 | [drone_ms3] Current position = [65, 23, 8].
+21:12:21 | [drone_ms3] Battery remaining: 50 %
+21:12:22 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:22 | [drone_ms3] Current position = [64, 23, 8].
+21:12:22 | [drone_ms3] Battery remaining: 49 %
+21:12:22 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:22 | [drone_ms3] Current position = [63, 23, 8].
+21:12:22 | [drone_ms3] Battery remaining: 48 %
+21:12:23 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:23 | [drone_ms3] Current position = [62, 23, 8].
+21:12:23 | [drone_ms3] Battery remaining: 47 %
+21:12:23 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:23 | [drone_ms3] Current position = [61, 23, 8].
+21:12:23 | [drone_ms3] Battery remaining: 46 %
+21:12:24 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:12:24 | [drone_ms3] Current position = [60, 23, 8].
+21:12:24 | [drone_ms3] Battery remaining: 45 %
+21:12:24 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:24 | [drone_ms3] Current position = [61, 23, 8].
+21:12:24 | [drone_ms3] Battery remaining: 44 %
+21:12:25 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:25 | [drone_ms3] Current position = [62, 23, 8].
+21:12:25 | [drone_ms3] Battery remaining: 43 %
+21:12:25 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:25 | [drone_ms3] Current position = [63, 23, 8].
+21:12:25 | [drone_ms3] Battery remaining: 42 %
+21:12:25 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:25 | [drone_ms3] Current position = [64, 23, 8].
+21:12:25 | [drone_ms3] Battery remaining: 41 %
+21:12:25 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:25 | [drone_ms3] Current position = [65, 23, 8].
+21:12:25 | [drone_ms3] Battery remaining: 40 %
+21:12:26 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:26 | [drone_ms3] Current position = [66, 23, 8].
+21:12:26 | [drone_ms3] Battery remaining: 39 %
+21:12:26 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:26 | [drone_ms3] Current position = [67, 23, 8].
+21:12:26 | [drone_ms3] Battery remaining: 38 %
+21:12:26 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:12:26 | [drone_ms3] Current position = [68, 23, 8].
+21:12:26 | [drone_ms3] Battery remaining: 37 %
+21:12:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:12:26 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:12:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = -2].
+21:12:27 | [drone_ms3] Current position = [69, 23, 7].
+21:12:27 | [drone_ms3] Battery remaining: 36 %
+21:12:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = -2].
+21:12:27 | [drone_ms3] Current position = [70, 23, 6].
+21:12:27 | [drone_ms3] Battery remaining: 35 %
+21:12:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = -2].
+21:12:27 | [drone_ms3] Current position = [71, 23, 5].
+21:12:27 | [drone_ms3] Battery remaining: 34 %
+21:12:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = -2].
+21:12:27 | [drone_ms3] Cannot move: map limit reached
+21:12:28 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:12:28 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:12:28 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:28 | [drone_ms3] Current position = [72, 24, 6].
+21:12:28 | [drone_ms3] Battery remaining: 33 %
+21:12:28 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:28 | [drone_ms3] Current position = [73, 25, 7].
+21:12:28 | [drone_ms3] Battery remaining: 32 %
+21:12:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:29 | [drone_ms3] Current position = [74, 26, 8].
+21:12:29 | [drone_ms3] Battery remaining: 31 %
+21:12:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:29 | [drone_ms3] Current position = [75, 27, 9].
+21:12:29 | [drone_ms3] Battery remaining: 30 %
+21:12:30 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:30 | [drone_ms3] Current position = [76, 28, 10].
+21:12:30 | [drone_ms3] Battery remaining: 29 %
+21:12:30 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:30 | [drone_ms3] Current position = [77, 29, 11].
+21:12:30 | [drone_ms3] Battery remaining: 28 %
+21:12:31 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:31 | [drone_ms3] Current position = [78, 30, 12].
+21:12:31 | [drone_ms3] Battery remaining: 27 %
+21:12:31 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 1].
+21:12:31 | [drone_ms3] Cannot move due to a wall.
+21:12:31 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:12:31 | [drone_ms3] Current position = [78, 30, 13].
+21:12:31 | [drone_ms3] Battery remaining: 26 %
+21:12:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:12:32 | [drone_ms3] Current position = [78, 30, 14].
+21:12:32 | [drone_ms3] Battery remaining: 25 %
+21:12:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:12:32 | [drone_ms3] Cannot move: map limit reached
+21:12:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:12:32 | [drone_ms3] Cannot move: map limit reached
+21:12:32 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = 0].
+21:12:32 | [drone_ms3] Current position = [77, 29, 14].
+21:12:32 | [drone_ms3] Battery remaining: 24 %
+21:12:33 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
+21:12:33 | [drone_ms3] Current position = [78, 29, 14].
+21:12:33 | [drone_ms3] Battery remaining: 23 %
+21:12:33 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
+21:12:33 | [drone_ms3] Cannot move due to a wall.
+21:12:33 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:12:33 | [drone_ms3] Cannot move due to a wall.
+21:12:33 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 2].
+21:12:33 | [drone_ms3] Cannot move: map limit reached
+21:12:33 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:33 | [drone_ms3] Current position = [78, 28, 13].
+21:12:33 | [drone_ms3] Battery remaining: 22 %
+21:12:34 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:34 | [drone_ms3] Current position = [78, 27, 12].
+21:12:34 | [drone_ms3] Battery remaining: 21 %
+21:12:34 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:34 | [drone_ms3] Current position = [78, 26, 11].
+21:12:34 | [drone_ms3] Battery remaining: 20 %
+21:12:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:35 | [drone_ms3] Current position = [78, 25, 10].
+21:12:35 | [drone_ms3] Battery remaining: 19 %
+21:12:35 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:35 | [drone_ms3] Current position = [78, 24, 9].
+21:12:35 | [drone_ms3] Battery remaining: 18 %
+21:12:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:36 | [drone_ms3] Current position = [78, 23, 8].
+21:12:36 | [drone_ms3] Battery remaining: 17 %
+21:12:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:37 | [drone_ms3] Current position = [78, 22, 7].
+21:12:37 | [drone_ms3] Battery remaining: 16 %
+21:12:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:37 | [drone_ms3] Current position = [78, 21, 6].
+21:12:37 | [drone_ms3] Battery remaining: 15 %
+21:12:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:12:38 | [drone_ms3] Current position = [78, 20, 5].
+21:12:38 | [drone_ms3] Battery remaining: 14 %
+21:12:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:38 | [drone_ms3] Current position = [78, 19, 5].
+21:12:38 | [drone_ms3] Battery remaining: 13 %
+21:12:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:39 | [drone_ms3] Current position = [78, 18, 5].
+21:12:39 | [drone_ms3] Battery remaining: 12 %
+21:12:40 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:40 | [drone_ms3] Current position = [78, 17, 5].
+21:12:40 | [drone_ms3] Battery remaining: 11 %
+21:12:40 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:40 | [drone_ms3] Current position = [78, 16, 5].
+21:12:40 | [drone_ms3] Battery remaining: 10 %
+21:12:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:41 | [drone_ms3] Current position = [78, 15, 5].
+21:12:41 | [drone_ms3] Battery remaining: 9 %
+21:12:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:41 | [drone_ms3] Current position = [78, 14, 5].
+21:12:41 | [drone_ms3] Battery remaining: 8 %
+21:12:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:42 | [drone_ms3] Current position = [78, 13, 5].
+21:12:42 | [drone_ms3] Battery remaining: 7 %
+21:12:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:42 | [drone_ms3] Current position = [78, 12, 5].
+21:12:42 | [drone_ms3] Battery remaining: 6 %
+21:12:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:12:43 | [drone_ms3] Current position = [78, 11, 5].
+21:12:43 | [drone_ms3] Battery remaining: 5 %
+21:12:43 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:43 | [drone_ms3] Current position = [77, 11, 5].
+21:12:43 | [drone_ms3] Battery remaining: 4 %
+21:12:44 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:44 | [drone_ms3] Current position = [76, 11, 5].
+21:12:44 | [drone_ms3] Battery remaining: 3 %
+21:12:44 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:44 | [drone_ms3] Current position = [75, 11, 5].
+21:12:44 | [drone_ms3] Battery remaining: 2 %
+21:12:44 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:44 | [drone_ms3] Current position = [74, 11, 5].
+21:12:44 | [drone_ms3] Battery remaining: 1 %
+21:12:45 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:45 | [drone_ms3] Current position = [73, 11, 5].
+21:12:45 | [drone_ms3] Landing due to battery charge.
+21:12:45 | [drone_ms3] Landed
+21:12:45 | [drone_ms3] Started recharging battery
+21:12:56 | [drone_ms3] Recharge completed.
+21:12:56 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:56 | [drone_ms3] Current position = [72, 11, 5].
+21:12:56 | [drone_ms3] Battery remaining: 99 %
+21:12:56 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:56 | [drone_ms3] Current position = [71, 11, 5].
+21:12:56 | [drone_ms3] Battery remaining: 98 %
+21:12:56 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:56 | [drone_ms3] Current position = [70, 11, 5].
+21:12:56 | [drone_ms3] Battery remaining: 97 %
+21:12:56 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:12:56 | [drone_ms3] Current position = [69, 11, 5].
+21:12:57 | [drone_ms3] Battery remaining: 96 %
+21:12:57 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = 0].
+21:12:57 | [drone_ms3] Current position = [70, 10, 5].
+21:12:57 | [drone_ms3] Battery remaining: 95 %
+21:12:57 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = 0].
+21:12:57 | [drone_ms3] Current position = [71, 9, 5].
+21:12:57 | [drone_ms3] Battery remaining: 94 %
+21:12:57 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:57 | [drone_ms3] Current position = [72, 9, 6].
+21:12:57 | [drone_ms3] Battery remaining: 93 %
+21:12:58 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:58 | [drone_ms3] Current position = [73, 9, 7].
+21:12:58 | [drone_ms3] Battery remaining: 92 %
+21:12:58 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:58 | [drone_ms3] Current position = [74, 9, 8].
+21:12:58 | [drone_ms3] Battery remaining: 91 %
+21:12:58 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:58 | [drone_ms3] Current position = [75, 9, 9].
+21:12:58 | [drone_ms3] Battery remaining: 90 %
+21:12:58 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:58 | [drone_ms3] Current position = [76, 9, 10].
+21:12:58 | [drone_ms3] Battery remaining: 89 %
+21:12:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:59 | [drone_ms3] Current position = [77, 9, 11].
+21:12:59 | [drone_ms3] Battery remaining: 88 %
+21:12:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 3].
+21:12:59 | [drone_ms3] Current position = [78, 9, 12].
+21:12:59 | [drone_ms3] Battery remaining: 87 %
+21:12:59 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 3].
+21:12:59 | [drone_ms3] Current position = [77, 8, 13].
+21:12:59 | [drone_ms3] Battery remaining: 86 %
+21:12:59 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 3].
+21:12:59 | [drone_ms3] Current position = [76, 7, 14].
+21:12:59 | [drone_ms3] Battery remaining: 85 %
+21:13:00 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 3].
+21:13:00 | [drone_ms3] Cannot move: map limit reached
+21:13:00 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:00 | [drone_ms3] Current position = [75, 7, 14].
+21:13:00 | [drone_ms3] Battery remaining: 84 %
+21:13:00 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:00 | [drone_ms3] Current position = [74, 7, 14].
+21:13:00 | [drone_ms3] Battery remaining: 83 %
+21:13:00 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:00 | [drone_ms3] Current position = [73, 7, 14].
+21:13:00 | [drone_ms3] Battery remaining: 82 %
+21:13:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:00 | [drone_ms3] Current position = [73, 8, 14].
+21:13:00 | [drone_ms3] Battery remaining: 81 %
+21:13:01 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:01 | [drone_ms3] Current position = [73, 9, 14].
+21:13:01 | [drone_ms3] Battery remaining: 80 %
+21:13:01 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:01 | [drone_ms3] Current position = [73, 10, 14].
+21:13:01 | [drone_ms3] Battery remaining: 79 %
+21:13:01 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:01 | [drone_ms3] Current position = [73, 11, 14].
+21:13:01 | [drone_ms3] Battery remaining: 78 %
+21:13:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:02 | [drone_ms3] Current position = [73, 12, 14].
+21:13:02 | [drone_ms3] Battery remaining: 77 %
+21:13:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 0].
+21:13:02 | [drone_ms3] Current position = [73, 13, 14].
+21:13:02 | [drone_ms3] Battery remaining: 76 %
+21:13:02 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:02 | [drone_ms3] Current position = [72, 12, 14].
+21:13:02 | [drone_ms3] Battery remaining: 75 %
+21:13:03 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:03 | [drone_ms3] Current position = [71, 11, 14].
+21:13:03 | [drone_ms3] Battery remaining: 74 %
+21:13:03 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:03 | [drone_ms3] Current position = [70, 10, 14].
+21:13:03 | [drone_ms3] Battery remaining: 73 %
+21:13:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:04 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:04 | [drone_ms3] Current position = [70, 10, 13].
+21:13:04 | [drone_ms3] Battery remaining: 72 %
+21:13:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:04 | [drone_ms3] Current position = [70, 10, 12].
+21:13:04 | [drone_ms3] Battery remaining: 71 %
+21:13:05 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:05 | [drone_ms3] Current position = [70, 10, 11].
+21:13:05 | [drone_ms3] Battery remaining: 70 %
+21:13:05 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:05 | [drone_ms3] Current position = [70, 10, 10].
+21:13:05 | [drone_ms3] Battery remaining: 69 %
+21:13:05 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:05 | [drone_ms3] Current position = [70, 10, 9].
+21:13:05 | [drone_ms3] Battery remaining: 68 %
+21:13:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:06 | [drone_ms3] Current position = [70, 10, 8].
+21:13:06 | [drone_ms3] Battery remaining: 67 %
+21:13:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:06 | [drone_ms3] Current position = [70, 10, 7].
+21:13:06 | [drone_ms3] Battery remaining: 66 %
+21:13:06 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:13:06 | [drone_ms3] Current position = [70, 10, 6].
+21:13:06 | [drone_ms3] Battery remaining: 65 %
+21:13:07 | [drone_ms3] Direction computed = [Vx = -3, Vy = 3, Vz = -3].
+21:13:07 | [drone_ms3] Current position = [69, 11, 5].
+21:13:07 | [drone_ms3] Battery remaining: 64 %
+21:13:07 | [drone_ms3] Direction computed = [Vx = -3, Vy = 3, Vz = -3].
+21:13:07 | [drone_ms3] Cannot move: map limit reached
+21:13:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:07 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = -3].
+21:13:07 | [drone_ms3] Cannot move: map limit reached
+21:13:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:07 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:07 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = -3].
+21:13:07 | [drone_ms3] Cannot move: map limit reached
+21:13:07 | [drone_ms3] Direction computed = [Vx = 1, Vy = -1, Vz = -1].
+21:13:07 | [drone_ms3] Cannot move: map limit reached
+21:13:07 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:13:07 | [drone_ms3] Current position = [69, 12, 6].
+21:13:07 | [drone_ms3] Battery remaining: 63 %
+21:13:08 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:13:08 | [drone_ms3] Current position = [69, 13, 7].
+21:13:08 | [drone_ms3] Battery remaining: 62 %
+21:13:08 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:08 | [drone_ms3] Current position = [68, 13, 8].
+21:13:08 | [drone_ms3] Battery remaining: 61 %
+21:13:09 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:09 | [drone_ms3] Current position = [67, 13, 9].
+21:13:09 | [drone_ms3] Battery remaining: 60 %
+21:13:09 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:09 | [drone_ms3] Current position = [66, 13, 10].
+21:13:09 | [drone_ms3] Battery remaining: 59 %
+21:13:10 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:10 | [drone_ms3] Current position = [65, 13, 11].
+21:13:10 | [drone_ms3] Battery remaining: 58 %
+21:13:10 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:10 | [drone_ms3] Current position = [64, 13, 12].
+21:13:10 | [drone_ms3] Battery remaining: 57 %
+21:13:11 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:11 | [drone_ms3] Current position = [63, 13, 13].
+21:13:11 | [drone_ms3] Battery remaining: 56 %
+21:13:11 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:11 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:11 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:11 | [drone_ms3] Current position = [62, 12, 12].
+21:13:11 | [drone_ms3] Battery remaining: 55 %
+21:13:12 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:12 | [drone_ms3] Current position = [61, 11, 11].
+21:13:12 | [drone_ms3] Battery remaining: 54 %
+21:13:12 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:12 | [drone_ms3] Current position = [60, 10, 10].
+21:13:12 | [drone_ms3] Battery remaining: 53 %
+21:13:12 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:12 | [drone_ms3] Current position = [59, 9, 9].
+21:13:12 | [drone_ms3] Battery remaining: 52 %
+21:13:13 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:13 | [drone_ms3] Current position = [58, 8, 8].
+21:13:13 | [drone_ms3] Battery remaining: 51 %
+21:13:13 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:13 | [drone_ms3] Current position = [57, 7, 7].
+21:13:13 | [drone_ms3] Battery remaining: 50 %
+21:13:13 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:13 | [drone_ms3] Current position = [56, 6, 6].
+21:13:13 | [drone_ms3] Battery remaining: 49 %
+21:13:13 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:13 | [drone_ms3] Current position = [55, 5, 5].
+21:13:13 | [drone_ms3] Battery remaining: 48 %
+21:13:14 | [drone_ms3] Direction computed = [Vx = -2, Vy = -2, Vz = -2].
+21:13:14 | [drone_ms3] Cannot move: map limit reached
+21:13:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:13:14 | [drone_ms3] Cannot move: map limit reached
+21:13:14 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 3].
+21:13:14 | [drone_ms3] Current position = [56, 4, 6].
+21:13:14 | [drone_ms3] Battery remaining: 47 %
+21:13:14 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 3].
+21:13:14 | [drone_ms3] Current position = [57, 3, 7].
+21:13:14 | [drone_ms3] Battery remaining: 46 %
+21:13:14 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 3].
+21:13:14 | [drone_ms3] Current position = [58, 2, 8].
+21:13:14 | [drone_ms3] Battery remaining: 45 %
+21:13:14 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 3].
+21:13:14 | [drone_ms3] Current position = [59, 1, 9].
+21:13:14 | [drone_ms3] Battery remaining: 44 %
+21:13:15 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 3].
+21:13:15 | [drone_ms3] Cannot move due to a wall.
+21:13:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:13:15 | [drone_ms3] Cannot move due to a wall.
+21:13:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:13:15 | [drone_ms3] Current position = [59, 2, 10].
+21:13:15 | [drone_ms3] Battery remaining: 43 %
+21:13:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:13:15 | [drone_ms3] Current position = [59, 3, 11].
+21:13:15 | [drone_ms3] Battery remaining: 42 %
+21:13:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:13:15 | [drone_ms3] Current position = [59, 2, 11].
+21:13:15 | [drone_ms3] Battery remaining: 41 %
+21:13:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:13:16 | [drone_ms3] Current position = [59, 1, 11].
+21:13:16 | [drone_ms3] Battery remaining: 40 %
+21:13:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:13:16 | [drone_ms3] Cannot move due to a wall.
+21:13:16 | [drone_ms3] Direction computed = [Vx = -3, Vy = 3, Vz = 0].
+21:13:16 | [drone_ms3] Current position = [58, 2, 11].
+21:13:16 | [drone_ms3] Battery remaining: 39 %
+21:13:16 | [drone_ms3] Direction computed = [Vx = -3, Vy = 3, Vz = 0].
+21:13:16 | [drone_ms3] Current position = [57, 3, 11].
+21:13:16 | [drone_ms3] Battery remaining: 38 %
+21:13:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:13:16 | [drone_ms3] Current position = [57, 2, 12].
+21:13:16 | [drone_ms3] Battery remaining: 37 %
+21:13:17 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:17 | [drone_ms3] Current position = [57, 2, 13].
+21:13:17 | [drone_ms3] Battery remaining: 36 %
+21:13:17 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:17 | [drone_ms3] Current position = [58, 2, 13].
+21:13:17 | [drone_ms3] Battery remaining: 35 %
+21:13:17 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:17 | [drone_ms3] Current position = [59, 2, 13].
+21:13:17 | [drone_ms3] Battery remaining: 34 %
+21:13:18 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:18 | [drone_ms3] Current position = [60, 2, 13].
+21:13:18 | [drone_ms3] Battery remaining: 33 %
+21:13:18 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:18 | [drone_ms3] Current position = [61, 2, 13].
+21:13:18 | [drone_ms3] Battery remaining: 32 %
+21:13:19 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:19 | [drone_ms3] Current position = [62, 2, 13].
+21:13:19 | [drone_ms3] Battery remaining: 31 %
+21:13:19 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:19 | [drone_ms3] Current position = [63, 2, 13].
+21:13:19 | [drone_ms3] Battery remaining: 30 %
+21:13:20 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:20 | [drone_ms3] Current position = [64, 2, 13].
+21:13:20 | [drone_ms3] Battery remaining: 29 %
+21:13:21 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = 0].
+21:13:21 | [drone_ms3] Current position = [65, 2, 13].
+21:13:21 | [drone_ms3] Battery remaining: 28 %
+21:13:21 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:13:21 | [drone_ms3] Current position = [64, 1, 12].
+21:13:21 | [drone_ms3] Battery remaining: 27 %
+21:13:21 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:13:21 | [drone_ms3] Cannot move due to a wall.
+21:13:21 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:21 | [drone_ms3] Current position = [64, 1, 11].
+21:13:21 | [drone_ms3] Battery remaining: 26 %
+21:13:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:22 | [drone_ms3] Current position = [64, 1, 10].
+21:13:22 | [drone_ms3] Battery remaining: 25 %
+21:13:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:22 | [drone_ms3] Current position = [64, 1, 9].
+21:13:22 | [drone_ms3] Battery remaining: 24 %
+21:13:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:22 | [drone_ms3] Current position = [64, 1, 8].
+21:13:22 | [drone_ms3] Battery remaining: 23 %
+21:13:22 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:22 | [drone_ms3] Current position = [64, 1, 7].
+21:13:22 | [drone_ms3] Battery remaining: 22 %
+21:13:23 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -3].
+21:13:23 | [drone_ms3] Current position = [64, 1, 6].
+21:13:23 | [drone_ms3] Battery remaining: 21 %
+21:13:23 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:23 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:23 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:23 | [drone_ms3] Current position = [63, 1, 7].
+21:13:23 | [drone_ms3] Battery remaining: 20 %
+21:13:23 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:23 | [drone_ms3] Current position = [62, 1, 8].
+21:13:23 | [drone_ms3] Battery remaining: 19 %
+21:13:23 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:23 | [drone_ms3] Current position = [61, 1, 9].
+21:13:23 | [drone_ms3] Battery remaining: 18 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Current position = [60, 1, 10].
+21:13:24 | [drone_ms3] Battery remaining: 17 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Current position = [59, 1, 11].
+21:13:24 | [drone_ms3] Battery remaining: 16 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Current position = [58, 1, 12].
+21:13:24 | [drone_ms3] Battery remaining: 15 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Current position = [57, 1, 13].
+21:13:24 | [drone_ms3] Battery remaining: 14 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Current position = [56, 1, 14].
+21:13:24 | [drone_ms3] Battery remaining: 13 %
+21:13:24 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:13:24 | [drone_ms3] Cannot move: map limit reached
+21:13:25 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:25 | [drone_ms3] Current position = [55, 1, 14].
+21:13:25 | [drone_ms3] Battery remaining: 12 %
+21:13:25 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:25 | [drone_ms3] Current position = [54, 1, 14].
+21:13:25 | [drone_ms3] Battery remaining: 11 %
+21:13:25 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:25 | [drone_ms3] Current position = [53, 1, 14].
+21:13:25 | [drone_ms3] Battery remaining: 10 %
+21:13:25 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:13:25 | [drone_ms3] Current position = [52, 1, 14].
+21:13:25 | [drone_ms3] Battery remaining: 9 %
+21:13:25 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:13:25 | [drone_ms3] Cannot move: map limit reached
+21:13:25 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:13:25 | [drone_ms3] Cannot move: map limit reached
+21:13:26 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = -2].
+21:13:26 | [drone_ms3] Cannot move due to a wall.
+21:13:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = -3].
+21:13:26 | [drone_ms3] Cannot move due to a wall.
+21:13:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:26 | [drone_ms3] Cannot move due to a wall.
+21:13:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:26 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:26 | [drone_ms3] Current position = [53, 1, 13].
+21:13:26 | [drone_ms3] Battery remaining: 8 %
+21:13:26 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:26 | [drone_ms3] Current position = [54, 1, 12].
+21:13:26 | [drone_ms3] Battery remaining: 7 %
+21:13:27 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:27 | [drone_ms3] Current position = [55, 1, 11].
+21:13:27 | [drone_ms3] Battery remaining: 6 %
+21:13:27 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:27 | [drone_ms3] Current position = [56, 1, 10].
+21:13:27 | [drone_ms3] Battery remaining: 5 %
+21:13:28 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:28 | [drone_ms3] Current position = [57, 1, 9].
+21:13:28 | [drone_ms3] Battery remaining: 4 %
+21:13:28 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:28 | [drone_ms3] Current position = [58, 1, 8].
+21:13:28 | [drone_ms3] Battery remaining: 3 %
+21:13:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:29 | [drone_ms3] Current position = [59, 1, 7].
+21:13:29 | [drone_ms3] Battery remaining: 2 %
+21:13:29 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:29 | [drone_ms3] Current position = [60, 1, 6].
+21:13:29 | [drone_ms3] Battery remaining: 1 %
+21:13:30 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:13:30 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:30 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:30 | [drone_ms3] Current position = [60, 1, 7].
+21:13:30 | [drone_ms3] Landing due to battery charge.
+21:13:31 | [drone_ms3] Landed
+21:13:31 | [drone_ms3] Started recharging battery
+21:13:40 | [drone_ms3] Recharge completed.
+21:13:40 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:40 | [drone_ms3] Current position = [60, 1, 8].
+21:13:40 | [drone_ms3] Battery remaining: 99 %
+21:13:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:41 | [drone_ms3] Current position = [60, 1, 9].
+21:13:41 | [drone_ms3] Battery remaining: 98 %
+21:13:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:41 | [drone_ms3] Current position = [60, 1, 10].
+21:13:41 | [drone_ms3] Battery remaining: 97 %
+21:13:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:41 | [drone_ms3] Current position = [60, 1, 11].
+21:13:41 | [drone_ms3] Battery remaining: 96 %
+21:13:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:41 | [drone_ms3] Current position = [60, 1, 12].
+21:13:41 | [drone_ms3] Battery remaining: 95 %
+21:13:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:41 | [drone_ms3] Current position = [60, 1, 13].
+21:13:41 | [drone_ms3] Battery remaining: 94 %
+21:13:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:13:42 | [drone_ms3] Current position = [60, 1, 14].
+21:13:42 | [drone_ms3] Battery remaining: 93 %
+21:13:42 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 3].
+21:13:42 | [drone_ms3] Current position = [61, 2, 15].
+21:13:42 | [drone_ms3] Battery remaining: 92 %
+21:13:42 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 3].
+21:13:42 | [drone_ms3] Current position = [62, 3, 16].
+21:13:42 | [drone_ms3] Battery remaining: 91 %
+21:13:42 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 3].
+21:13:42 | [drone_ms3] Cannot move: map limit reached
+21:13:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:42 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:42 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
+21:13:42 | [drone_ms3] Current position = [63, 3, 16].
+21:13:42 | [drone_ms3] Battery remaining: 90 %
+21:13:43 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 0].
+21:13:43 | [drone_ms3] Current position = [64, 3, 16].
+21:13:43 | [drone_ms3] Battery remaining: 89 %
+21:13:43 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:43 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:43 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 1].
+21:13:43 | [drone_ms3] Cannot move: map limit reached
+21:13:43 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:43 | [drone_ms3] Current position = [65, 4, 16].
+21:13:43 | [drone_ms3] Battery remaining: 88 %
+21:13:43 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:43 | [drone_ms3] Current position = [66, 5, 16].
+21:13:43 | [drone_ms3] Battery remaining: 87 %
+21:13:44 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:44 | [drone_ms3] Current position = [67, 6, 16].
+21:13:44 | [drone_ms3] Battery remaining: 86 %
+21:13:45 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:45 | [drone_ms3] Current position = [68, 7, 16].
+21:13:45 | [drone_ms3] Battery remaining: 85 %
+21:13:45 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:45 | [drone_ms3] Current position = [69, 8, 16].
+21:13:45 | [drone_ms3] Battery remaining: 84 %
+21:13:46 | [drone_ms3] Direction computed = [Vx = 1, Vy = 1, Vz = 0].
+21:13:46 | [drone_ms3] Current position = [70, 9, 16].
+21:13:46 | [drone_ms3] Battery remaining: 83 %
+21:13:46 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = -1].
+21:13:46 | [drone_ms3] Current position = [69, 9, 15].
+21:13:46 | [drone_ms3] Battery remaining: 82 %
+21:13:47 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = -1].
+21:13:47 | [drone_ms3] Current position = [68, 9, 14].
+21:13:47 | [drone_ms3] Battery remaining: 81 %
+21:13:47 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = -1].
+21:13:47 | [drone_ms3] Current position = [67, 9, 13].
+21:13:47 | [drone_ms3] Battery remaining: 80 %
+21:13:48 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = -1].
+21:13:48 | [drone_ms3] Current position = [66, 9, 12].
+21:13:48 | [drone_ms3] Battery remaining: 79 %
+21:13:48 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = -1].
+21:13:48 | [drone_ms3] Current position = [65, 9, 11].
+21:13:48 | [drone_ms3] Battery remaining: 78 %
+21:13:49 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:49 | [drone_ms3] Current position = [64, 8, 11].
+21:13:49 | [drone_ms3] Battery remaining: 77 %
+21:13:49 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:49 | [drone_ms3] Current position = [63, 7, 11].
+21:13:49 | [drone_ms3] Battery remaining: 76 %
+21:13:50 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 0].
+21:13:50 | [drone_ms3] Current position = [62, 6, 11].
+21:13:50 | [drone_ms3] Battery remaining: 75 %
+21:13:50 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:13:50 | [drone_ms3] Current position = [62, 6, 10].
+21:13:50 | [drone_ms3] Battery remaining: 74 %
+21:13:51 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:51 | [drone_ms3] Current position = [62, 6, 11].
+21:13:51 | [drone_ms3] Battery remaining: 73 %
+21:13:51 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:51 | [drone_ms3] Current position = [62, 6, 12].
+21:13:51 | [drone_ms3] Battery remaining: 72 %
+21:13:52 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:52 | [drone_ms3] Current position = [62, 6, 13].
+21:13:52 | [drone_ms3] Battery remaining: 71 %
+21:13:52 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:52 | [drone_ms3] Current position = [62, 6, 14].
+21:13:52 | [drone_ms3] Battery remaining: 70 %
+21:13:52 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:52 | [drone_ms3] Current position = [62, 6, 15].
+21:13:52 | [drone_ms3] Battery remaining: 69 %
+21:13:52 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:52 | [drone_ms3] Current position = [62, 6, 16].
+21:13:52 | [drone_ms3] Battery remaining: 68 %
+21:13:53 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 2].
+21:13:53 | [drone_ms3] Cannot move: map limit reached
+21:13:53 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:53 | [drone_ms3] Current position = [62, 5, 15].
+21:13:53 | [drone_ms3] Battery remaining: 67 %
+21:13:53 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:53 | [drone_ms3] Current position = [62, 4, 14].
+21:13:53 | [drone_ms3] Battery remaining: 66 %
+21:13:53 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:53 | [drone_ms3] Current position = [62, 3, 13].
+21:13:53 | [drone_ms3] Battery remaining: 65 %
+21:13:54 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:54 | [drone_ms3] Current position = [62, 2, 12].
+21:13:54 | [drone_ms3] Battery remaining: 64 %
+21:13:54 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:54 | [drone_ms3] Current position = [62, 1, 11].
+21:13:54 | [drone_ms3] Battery remaining: 63 %
+21:13:54 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:54 | [drone_ms3] Cannot move due to a wall.
+21:13:54 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:54 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:54 | [drone_ms3] Direction computed = [Vx = 3, Vy = 0, Vz = 0].
+21:13:54 | [drone_ms3] Current position = [63, 1, 11].
+21:13:54 | [drone_ms3] Battery remaining: 62 %
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:13:55 | [drone_ms3] Cannot move due to a wall.
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:13:55 | [drone_ms3] Cannot move due to a wall.
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 2].
+21:13:55 | [drone_ms3] Cannot move due to a wall.
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 0].
+21:13:55 | [drone_ms3] Cannot move due to a wall.
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = -2].
+21:13:55 | [drone_ms3] Cannot move due to a wall.
+21:13:55 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:13:55 | [drone_ms3] Current position = [63, 2, 12].
+21:13:55 | [drone_ms3] Battery remaining: 61 %
+21:13:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 1].
+21:13:56 | [drone_ms3] Current position = [63, 3, 13].
+21:13:56 | [drone_ms3] Battery remaining: 60 %
+21:13:56 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:13:56 | [drone_ms3] Current position = [63, 2, 12].
+21:13:56 | [drone_ms3] Battery remaining: 59 %
+21:13:57 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:13:57 | [drone_ms3] Current position = [63, 1, 11].
+21:13:57 | [drone_ms3] Battery remaining: 58 %
+21:13:57 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = -1].
+21:13:57 | [drone_ms3] Cannot move due to a wall.
+21:13:57 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:13:57 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:13:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = 2, Vz = -2].
+21:13:58 | [drone_ms3] Current position = [62, 2, 10].
+21:13:58 | [drone_ms3] Battery remaining: 57 %
+21:13:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = 2, Vz = -2].
+21:13:58 | [drone_ms3] Current position = [61, 3, 9].
+21:13:58 | [drone_ms3] Battery remaining: 56 %
+21:13:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = 2, Vz = -2].
+21:13:58 | [drone_ms3] Current position = [60, 4, 8].
+21:13:58 | [drone_ms3] Battery remaining: 55 %
+21:13:58 | [drone_ms3] Direction computed = [Vx = -2, Vy = 2, Vz = -2].
+21:13:58 | [drone_ms3] Current position = [59, 5, 7].
+21:13:58 | [drone_ms3] Battery remaining: 54 %
+21:13:59 | [drone_ms3] Direction computed = [Vx = -2, Vy = 2, Vz = -2].
+21:13:59 | [drone_ms3] Cannot move: map limit reached
+21:13:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:13:59 | [drone_ms3] Current position = [60, 4, 7].
+21:13:59 | [drone_ms3] Battery remaining: 53 %
+21:13:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:13:59 | [drone_ms3] Current position = [61, 3, 7].
+21:13:59 | [drone_ms3] Battery remaining: 52 %
+21:13:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:13:59 | [drone_ms3] Current position = [62, 2, 7].
+21:13:59 | [drone_ms3] Battery remaining: 51 %
+21:13:59 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:13:59 | [drone_ms3] Current position = [63, 1, 7].
+21:13:59 | [drone_ms3] Battery remaining: 50 %
+21:14:00 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:14:00 | [drone_ms3] Cannot move due to a wall.
+21:14:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:14:00 | [drone_ms3] Cannot move due to a wall.
+21:14:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:14:00 | [drone_ms3] Cannot move due to a wall.
+21:14:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:00 | [drone_ms3] Cannot move: map limit reached
+21:14:00 | [drone_ms3] Direction computed = [Vx = -1, Vy = -1, Vz = 1].
+21:14:00 | [drone_ms3] Cannot move due to a wall.
+21:14:00 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:14:00 | [drone_ms3] Cannot move: map limit reached
+21:14:00 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:00 | [drone_ms3] Cannot move due to a wall.
+21:14:01 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:14:01 | [drone_ms3] Current position = [62, 1, 7].
+21:14:01 | [drone_ms3] Battery remaining: 49 %
+21:14:01 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:14:01 | [drone_ms3] Current position = [61, 1, 7].
+21:14:01 | [drone_ms3] Battery remaining: 48 %
+21:14:01 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:14:01 | [drone_ms3] Current position = [60, 1, 7].
+21:14:01 | [drone_ms3] Battery remaining: 47 %
+21:14:01 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:14:01 | [drone_ms3] Current position = [59, 1, 7].
+21:14:01 | [drone_ms3] Battery remaining: 46 %
+21:14:02 | [drone_ms3] Direction computed = [Vx = -2, Vy = 0, Vz = 0].
+21:14:02 | [drone_ms3] Current position = [58, 1, 7].
+21:14:02 | [drone_ms3] Battery remaining: 45 %
+21:14:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:14:02 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:14:02 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:14:02 | [drone_ms3] Cannot move: map limit reached
+21:14:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:14:02 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:14:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = -3].
+21:14:02 | [drone_ms3] Cannot move: map limit reached
+21:14:02 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 0].
+21:14:02 | [drone_ms3] Cannot move due to a wall.
+21:14:02 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:02 | [drone_ms3] Current position = [57, 1, 7].
+21:14:02 | [drone_ms3] Battery remaining: 44 %
+21:14:02 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:02 | [drone_ms3] Current position = [56, 1, 7].
+21:14:02 | [drone_ms3] Battery remaining: 43 %
+21:14:03 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:03 | [drone_ms3] Current position = [55, 1, 7].
+21:14:03 | [drone_ms3] Battery remaining: 42 %
+21:14:03 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:03 | [drone_ms3] Current position = [54, 1, 7].
+21:14:03 | [drone_ms3] Battery remaining: 41 %
+21:14:03 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:03 | [drone_ms3] Current position = [53, 1, 7].
+21:14:03 | [drone_ms3] Battery remaining: 40 %
+21:14:03 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:03 | [drone_ms3] Current position = [52, 1, 7].
+21:14:03 | [drone_ms3] Battery remaining: 39 %
+21:14:03 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:03 | [drone_ms3] Current position = [51, 1, 7].
+21:14:03 | [drone_ms3] Battery remaining: 38 %
+21:14:04 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:04 | [drone_ms3] Current position = [50, 1, 7].
+21:14:04 | [drone_ms3] Battery remaining: 37 %
+21:14:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:14:04 | [drone_ms3] Cannot move due to a wall.
+21:14:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 3].
+21:14:04 | [drone_ms3] Cannot move due to a wall.
+21:14:04 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 1].
+21:14:04 | [drone_ms3] Current position = [50, 1, 8].
+21:14:04 | [drone_ms3] Battery remaining: 36 %
+21:14:05 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:05 | [drone_ms3] Current position = [49, 1, 8].
+21:14:05 | [drone_ms3] Battery remaining: 35 %
+21:14:05 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:05 | [drone_ms3] Current position = [48, 1, 8].
+21:14:05 | [drone_ms3] Battery remaining: 34 %
+21:14:06 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:06 | [drone_ms3] Current position = [47, 1, 8].
+21:14:06 | [drone_ms3] Battery remaining: 33 %
+21:14:06 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:06 | [drone_ms3] Current position = [46, 1, 8].
+21:14:06 | [drone_ms3] Battery remaining: 32 %
+21:14:07 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:07 | [drone_ms3] Current position = [45, 1, 8].
+21:14:07 | [drone_ms3] Battery remaining: 31 %
+21:14:07 | [drone_ms3] Direction computed = [Vx = -1, Vy = 0, Vz = 0].
+21:14:07 | [drone_ms3] Current position = [44, 1, 8].
+21:14:07 | [drone_ms3] Battery remaining: 30 %
+21:14:08 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:14:08 | [drone_ms3] Current position = [43, 1, 9].
+21:14:08 | [drone_ms3] Battery remaining: 29 %
+21:14:08 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:14:08 | [drone_ms3] Current position = [42, 1, 10].
+21:14:08 | [drone_ms3] Battery remaining: 28 %
+21:14:08 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:14:08 | [drone_ms3] Current position = [41, 1, 11].
+21:14:08 | [drone_ms3] Battery remaining: 27 %
+21:14:08 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:14:08 | [drone_ms3] Current position = [40, 1, 12].
+21:14:08 | [drone_ms3] Battery remaining: 26 %
+21:14:09 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 3].
+21:14:09 | [drone_ms3] Current position = [39, 1, 13].
+21:14:09 | [drone_ms3] Battery remaining: 25 %
+21:14:09 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:14:09 | [drone_ms3] Cannot move due to a wall.
+21:14:09 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:09 | [drone_ms3] Current position = [40, 2, 13].
+21:14:09 | [drone_ms3] Battery remaining: 24 %
+21:14:09 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:09 | [drone_ms3] Current position = [41, 3, 13].
+21:14:09 | [drone_ms3] Battery remaining: 23 %
+21:14:09 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:09 | [drone_ms3] Current position = [42, 4, 13].
+21:14:09 | [drone_ms3] Battery remaining: 22 %
+21:14:09 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:09 | [drone_ms3] Current position = [43, 5, 13].
+21:14:09 | [drone_ms3] Battery remaining: 21 %
+21:14:10 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:10 | [drone_ms3] Current position = [44, 6, 13].
+21:14:10 | [drone_ms3] Battery remaining: 20 %
+21:14:10 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:10 | [drone_ms3] Current position = [45, 7, 13].
+21:14:10 | [drone_ms3] Battery remaining: 19 %
+21:14:10 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:10 | [drone_ms3] Current position = [46, 8, 13].
+21:14:10 | [drone_ms3] Battery remaining: 18 %
+21:14:10 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:10 | [drone_ms3] Current position = [47, 9, 13].
+21:14:10 | [drone_ms3] Battery remaining: 17 %
+21:14:10 | [drone_ms3] Direction computed = [Vx = 3, Vy = 3, Vz = 0].
+21:14:10 | [drone_ms3] Current position = [48, 10, 13].
+21:14:10 | [drone_ms3] Battery remaining: 16 %
+21:14:11 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:11 | [drone_ms3] Current position = [48, 10, 12].
+21:14:11 | [drone_ms3] Battery remaining: 15 %
+21:14:11 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:11 | [drone_ms3] Current position = [48, 10, 11].
+21:14:11 | [drone_ms3] Battery remaining: 14 %
+21:14:12 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:12 | [drone_ms3] Current position = [48, 10, 10].
+21:14:12 | [drone_ms3] Battery remaining: 13 %
+21:14:12 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:12 | [drone_ms3] Current position = [48, 10, 9].
+21:14:12 | [drone_ms3] Battery remaining: 12 %
+21:14:13 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:13 | [drone_ms3] Current position = [48, 10, 8].
+21:14:13 | [drone_ms3] Battery remaining: 11 %
+21:14:13 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:13 | [drone_ms3] Current position = [48, 10, 7].
+21:14:13 | [drone_ms3] Battery remaining: 10 %
+21:14:14 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -1].
+21:14:14 | [drone_ms3] Cannot move: map limit reached
+21:14:14 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:14:14 | [drone_ms3] Current position = [49, 10, 8].
+21:14:14 | [drone_ms3] Battery remaining: 9 %
+21:14:14 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:14:14 | [drone_ms3] Current position = [50, 10, 9].
+21:14:14 | [drone_ms3] Battery remaining: 8 %
+21:14:15 | [drone_ms3] Direction computed = [Vx = 2, Vy = 0, Vz = 2].
+21:14:15 | [drone_ms3] Cannot move due to a wall.
+21:14:15 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = 0].
+21:14:15 | [drone_ms3] Cannot move due to a wall.
+21:14:15 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:15 | [drone_ms3] Current position = [49, 9, 8].
+21:14:15 | [drone_ms3] Battery remaining: 7 %
+21:14:15 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:15 | [drone_ms3] Current position = [48, 8, 7].
+21:14:15 | [drone_ms3] Battery remaining: 6 %
+21:14:15 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:15 | [drone_ms3] Cannot move: map limit reached
+21:14:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:15 | [drone_ms3] Current position = [48, 9, 8].
+21:14:15 | [drone_ms3] Battery remaining: 5 %
+21:14:15 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:15 | [drone_ms3] Current position = [48, 10, 9].
+21:14:15 | [drone_ms3] Battery remaining: 4 %
+21:14:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:16 | [drone_ms3] Current position = [48, 11, 10].
+21:14:16 | [drone_ms3] Battery remaining: 3 %
+21:14:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:16 | [drone_ms3] Current position = [48, 12, 11].
+21:14:16 | [drone_ms3] Battery remaining: 2 %
+21:14:16 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:16 | [drone_ms3] Current position = [48, 13, 12].
+21:14:16 | [drone_ms3] Landing due to battery charge.
+21:14:17 | [drone_ms3] Landed
+21:14:17 | [drone_ms3] Started recharging battery
+21:14:26 | [drone_ms3] Recharge completed.
+21:14:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = 3, Vz = 3].
+21:14:26 | [drone_ms3] Current position = [48, 14, 13].
+21:14:26 | [drone_ms3] Battery remaining: 99 %
+21:14:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 0].
+21:14:26 | [drone_ms3] Current position = [48, 13, 13].
+21:14:26 | [drone_ms3] Battery remaining: 98 %
+21:14:26 | [drone_ms3] Direction computed = [Vx = 0, Vy = -3, Vz = 0].
+21:14:26 | [drone_ms3] Current position = [48, 12, 13].
+21:14:26 | [drone_ms3] Battery remaining: 97 %
+21:14:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = -2].
+21:14:27 | [drone_ms3] Current position = [49, 11, 12].
+21:14:27 | [drone_ms3] Battery remaining: 96 %
+21:14:27 | [drone_ms3] Direction computed = [Vx = 2, Vy = -2, Vz = -2].
+21:14:27 | [drone_ms3] Cannot move: map limit reached
+21:14:27 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = 0].
+21:14:27 | [drone_ms3] Current position = [50, 10, 12].
+21:14:27 | [drone_ms3] Battery remaining: 95 %
+21:14:27 | [drone_ms3] Direction computed = [Vx = 3, Vy = -3, Vz = -3].
+21:14:27 | [drone_ms3] Cannot move: map limit reached
+21:14:27 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 0].
+21:14:27 | [drone_ms3] Cannot move due to a drone occupying the position.
+21:14:27 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:27 | [drone_ms3] Current position = [49, 10, 12].
+21:14:27 | [drone_ms3] Battery remaining: 94 %
+21:14:28 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:28 | [drone_ms3] Current position = [48, 10, 12].
+21:14:28 | [drone_ms3] Battery remaining: 93 %
+21:14:28 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:28 | [drone_ms3] Current position = [47, 10, 12].
+21:14:28 | [drone_ms3] Battery remaining: 92 %
+21:14:28 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:28 | [drone_ms3] Current position = [46, 10, 12].
+21:14:28 | [drone_ms3] Battery remaining: 91 %
+21:14:29 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:29 | [drone_ms3] Current position = [45, 10, 12].
+21:14:29 | [drone_ms3] Battery remaining: 90 %
+21:14:29 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:29 | [drone_ms3] Current position = [44, 10, 12].
+21:14:29 | [drone_ms3] Battery remaining: 89 %
+21:14:29 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:29 | [drone_ms3] Current position = [43, 10, 12].
+21:14:29 | [drone_ms3] Battery remaining: 88 %
+21:14:29 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:29 | [drone_ms3] Current position = [42, 10, 12].
+21:14:29 | [drone_ms3] Battery remaining: 87 %
+21:14:30 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:30 | [drone_ms3] Current position = [41, 10, 12].
+21:14:30 | [drone_ms3] Battery remaining: 86 %
+21:14:30 | [drone_ms3] Direction computed = [Vx = -3, Vy = 0, Vz = 0].
+21:14:30 | [drone_ms3] Current position = [40, 10, 12].
+21:14:30 | [drone_ms3] Battery remaining: 85 %
+21:14:30 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:30 | [drone_ms3] Current position = [39, 9, 12].
+21:14:30 | [drone_ms3] Battery remaining: 84 %
+21:14:30 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:30 | [drone_ms3] Current position = [38, 8, 12].
+21:14:30 | [drone_ms3] Battery remaining: 83 %
+21:14:31 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:31 | [drone_ms3] Current position = [37, 7, 12].
+21:14:31 | [drone_ms3] Battery remaining: 82 %
+21:14:31 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:31 | [drone_ms3] Current position = [36, 6, 12].
+21:14:31 | [drone_ms3] Battery remaining: 81 %
+21:14:31 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:31 | [drone_ms3] Current position = [35, 5, 12].
+21:14:31 | [drone_ms3] Battery remaining: 80 %
+21:14:31 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:31 | [drone_ms3] Current position = [34, 4, 12].
+21:14:31 | [drone_ms3] Battery remaining: 79 %
+21:14:32 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = 0].
+21:14:32 | [drone_ms3] Current position = [33, 3, 12].
+21:14:32 | [drone_ms3] Battery remaining: 78 %
+21:14:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = -2].
+21:14:32 | [drone_ms3] Cannot move: map limit reached
+21:14:32 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:14:32 | [drone_ms3] Current position = [33, 2, 12].
+21:14:32 | [drone_ms3] Battery remaining: 77 %
+21:14:33 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:14:33 | [drone_ms3] Current position = [33, 1, 12].
+21:14:33 | [drone_ms3] Battery remaining: 76 %
+21:14:33 | [drone_ms3] Direction computed = [Vx = 0, Vy = -1, Vz = 0].
+21:14:33 | [drone_ms3] Cannot move due to a wall.
+21:14:33 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:33 | [drone_ms3] Current position = [34, 2, 12].
+21:14:33 | [drone_ms3] Battery remaining: 75 %
+21:14:34 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:34 | [drone_ms3] Current position = [35, 3, 12].
+21:14:34 | [drone_ms3] Battery remaining: 74 %
+21:14:34 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:34 | [drone_ms3] Current position = [36, 4, 12].
+21:14:34 | [drone_ms3] Battery remaining: 73 %
+21:14:35 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:35 | [drone_ms3] Current position = [37, 5, 12].
+21:14:35 | [drone_ms3] Battery remaining: 72 %
+21:14:35 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:35 | [drone_ms3] Current position = [38, 6, 12].
+21:14:35 | [drone_ms3] Battery remaining: 71 %
+21:14:35 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:35 | [drone_ms3] Current position = [39, 7, 12].
+21:14:35 | [drone_ms3] Battery remaining: 70 %
+21:14:36 | [drone_ms3] Direction computed = [Vx = 2, Vy = 2, Vz = 0].
+21:14:36 | [drone_ms3] Current position = [40, 8, 12].
+21:14:36 | [drone_ms3] Battery remaining: 69 %
+21:14:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:36 | [drone_ms3] Current position = [40, 9, 13].
+21:14:36 | [drone_ms3] Battery remaining: 68 %
+21:14:36 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:36 | [drone_ms3] Current position = [40, 10, 14].
+21:14:36 | [drone_ms3] Battery remaining: 67 %
+21:14:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:37 | [drone_ms3] Current position = [40, 11, 15].
+21:14:37 | [drone_ms3] Battery remaining: 66 %
+21:14:37 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:37 | [drone_ms3] Current position = [40, 12, 16].
+21:14:37 | [drone_ms3] Battery remaining: 65 %
+21:14:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:38 | [drone_ms3] Current position = [40, 13, 17].
+21:14:38 | [drone_ms3] Battery remaining: 64 %
+21:14:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:38 | [drone_ms3] Current position = [40, 14, 18].
+21:14:38 | [drone_ms3] Battery remaining: 63 %
+21:14:38 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:38 | [drone_ms3] Current position = [40, 15, 19].
+21:14:38 | [drone_ms3] Battery remaining: 62 %
+21:14:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = 2, Vz = 2].
+21:14:39 | [drone_ms3] Current position = [40, 16, 20].
+21:14:39 | [drone_ms3] Battery remaining: 61 %
+21:14:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:14:39 | [drone_ms3] Current position = [40, 16, 21].
+21:14:39 | [drone_ms3] Battery remaining: 60 %
+21:14:39 | [drone_ms3] Direction computed = [Vx = 0, Vy = 0, Vz = 3].
+21:14:39 | [drone_ms3] Cannot move: map limit reached
+21:14:39 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:14:39 | [drone_ms3] Current position = [41, 16, 20].
+21:14:39 | [drone_ms3] Battery remaining: 59 %
+21:14:40 | [drone_ms3] Direction computed = [Vx = 1, Vy = 0, Vz = -1].
+21:14:40 | [drone_ms3] Current position = [42, 16, 19].
+21:14:40 | [drone_ms3] Battery remaining: 58 %
+21:14:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:14:41 | [drone_ms3] Current position = [42, 15, 19].
+21:14:41 | [drone_ms3] Battery remaining: 57 %
+21:14:41 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:14:41 | [drone_ms3] Current position = [42, 14, 19].
+21:14:41 | [drone_ms3] Battery remaining: 56 %
+21:14:42 | [drone_ms3] Direction computed = [Vx = 0, Vy = -2, Vz = 0].
+21:14:42 | [drone_ms3] Current position = [42, 13, 19].
+21:14:42 | [drone_ms3] Battery remaining: 55 %
+21:14:42 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:42 | [drone_ms3] Current position = [41, 12, 18].
+21:14:42 | [drone_ms3] Battery remaining: 54 %
+21:14:42 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:42 | [drone_ms3] Current position = [40, 11, 17].
+21:14:42 | [drone_ms3] Battery remaining: 53 %
+21:14:42 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:42 | [drone_ms3] Current position = [39, 10, 16].
+21:14:42 | [drone_ms3] Battery remaining: 52 %
+21:14:43 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:43 | [drone_ms3] Current position = [38, 9, 15].
+21:14:43 | [drone_ms3] Battery remaining: 51 %
+21:14:43 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:43 | [drone_ms3] Current position = [37, 8, 14].
+21:14:43 | [drone_ms3] Battery remaining: 50 %
+21:14:43 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:43 | [drone_ms3] Current position = [36, 7, 13].
+21:14:43 | [drone_ms3] Battery remaining: 49 %
+21:14:43 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:43 | [drone_ms3] Current position = [35, 6, 12].
+21:14:43 | [drone_ms3] Battery remaining: 48 %
+21:14:43 | [drone_ms3] Direction computed = [Vx = -3, Vy = -3, Vz = -3].
+21:14:43 | [drone_ms3] Cannot move: map limit reached
+21:14:44 | [drone_ms3] Direction computed = [Vx = -1, Vy = 1, Vz = 0].
+21:14:44 | [drone_ms3] Current position = [34, 7, 12].
+21:14:44 | [drone_ms3] Battery remaining: 47 %
+21:14:44 | [drone_ms3] Direction computed = [Vx = -1, Vy = 1, Vz = 0].
+21:14:44 | [drone_ms3] Current position = [33, 8, 12].
+21:14:44 | [drone_ms3] Battery remaining: 46 %
+21:14:45 | [drone_ms3] Direction computed = [Vx = -1, Vy = 1, Vz = 0].
+21:14:45 | [drone_ms3] Cannot move due to a wall.
+21:14:45 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:14:45 | [drone_ms3] Current position = [33, 9, 12].
+21:14:45 | [drone_ms3] Battery remaining: 45 %
+21:14:45 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:14:45 | [drone_ms3] Current position = [33, 10, 12].
+21:14:45 | [drone_ms3] Battery remaining: 44 %
+21:14:46 | [drone_ms3] Direction computed = [Vx = 0, Vy = 1, Vz = 0].
+21:14:46 | [drone_ms3] Current position = [33, 11, 12].
+21:14:46 | [drone_ms3] Battery remaining: 43 %
