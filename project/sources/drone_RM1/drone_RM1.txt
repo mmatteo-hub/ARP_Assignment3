@@ -8,7 +8,7 @@ First of all, the drone process tries to establish a connection with the master 
 The communication between the master and the drone is carried out thanks to a custom library, which has been developed in order to standardize the messages sent on the socket by drones of different groups.
 Once that the connection has been established successfully, the drone sends a spawning request to the master and, if the position specified as argument, is not already occupied, it takes off inside the map.
 
-From now on, the drone moves inside the map with the velocity given as third argument to the process. Furthermore, while it moves, it keeps tracks of the visited positions by printing them on screen.
+From now on, the drone moves inside the map with the velocity given as third argument to the process.
 Since there are other drones and obstacles inside the map, the drone must ask the master if the new position in which it wants to move is allowed.
 The moving direction is chosen autonomously by randomly extracting a feasible triplet in the form: x (horizontal movement), y (vertical movement) and z (movement 'through the screen'). In particular, the drone implements a sort of navigation algorithm that prevents it from asking the master for a planar direction opposite to the one previously requested.
 In order to better understand how the algorithm works, it is better to provide an example. There are 8 possible moving directions on the plane:
@@ -23,6 +23,8 @@ In order to avoid this situation, the algorithm is disabled when the critical co
 
 Initially the drone is provided with a full-charged battery that, at each performed step, decresases. A continuous check on the battery power is run in order to guarantee the safe return of the drone to the floor for the recharge. In other words, when the drone detects that the residual battery is sufficient only to reach the floor (and accomplish no other movement), the landing procedure is started.
 Once the device has landed, the battery recharge, which takes some time, takes place. After this, the drone takes off again.
+
+In addition to these features, the drone keeps track of the visited positions and prints them on the screen. In particular, the explored area is indicated in light-blue color in a simulated empty map displayed in the terminal window. Each visited position is characterized by a number that identifies the greatest height at which the position at issue has been occupied.
 
 ### DATA LOGGING
 The process writes its state in the log_drone_RM.txt file under the following circumstances:
