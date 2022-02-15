@@ -8,13 +8,14 @@ occupied and the relative altitudes reached in all positions.
 
 The map is set up by the master process, that also keeps track of the positions of all the other 
 drones moving inside it. The drone comunicates with the master through a dedicated socket. Every 
-movement deision is comunicated to the master and before an actual movement is carried out the 
+movement deision is comunicated to the master: before an actual movement is carried out the 
 drone waits for an answer by the master that comunicates back if the desired movement
 interpheres with another drone's trajectory or if it drives the drone into a wall.
 
 In both cases drone MS8 simply stops and recalculates a new random direction to follow.
-If a wall was ncountered however, the wall's position is marked on the map. The drone will 
+If a wall was encountered however, the wall's position is marked on the drone's map. The drone will 
 eventually explore the whole map, recreating its own version of the map generatd by the master.
+This map is displayed to te usser along with oher status messages regarding the drone's operations.
 
 When launching the drone's executable, 3 arguments have to be passed: 2 planar coordinates on the 
 map and one integer between 1 and 20 that fixes the drone's simulated velocity. If any of the 
@@ -26,6 +27,6 @@ a value close to zero, it simulates a controlled emergency landing and updates i
 while doing so.
 
 A signal handler catches a termination signal sent to the drone and launches the process' exit 
-routine where the user gets notifieed one last time on screen and the socket used is closed.
+routine, where the user gets notifieed one last time on screen and the socket connection used is closed.
 All the drone's status changes and decisions are logged in a separate .txt file that will store a 
 copy of all the messages shown to the user on screen.
