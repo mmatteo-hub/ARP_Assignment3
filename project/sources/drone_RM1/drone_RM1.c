@@ -15,11 +15,25 @@
 #include <math.h>
 #include "./../drone_api/drone_api.h"
 
+// Define the map dimension
+#define MAP_DIM_X 80
+#define MAP_DIM_Y 40
+#define MAP_DIM_Z 10
+#define MAP_AREA 2964
+
 int fd_sock;
+
+// Define two global variables to keep track of the percentage of explored area
+double count = 0;
+double perc_explored_area = 0;
 
 void error_exit(char* s);
 void close_socket();
 void write_log(char* file_path, char* msg);
+void print_explored_area();
+
+// Define the explored area matrix
+int explored_area[MAP_DIM_X][MAP_DIM_Y];
 
 int main(int argc, char *argv[])
 {
@@ -74,8 +88,8 @@ int main(int argc, char *argv[])
   }
 
   // Define the time required to execute a step both when the drone moves and when it lands
-  int step_move_time = floor(2000000/vel);
-  int step_land_time = floor(3000000/vel);
+  int step_move_time = floor(4000000/vel);
+  int step_land_time = floor(5000000/vel);
 
   // Send spawning request to the master
   while(1){
@@ -117,7 +131,6 @@ int main(int argc, char *argv[])
   char msg[80];         // string where to save messages to be printed
 
   // Clear the log file used by the drone, if it doesn't exists it creates one
-  //FILE * fp;
   fclose(fopen(log_path, "w+"));
 
   // Initialize the number of consequent moves that the drone can do before
@@ -138,6 +151,15 @@ int main(int argc, char *argv[])
   // Variable to keep track of the consequent failures in choosing the moving direction
   int failures = 0;
 
+  // Initialize the explored area matrix
+  int i = 0;
+  int j = 0;
+  for (j=0; j< MAP_DIM_Y; j++){
+    for(i=0; i< MAP_DIM_X; i++){
+        explored_area[i][j]=10;
+    }
+  }
+
   // Print on stdout
   printf("\x1b[32m" "Taking off...\n\n" "\x1b[0m");
   fflush(stdout);
@@ -145,6 +167,8 @@ int main(int argc, char *argv[])
   // Print on LOG file
   sprintf(msg, "Taking off...");
   write_log(log_path, msg);
+
+  usleep(500000);
 
   while(1)
   {
@@ -215,6 +239,22 @@ int main(int argc, char *argv[])
     // Moving in the selected direction
     while(--steps > 0)
     {
+      // Clear the terminal
+      system("clear");
+
+      // Update the value of the current cell of the explored area matrix
+      if(explored_area[my_drone.posx][my_drone.posy] == 10 || my_drone.posz > explored_area[my_drone.posx][my_drone.posy]){
+        // If it's the first time that the position has been explored, update the counter that takes into account the explored area
+        if(explored_area[my_drone.posx][my_drone.posy] == 10){
+            count = count+1;
+        }
+        explored_area[my_drone.posx][my_drone.posy] = my_drone.posz;
+      }
+
+      // Print the explored area
+      print_explored_area();
+
+
       int result = send_move_message(fd_sock, offx, offy, offz);
       printf("Tried to move along [%i %i %i] direction: ", offx, offy, offz);
       drone_error(result);
@@ -223,6 +263,7 @@ int main(int argc, char *argv[])
       if(result != SUCCESS)
       {
         failures++;
+        usleep(500000);
         break;
       }
 
@@ -241,6 +282,7 @@ int main(int argc, char *argv[])
 
       // Decrease the number of moves available
       --battery;
+
 
       // Print on stdout
       printf("Current position [%i %i %i]\n", my_drone.posx, my_drone.posy, my_drone.posz);
@@ -263,6 +305,8 @@ int main(int argc, char *argv[])
         // Print on the LOG file
         sprintf(msg, "Half of the battery left");
         write_log(log_path, msg);
+
+        usleep(300000);
       }
 
       if(battery == quarter_battery)
@@ -274,6 +318,8 @@ int main(int argc, char *argv[])
         // Print on the LOG file
         sprintf(msg, "A quarter of the battery left");
         write_log(log_path, msg);
+
+        usleep(300000);
       }
 
       // Wait before taking the next step
@@ -364,6 +410,35 @@ int main(int argc, char *argv[])
  	return 0;
 }
 
+void print_explored_area()
+{
+    // Print the explored area
+    printf("\x1b[33m" "VISUALIZATION OF THE EXPLORED AREA:\n" "\x1b[0m");
+    fflush(stdout);
+    int i = 0;
+    int j = 0;
+    for(j=MAP_DIM_Y-1; j>=0; j--){
+        for(i=0; i<MAP_DIM_X; i++){
+            if(explored_area[i][j] != 10){
+                printf("\x1b[36m" "%d" "\x1b[0m", explored_area[i][j]);
+                fflush(stdout);
+            }
+            else{
+                printf("-");
+                fflush(stdout);
+            }
+        }
+        printf("\n");
+        fflush(stdout);
+    }
+
+    // Evaluate the percentage of explored area
+    perc_explored_area = count / MAP_AREA;
+
+    // Print the percentage of explored area
+    printf("\x1b[36m" "Percentage of explored area: %f\n\n" "\x1b[0m", perc_explored_area);
+    fflush(stdout);
+}
 
 
 void error_exit(char* s)

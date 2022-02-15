@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 23:15:34 | [MASTER] Started the initialization phase.
 23:15:34 | [MASTER] Data initialized, initializating socket.
 23:15:34 | [MASTER] Socket initialized, waiting for connections.
@@ -6,3 +7,18 @@
 23:15:36 | [MASTER] Client [127.0.0.1] connected at index 2.
 23:15:37 | [MASTER] Client [127.0.0.1] connected at index 3.
 23:15:37 | [MASTER] Client [127.0.0.1] connected at index 4.
+=======
+08:25:33 | [MASTER] Started the initialization phase.
+08:25:33 | [MASTER] Data initialized, initializating socket.
+08:25:33 | [MASTER] Socket initialized, waiting for connections.
+08:25:34 | [MASTER] Client [127.0.0.1] connected at index 0.
+08:25:34 | [MASTER] Client [127.0.0.1] connected at index 1.
+08:25:34 | [MASTER] Client [127.0.0.1] connected at index 2.
+08:25:34 | [MASTER] Client [127.0.0.1] connected at index 3.
+08:25:35 | [MASTER] Client [127.0.0.1] connected at index 4.
+08:25:37 | [MASTER] Client at index 4 disconnected.
+08:25:38 | [MASTER] Client at index 3 disconnected.
+08:25:38 | [MASTER] Client at index 2 disconnected.
+08:25:38 | [MASTER] Client at index 1 disconnected.
+08:25:39 | [MASTER] Client at index 0 disconnected.
+>>>>>>> f0233852b40e22f3735eafd01dd497829d4e0c9d

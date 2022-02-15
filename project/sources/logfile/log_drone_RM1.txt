@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 23:15:36 [DRONE_RM1] Taking off...
 23:15:36 [DRONE_RM1] Moved along the [-1 1 0] direction
 23:15:36 [DRONE_RM1] Current position [36 21 0]
@@ -203,3 +204,14 @@
 23:16:21 [DRONE_RM1] Current position [46 8 0]
 23:16:21 [DRONE_RM1] Moved along the [1 0 0] direction
 23:16:21 [DRONE_RM1] Current position [47 8 0]
+=======
+08:25:35 [DRONE_RM1] Taking off...
+08:25:36 [DRONE_RM1] Moved along the [-1 0 0] direction
+08:25:36 [DRONE_RM1] Current position [36 20 0]
+08:25:37 [DRONE_RM1] Moved along the [-1 0 0] direction
+08:25:37 [DRONE_RM1] Current position [35 20 0]
+08:25:37 [DRONE_RM1] Moved along the [-1 0 0] direction
+08:25:37 [DRONE_RM1] Current position [34 20 0]
+08:25:38 [DRONE_RM1] Moved along the [-1 0 0] direction
+08:25:38 [DRONE_RM1] Current position [33 20 0]
+>>>>>>> f0233852b40e22f3735eafd01dd497829d4e0c9d

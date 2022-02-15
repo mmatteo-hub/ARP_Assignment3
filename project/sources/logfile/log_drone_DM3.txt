@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 DM3: Socket opened at : 		Mon Feb 14 23:15:37 2022
 DM3: Socket established at : 		Mon Feb 14 23:15:37 2022
 DM3: Drone spawned at : 		Mon Feb 14 23:15:37 2022
@@ -89,3 +90,14 @@ DM3: Trying to move north at : 	Mon Feb 14 23:16:20 2022
 DM3: Trying to move north at : 	Mon Feb 14 23:16:20 2022
 DM3: Trying to move north at : 	Mon Feb 14 23:16:21 2022
 DM3: Trying to move north-west at : 	Mon Feb 14 23:16:22 2022
+=======
+DM3: Socket opened at : 		Tue Feb 15 08:25:34 2022
+DM3: Socket established at : 		Tue Feb 15 08:25:34 2022
+DM3: Drone spawned at : 		Tue Feb 15 08:25:34 2022
+DM3: Taking off at : 			Tue Feb 15 08:25:35 2022
+DM3: Trying to move up at : 		Tue Feb 15 08:25:35 2022
+DM3: Trying to move up at : 		Tue Feb 15 08:25:36 2022
+DM3: Trying to move up at : 		Tue Feb 15 08:25:36 2022
+DM3: Trying to move up at : 		Tue Feb 15 08:25:37 2022
+DM3: Trying to move down at : 	Tue Feb 15 08:25:37 2022
+>>>>>>> f0233852b40e22f3735eafd01dd497829d4e0c9d
