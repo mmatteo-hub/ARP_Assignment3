@@ -1,189 +1,205 @@
-22:31:55 [DRONE_RM1] Taking off...
-22:31:55 [DRONE_RM1] Moved along the [-1 1 1] direction
-22:31:55 [DRONE_RM1] Current position [36 21 1]
-22:31:56 [DRONE_RM1] Moved along the [-1 1 1] direction
-22:31:56 [DRONE_RM1] Current position [35 22 2]
-22:31:56 [DRONE_RM1] Moved along the [1 1 -1] direction
-22:31:56 [DRONE_RM1] Current position [36 23 1]
-22:31:56 [DRONE_RM1] Moved along the [1 1 -1] direction
-22:31:56 [DRONE_RM1] Current position [37 24 0]
-22:31:57 [DRONE_RM1] Moved along the [0 1 0] direction
-22:31:57 [DRONE_RM1] Current position [37 25 0]
-22:31:57 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:31:57 [DRONE_RM1] Current position [36 25 0]
-22:31:57 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:31:57 [DRONE_RM1] Current position [35 25 0]
-22:31:58 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:31:58 [DRONE_RM1] Current position [34 25 0]
-22:31:58 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:31:58 [DRONE_RM1] Current position [33 25 0]
-22:31:59 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:31:59 [DRONE_RM1] Current position [32 25 0]
-22:31:59 [DRONE_RM1] Moved along the [0 0 1] direction
-22:31:59 [DRONE_RM1] Current position [32 25 1]
-22:31:59 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:31:59 [DRONE_RM1] Current position [32 24 1]
-22:32:00 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:00 [DRONE_RM1] Current position [32 23 1]
-22:32:00 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:00 [DRONE_RM1] Current position [32 22 1]
-22:32:00 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:00 [DRONE_RM1] Current position [32 21 1]
-22:32:01 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:01 [DRONE_RM1] Current position [32 20 1]
-22:32:01 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:01 [DRONE_RM1] Current position [32 19 1]
-22:32:01 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:01 [DRONE_RM1] Current position [32 18 1]
-22:32:02 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:02 [DRONE_RM1] Current position [32 17 1]
-22:32:02 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:02 [DRONE_RM1] Current position [32 16 1]
-22:32:02 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:02 [DRONE_RM1] Current position [31 16 1]
-22:32:03 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:03 [DRONE_RM1] Current position [30 16 1]
-22:32:03 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:03 [DRONE_RM1] Current position [29 16 1]
-22:32:03 [DRONE_RM1] Half of the battery left
-22:32:03 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:03 [DRONE_RM1] Current position [28 16 1]
-22:32:04 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:04 [DRONE_RM1] Current position [27 16 1]
-22:32:04 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:04 [DRONE_RM1] Current position [26 16 1]
-22:32:05 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:05 [DRONE_RM1] Current position [25 16 1]
-22:32:05 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:05 [DRONE_RM1] Current position [24 16 1]
-22:32:05 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:05 [DRONE_RM1] Current position [24 15 1]
-22:32:06 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:06 [DRONE_RM1] Current position [24 14 1]
-22:32:06 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:06 [DRONE_RM1] Current position [24 13 1]
-22:32:06 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:06 [DRONE_RM1] Current position [24 12 1]
-22:32:07 [DRONE_RM1] Moved along the [1 -1 1] direction
-22:32:07 [DRONE_RM1] Current position [25 11 2]
-22:32:07 [DRONE_RM1] Moved along the [1 -1 1] direction
-22:32:07 [DRONE_RM1] Current position [26 10 3]
-22:32:07 [DRONE_RM1] Moved along the [-1 -1 0] direction
-22:32:07 [DRONE_RM1] Current position [25 9 3]
-22:32:07 [DRONE_RM1] A quarter of the battery left
-22:32:08 [DRONE_RM1] Moved along the [-1 -1 0] direction
-22:32:08 [DRONE_RM1] Current position [24 8 3]
-22:32:08 [DRONE_RM1] Moved along the [-1 -1 0] direction
-22:32:08 [DRONE_RM1] Current position [23 7 3]
-22:32:08 [DRONE_RM1] Moved along the [-1 -1 0] direction
-22:32:08 [DRONE_RM1] Current position [22 6 3]
-22:32:09 [DRONE_RM1] Moved along the [-1 1 1] direction
-22:32:09 [DRONE_RM1] Current position [21 7 4]
-22:32:09 [DRONE_RM1] Moved along the [-1 1 1] direction
-22:32:09 [DRONE_RM1] Current position [20 8 5]
-22:32:09 [DRONE_RM1] Battery is running out! Starting the landing manoeuvre to recharge
-22:32:10 [DRONE_RM1] Landing...
-22:32:10 [DRONE_RM1] Landing...
-22:32:11 [DRONE_RM1] Landing...
-22:32:11 [DRONE_RM1] Landing...
-22:32:12 [DRONE_RM1] Landing...
-22:32:12 [DRONE_RM1] Recharging battery...
-22:32:17 [DRONE_RM1] Battery recharged! Taking off...
-22:32:17 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:17 [DRONE_RM1] Current position [19 9 0]
-22:32:17 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:17 [DRONE_RM1] Current position [18 10 0]
-22:32:18 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:18 [DRONE_RM1] Current position [17 11 0]
-22:32:18 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:18 [DRONE_RM1] Current position [16 12 0]
-22:32:19 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:19 [DRONE_RM1] Current position [15 13 0]
-22:32:19 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:19 [DRONE_RM1] Current position [14 13 0]
-22:32:19 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:19 [DRONE_RM1] Current position [13 13 0]
-22:32:20 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:20 [DRONE_RM1] Current position [12 13 0]
-22:32:20 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:20 [DRONE_RM1] Current position [11 13 0]
-22:32:20 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:20 [DRONE_RM1] Current position [10 13 0]
-22:32:21 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:21 [DRONE_RM1] Current position [9 13 0]
-22:32:21 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:21 [DRONE_RM1] Current position [8 13 0]
-22:32:21 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:21 [DRONE_RM1] Current position [7 14 0]
-22:32:22 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:22 [DRONE_RM1] Current position [6 15 0]
-22:32:22 [DRONE_RM1] Moved along the [-1 1 0] direction
-22:32:22 [DRONE_RM1] Current position [5 16 0]
-22:32:22 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:22 [DRONE_RM1] Current position [4 16 0]
-22:32:23 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:23 [DRONE_RM1] Current position [3 16 0]
-22:32:23 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:23 [DRONE_RM1] Current position [2 16 0]
-22:32:23 [DRONE_RM1] Moved along the [-1 0 0] direction
-22:32:23 [DRONE_RM1] Current position [1 16 0]
-22:32:24 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:24 [DRONE_RM1] Current position [1 17 0]
-22:32:24 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:24 [DRONE_RM1] Current position [1 18 0]
-22:32:25 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:25 [DRONE_RM1] Current position [1 19 0]
-22:32:25 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:25 [DRONE_RM1] Current position [1 20 0]
-22:32:25 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:25 [DRONE_RM1] Current position [1 21 0]
-22:32:26 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:26 [DRONE_RM1] Current position [1 22 0]
-22:32:26 [DRONE_RM1] Half of the battery left
-22:32:26 [DRONE_RM1] Moved along the [0 1 0] direction
-22:32:26 [DRONE_RM1] Current position [1 23 0]
-22:32:26 [DRONE_RM1] Moved along the [0 1 1] direction
-22:32:26 [DRONE_RM1] Current position [1 24 1]
-22:32:27 [DRONE_RM1] Moved along the [0 0 -1] direction
-22:32:27 [DRONE_RM1] Current position [1 24 0]
-22:32:27 [DRONE_RM1] Moved along the [0 0 1] direction
-22:32:27 [DRONE_RM1] Current position [1 24 1]
-22:32:28 [DRONE_RM1] Moved along the [0 0 1] direction
-22:32:28 [DRONE_RM1] Current position [1 24 2]
-22:32:28 [DRONE_RM1] Moved along the [1 0 1] direction
-22:32:28 [DRONE_RM1] Current position [2 24 3]
-22:32:28 [DRONE_RM1] Moved along the [1 0 1] direction
-22:32:28 [DRONE_RM1] Current position [3 24 4]
-22:32:29 [DRONE_RM1] Moved along the [1 0 1] direction
-22:32:29 [DRONE_RM1] Current position [4 24 5]
-22:32:29 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:29 [DRONE_RM1] Current position [5 25 5]
-22:32:29 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:29 [DRONE_RM1] Current position [6 26 5]
-22:32:30 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:30 [DRONE_RM1] Current position [7 27 5]
-22:32:30 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:30 [DRONE_RM1] Current position [8 28 5]
-22:32:30 [DRONE_RM1] A quarter of the battery left
-22:32:30 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:30 [DRONE_RM1] Current position [9 29 5]
-22:32:31 [DRONE_RM1] Moved along the [1 1 0] direction
-22:32:31 [DRONE_RM1] Current position [10 30 5]
-22:32:31 [DRONE_RM1] Moved along the [1 0 -1] direction
-22:32:31 [DRONE_RM1] Current position [11 30 4]
-22:32:31 [DRONE_RM1] Moved along the [0 -1 1] direction
-22:32:31 [DRONE_RM1] Current position [11 29 5]
-22:32:32 [DRONE_RM1] Moved along the [1 -1 -1] direction
-22:32:32 [DRONE_RM1] Current position [12 28 4]
-22:32:32 [DRONE_RM1] Moved along the [1 -1 -1] direction
-22:32:32 [DRONE_RM1] Current position [13 27 3]
-22:32:32 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:32 [DRONE_RM1] Current position [13 26 3]
-22:32:33 [DRONE_RM1] Moved along the [0 -1 0] direction
-22:32:33 [DRONE_RM1] Current position [13 25 3]
-22:32:33 [DRONE_RM1] Battery is running out! Starting the landing manoeuvre to recharge
-22:32:33 [DRONE_RM1] Landing...
-22:32:34 [DRONE_RM1] Landing...
-22:32:34 [DRONE_RM1] Landing...
-22:32:35 [DRONE_RM1] Recharging battery...
-22:32:40 [DRONE_RM1] Battery recharged! Taking off...
+23:15:36 [DRONE_RM1] Taking off...
+23:15:36 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:36 [DRONE_RM1] Current position [36 21 0]
+23:15:37 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:37 [DRONE_RM1] Current position [35 22 0]
+23:15:37 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:37 [DRONE_RM1] Current position [34 23 0]
+23:15:37 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:37 [DRONE_RM1] Current position [33 24 0]
+23:15:38 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:38 [DRONE_RM1] Current position [32 25 0]
+23:15:38 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:38 [DRONE_RM1] Current position [31 26 0]
+23:15:38 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:38 [DRONE_RM1] Current position [30 27 0]
+23:15:39 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:39 [DRONE_RM1] Current position [29 28 0]
+23:15:39 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:39 [DRONE_RM1] Current position [28 29 0]
+23:15:39 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:39 [DRONE_RM1] Current position [27 30 0]
+23:15:40 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:40 [DRONE_RM1] Current position [26 31 0]
+23:15:40 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:40 [DRONE_RM1] Current position [25 32 0]
+23:15:41 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:41 [DRONE_RM1] Current position [24 33 0]
+23:15:41 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:41 [DRONE_RM1] Current position [23 34 0]
+23:15:41 [DRONE_RM1] Moved along the [-1 1 0] direction
+23:15:41 [DRONE_RM1] Current position [22 35 0]
+23:15:42 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:42 [DRONE_RM1] Current position [21 34 0]
+23:15:42 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:42 [DRONE_RM1] Current position [20 33 0]
+23:15:42 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:42 [DRONE_RM1] Current position [19 32 0]
+23:15:43 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:43 [DRONE_RM1] Current position [18 31 0]
+23:15:43 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:43 [DRONE_RM1] Current position [17 30 0]
+23:15:43 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:43 [DRONE_RM1] Current position [16 29 0]
+23:15:44 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:44 [DRONE_RM1] Current position [15 28 0]
+23:15:44 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:44 [DRONE_RM1] Current position [14 27 0]
+23:15:44 [DRONE_RM1] Half of the battery left
+23:15:44 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:15:44 [DRONE_RM1] Current position [13 26 0]
+23:15:45 [DRONE_RM1] Moved along the [-1 0 1] direction
+23:15:45 [DRONE_RM1] Current position [12 26 1]
+23:15:45 [DRONE_RM1] Moved along the [-1 0 1] direction
+23:15:45 [DRONE_RM1] Current position [11 26 2]
+23:15:45 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:45 [DRONE_RM1] Current position [11 25 2]
+23:15:46 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:46 [DRONE_RM1] Current position [11 24 2]
+23:15:46 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:46 [DRONE_RM1] Current position [11 23 2]
+23:15:46 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:46 [DRONE_RM1] Current position [11 22 2]
+23:15:47 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:47 [DRONE_RM1] Current position [11 21 2]
+23:15:47 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:47 [DRONE_RM1] Current position [12 21 2]
+23:15:48 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:48 [DRONE_RM1] Current position [13 21 2]
+23:15:48 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:48 [DRONE_RM1] Current position [14 21 2]
+23:15:48 [DRONE_RM1] A quarter of the battery left
+23:15:48 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:48 [DRONE_RM1] Current position [15 21 2]
+23:15:49 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:49 [DRONE_RM1] Current position [16 21 2]
+23:15:49 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:49 [DRONE_RM1] Current position [17 21 2]
+23:15:49 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:49 [DRONE_RM1] Current position [18 21 2]
+23:15:50 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:50 [DRONE_RM1] Current position [19 21 2]
+23:15:50 [DRONE_RM1] Moved along the [1 1 0] direction
+23:15:50 [DRONE_RM1] Current position [20 22 2]
+23:15:50 [DRONE_RM1] Moved along the [1 1 0] direction
+23:15:50 [DRONE_RM1] Current position [21 23 2]
+23:15:51 [DRONE_RM1] Moved along the [1 1 0] direction
+23:15:51 [DRONE_RM1] Current position [22 24 2]
+23:15:51 [DRONE_RM1] Battery is running out! Starting the landing manoeuvre to recharge
+23:15:51 [DRONE_RM1] Landing...
+23:15:52 [DRONE_RM1] Landing...
+23:15:52 [DRONE_RM1] Recharging battery...
+23:15:57 [DRONE_RM1] Battery recharged! Taking off...
+23:15:57 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:57 [DRONE_RM1] Current position [23 24 0]
+23:15:58 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:58 [DRONE_RM1] Current position [24 24 0]
+23:15:58 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:58 [DRONE_RM1] Current position [25 24 0]
+23:15:58 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:58 [DRONE_RM1] Current position [26 24 0]
+23:15:59 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:59 [DRONE_RM1] Current position [27 24 0]
+23:15:59 [DRONE_RM1] Moved along the [1 0 0] direction
+23:15:59 [DRONE_RM1] Current position [28 24 0]
+23:15:59 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:15:59 [DRONE_RM1] Current position [28 23 0]
+23:16:00 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:00 [DRONE_RM1] Current position [28 22 0]
+23:16:00 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:00 [DRONE_RM1] Current position [28 21 0]
+23:16:00 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:00 [DRONE_RM1] Current position [28 20 0]
+23:16:01 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:01 [DRONE_RM1] Current position [28 19 0]
+23:16:01 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:01 [DRONE_RM1] Current position [28 18 0]
+23:16:01 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:01 [DRONE_RM1] Current position [28 17 0]
+23:16:02 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:02 [DRONE_RM1] Current position [28 16 0]
+23:16:02 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:02 [DRONE_RM1] Current position [28 15 0]
+23:16:03 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:03 [DRONE_RM1] Current position [28 14 0]
+23:16:03 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:03 [DRONE_RM1] Current position [28 13 0]
+23:16:03 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:03 [DRONE_RM1] Current position [28 12 0]
+23:16:04 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:04 [DRONE_RM1] Current position [28 11 0]
+23:16:04 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:04 [DRONE_RM1] Current position [28 10 0]
+23:16:04 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:04 [DRONE_RM1] Current position [28 9 0]
+23:16:05 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:05 [DRONE_RM1] Current position [28 8 0]
+23:16:05 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:05 [DRONE_RM1] Current position [28 7 0]
+23:16:05 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:05 [DRONE_RM1] Current position [28 6 0]
+23:16:05 [DRONE_RM1] Half of the battery left
+23:16:06 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:06 [DRONE_RM1] Current position [28 5 0]
+23:16:06 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:06 [DRONE_RM1] Current position [28 4 0]
+23:16:06 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:06 [DRONE_RM1] Current position [28 3 0]
+23:16:07 [DRONE_RM1] Moved along the [0 -1 0] direction
+23:16:07 [DRONE_RM1] Current position [28 2 0]
+23:16:07 [DRONE_RM1] Moved along the [-1 0 0] direction
+23:16:07 [DRONE_RM1] Current position [27 2 0]
+23:16:07 [DRONE_RM1] Moved along the [-1 0 0] direction
+23:16:07 [DRONE_RM1] Current position [26 2 0]
+23:16:08 [DRONE_RM1] Moved along the [-1 -1 0] direction
+23:16:08 [DRONE_RM1] Current position [25 1 0]
+23:16:09 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:09 [DRONE_RM1] Current position [26 1 0]
+23:16:09 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:09 [DRONE_RM1] Current position [27 1 0]
+23:16:09 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:09 [DRONE_RM1] Current position [28 1 0]
+23:16:10 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:10 [DRONE_RM1] Current position [29 1 0]
+23:16:10 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:10 [DRONE_RM1] Current position [30 1 0]
+23:16:10 [DRONE_RM1] A quarter of the battery left
+23:16:10 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:10 [DRONE_RM1] Current position [31 1 0]
+23:16:11 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:11 [DRONE_RM1] Current position [32 1 0]
+23:16:11 [DRONE_RM1] Moved along the [0 0 1] direction
+23:16:11 [DRONE_RM1] Current position [32 1 1]
+23:16:11 [DRONE_RM1] Moved along the [1 0 -1] direction
+23:16:11 [DRONE_RM1] Current position [33 1 0]
+23:16:12 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:12 [DRONE_RM1] Current position [34 2 0]
+23:16:12 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:12 [DRONE_RM1] Current position [35 3 0]
+23:16:12 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:12 [DRONE_RM1] Current position [36 4 0]
+23:16:13 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:13 [DRONE_RM1] Current position [37 5 0]
+23:16:13 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:13 [DRONE_RM1] Current position [38 6 0]
+23:16:13 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:13 [DRONE_RM1] Current position [39 7 0]
+23:16:14 [DRONE_RM1] Moved along the [1 1 0] direction
+23:16:14 [DRONE_RM1] Current position [40 8 0]
+23:16:14 [DRONE_RM1] Battery is running out! Starting the landing manoeuvre to recharge
+23:16:14 [DRONE_RM1] Recharging battery...
+23:16:19 [DRONE_RM1] Battery recharged! Taking off...
+23:16:19 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:19 [DRONE_RM1] Current position [41 8 0]
+23:16:20 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:20 [DRONE_RM1] Current position [42 8 0]
+23:16:20 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:20 [DRONE_RM1] Current position [43 8 0]
+23:16:20 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:20 [DRONE_RM1] Current position [44 8 0]
+23:16:21 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:21 [DRONE_RM1] Current position [45 8 0]
+23:16:21 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:21 [DRONE_RM1] Current position [46 8 0]
+23:16:21 [DRONE_RM1] Moved along the [1 0 0] direction
+23:16:21 [DRONE_RM1] Current position [47 8 0]
