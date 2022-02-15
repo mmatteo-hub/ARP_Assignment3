@@ -400,21 +400,22 @@ void connect_to_master() {
 
 //function to decode the result returned by "drone_api.h" functions 
 char *decode_result(int result){
-    switch (result)
-    {
-    case 0:
-        return "SUCCESS";
-    case 1:
-        return "TARGET POSITION OUT OF BOUNDS";
-    case 2:
-        return "WALL IN THE TARGET POSITION";
-    case 3:
-        return "DRONE IN THE TARGET POSITION";
-    case 4:
-        return "DRONE NOT SPAWNED";
-    case 5:
-        return "DRONE LANDED";
-    }
+    switch (result){
+	    case SUCCESS:
+		return "SUCCESS";
+	    case INVALID_MESSAGE:
+		return "INVALID MESSAGE";
+	    case OUT_OF_BOUNDS_POSITION:
+		return "TARGET POSITION OUT OF BOUNDS";
+	    case OCCUPIED_POSITION_WALL:
+		return "WALL IN THE TARGET POSITION";
+	    case OCCUPIED_POSITION_DRONE:
+		return "DRONE IN THE TARGET POSITION";
+	    case DRONE_NOT_SPAWNED:
+		return "DRONE NOT SPAWNED";
+	    case DRONE_IS_LANDED:
+		return "DRONE LANDED";
+	    }
     return NULL;
 }
 
