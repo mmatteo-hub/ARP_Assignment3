@@ -10,3 +10,5 @@ Group RM1 (Luca Mosetti, Emanuale Rambaldi): developed drone_RM1.
 Group MD99 (Mattia Musumeci, Daniele Martino Parisi): developed drone_api, logger and master.
 Group DF21 (Parisi Davide Leo, Ferrazzi Francesco): developed drone_DF21.
 Group MS8 (Mohammad Al Horany, Salvatore D'Ippolito): developed drone_MS8.
+Group ms3 (Matteo Maragliano, Sara Sgambato): developed drone_ms3.
+Group DM3 (Monica Fossati, Davide Bruzzo): developed drone_DM3.
