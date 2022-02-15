@@ -9,4 +9,5 @@ sources/master/master.txt <(echo) \
 sources/drone_RM1/drone_RM1.txt <(echo) \
 sources/drone_DF21/drone_DF21.txt <(echo) \
 sources/drone_ms3/drone_ms3.txt <(echo) \
+sources/drone_MS8/MS8.txt <(echo) \
 | more -d -c -p
